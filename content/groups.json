@@ -1,0 +1,830 @@
+{
+  "_comment": "Group (kiểu trait TFT). Mỗi card có 1 group xuất thân (origin) + 1 group tính cách (trait); Legendary được thêm 1 trait. Mốc cộng dồn: đạt 3 vẫn giữ hiệu ứng mốc 2. scope: members = chỉ card thuộc group, team = cả đội. stats: HP/ATK/DEF/SPD là tỉ lệ (0.1 = +10%), CRIT/DODGE là điểm %. skill: cùng định dạng skill của card.",
+  "groups": [
+    {
+      "id": "vu_tru",
+      "name": "Vũ trụ",
+      "axis": "origin",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "spd",
+              "skill_name": "Năng lượng vũ trụ",
+              "skill_params": {
+                "effect": "start_energy",
+                "target": "self",
+                "coeff": 1
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Sức mạnh vũ trụ",
+              "skill_params": {
+                "effect": "skill_power",
+                "target": "self",
+                "coeff": 0.12
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trung_co",
+      "name": "Cổ trang",
+      "axis": "origin",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "team",
+          "stats": [
+            {
+              "stat": "atk",
+              "value": 0.1
+            }
+          ],
+          "skills": []
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Lưỡi kiếm cổ",
+              "skill_params": {
+                "effect": "sharpen",
+                "target": "primary",
+                "coeff": 0.15
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "giang_ho",
+      "name": "Giang hồ",
+      "axis": "origin",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "ally_death",
+              "scale_stat": "atk",
+              "skill_name": "Báo thù",
+              "skill_params": {
+                "effect": "empower",
+                "target": "self",
+                "coeff": 0.12,
+                "permanent": true,
+                "stack_max": -1
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "ally_death",
+              "scale_stat": "atk",
+              "skill_name": "Báo thù lớn",
+              "skill_params": {
+                "effect": "empower",
+                "target": "self",
+                "coeff": 0.18,
+                "permanent": true,
+                "stack_max": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quan_su",
+      "name": "Quân sự",
+      "axis": "origin",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "attack",
+              "scale_stat": "def",
+              "skill_name": "Yểm trợ",
+              "skill_params": {
+                "effect": "followup",
+                "target": "self",
+                "coeff": 0.3
+              }
+            }
+          ]
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "attack",
+              "scale_stat": "def",
+              "skill_name": "Yểm trợ mạnh",
+              "skill_params": {
+                "effect": "followup",
+                "target": "self",
+                "coeff": 0.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "huyen_bi",
+      "name": "Huyền bí",
+      "axis": "origin",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "death",
+              "scale_stat": "hp",
+              "skill_name": "Lời nguyền",
+              "skill_params": {
+                "effect": "damage",
+                "target": "enemy_front",
+                "coeff": 0.15
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "death",
+              "scale_stat": "hp",
+              "skill_name": "Trở về",
+              "skill_params": {
+                "effect": "revive",
+                "target": "self",
+                "coeff": 0.12
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hoc_duong",
+      "name": "Học đường",
+      "axis": "origin",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "team",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "spd",
+              "skill_name": "Học nhanh",
+              "skill_params": {
+                "effect": "exp",
+                "target": "self",
+                "coeff": 0.1
+              }
+            }
+          ]
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "spd",
+              "skill_name": "Học giỏi",
+              "skill_params": {
+                "effect": "exp",
+                "target": "self",
+                "coeff": 0.15
+              }
+            },
+            {
+              "trigger": "passive",
+              "scale_stat": "spd",
+              "skill_name": "Sẵn sàng",
+              "skill_params": {
+                "effect": "start_energy",
+                "target": "self",
+                "coeff": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thien_nhien",
+      "name": "Thiên nhiên",
+      "axis": "origin",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "team",
+          "stats": [
+            {
+              "stat": "spd",
+              "value": 0.05
+            }
+          ],
+          "skills": []
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "hp",
+              "skill_name": "Tái sinh",
+              "skill_params": {
+                "effect": "regen",
+                "target": "self",
+                "coeff": 0.02
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "do_thi",
+      "name": "Đô thị",
+      "axis": "origin",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "team",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "spd",
+              "skill_name": "Săn hàng",
+              "skill_params": {
+                "effect": "chest_chance",
+                "target": "self",
+                "coeff": 0.1
+              }
+            }
+          ]
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [
+            {
+              "stat": "dodge",
+              "value": 8
+            },
+            {
+              "stat": "spd",
+              "value": 0.05
+            }
+          ],
+          "skills": []
+        }
+      ]
+    },
+    {
+      "id": "tham_lam",
+      "name": "Tham lam",
+      "axis": "trait",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "team",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Hám lợi",
+              "skill_params": {
+                "effect": "loot_xu",
+                "target": "self",
+                "coeff": 0.2
+              }
+            }
+          ]
+        },
+        {
+          "count": 3,
+          "scope": "team",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Mắt tinh",
+              "skill_params": {
+                "effect": "valuable_chance",
+                "target": "self",
+                "coeff": 0.15
+              }
+            },
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Mở khóa",
+              "skill_params": {
+                "effect": "chest_chance",
+                "target": "self",
+                "coeff": 0.1
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Càng giàu càng hăng",
+              "skill_params": {
+                "effect": "stat_bonus",
+                "target": "self",
+                "coeff": 0.02,
+                "per": "held_xu",
+                "per_amount": 100000,
+                "max": 0.3
+              }
+            },
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Ôm của",
+              "skill_params": {
+                "effect": "damage_dealt",
+                "target": "self",
+                "coeff": 0.15,
+                "per": "held_valuables",
+                "per_amount": 1,
+                "max": 0.3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chuan_xac",
+      "name": "Chuẩn xác",
+      "axis": "trait",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "team",
+          "stats": [
+            {
+              "stat": "crit",
+              "value": 8
+            }
+          ],
+          "skills": []
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Chí mạng",
+              "skill_params": {
+                "effect": "crit_damage",
+                "target": "self",
+                "coeff": 0.25
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [
+            {
+              "stat": "crit",
+              "value": 5
+            }
+          ],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Chí mạng sâu",
+              "skill_params": {
+                "effect": "crit_damage",
+                "target": "self",
+                "coeff": 0.35
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noi_nang",
+      "name": "Nội năng",
+      "axis": "trait",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Khai thông",
+              "skill_params": {
+                "effect": "skill_power",
+                "target": "self",
+                "coeff": 0.1
+              }
+            }
+          ]
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Tụ khí",
+              "skill_params": {
+                "effect": "ult_cost",
+                "target": "self",
+                "coeff": -1
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Bùng nổ nội lực",
+              "skill_params": {
+                "effect": "skill_power",
+                "target": "self",
+                "coeff": 0.2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nhanh_nhen",
+      "name": "Nhanh nhẹn",
+      "axis": "trait",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "team",
+          "stats": [
+            {
+              "stat": "spd",
+              "value": 0.08
+            }
+          ],
+          "skills": []
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [
+            {
+              "stat": "dodge",
+              "value": 8
+            }
+          ],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "spd",
+              "skill_name": "Phản xạ",
+              "skill_params": {
+                "effect": "start_energy",
+                "target": "self",
+                "coeff": 1
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Đòn đầu",
+              "skill_params": {
+                "effect": "damage_dealt",
+                "target": "self",
+                "coeff": 0.15,
+                "when": "first_attack"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mau_chien",
+      "name": "Máu chiến",
+      "axis": "trait",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "team",
+          "stats": [
+            {
+              "stat": "atk",
+              "value": 0.1
+            }
+          ],
+          "skills": []
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Hút máu",
+              "skill_params": {
+                "effect": "life_steal",
+                "target": "self",
+                "coeff": 0.1
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "atk",
+              "skill_name": "Càng đau càng mạnh",
+              "skill_params": {
+                "effect": "damage_dealt",
+                "target": "self",
+                "coeff": 0.2,
+                "when": "self_hp_below",
+                "when_value": 0.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kien_cuong",
+      "name": "Kiên cường",
+      "axis": "trait",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "team",
+          "stats": [
+            {
+              "stat": "hp",
+              "value": 0.08
+            },
+            {
+              "stat": "def",
+              "value": 0.08
+            }
+          ],
+          "skills": []
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "passive",
+              "scale_stat": "hp",
+              "skill_name": "Chai lì",
+              "skill_params": {
+                "effect": "damage_taken",
+                "target": "self",
+                "coeff": -0.1
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "phase",
+              "scale_stat": "hp",
+              "skill_name": "Gượng dậy",
+              "skill_params": {
+                "effect": "heal",
+                "target": "self",
+                "coeff": 0.15,
+                "threshold": 0.3
+              }
+            },
+            {
+              "trigger": "passive",
+              "scale_stat": "hp",
+              "skill_name": "Hồi sức",
+              "skill_params": {
+                "effect": "regen",
+                "target": "self",
+                "coeff": 0.02
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lay_loi",
+      "name": "Cợt nhả",
+      "axis": "trait",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "hit",
+              "scale_stat": "atk",
+              "skill_name": "Chọc tức",
+              "skill_params": {
+                "effect": "stun",
+                "target": "primary",
+                "chance": 0.15
+              }
+            }
+          ]
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "open",
+              "scale_stat": "spd",
+              "skill_name": "Câu giờ",
+              "skill_params": {
+                "effect": "haste",
+                "target": "enemy_front",
+                "coeff": -0.15,
+                "turns": 2
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "hit",
+              "scale_stat": "atk",
+              "skill_name": "Chặn họng",
+              "skill_params": {
+                "effect": "silence",
+                "target": "primary",
+                "turns": 1,
+                "chance": 0.2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "muu_meo",
+      "name": "Mưu mẹo",
+      "axis": "trait",
+      "tiers": [
+        {
+          "count": 2,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "attack",
+              "scale_stat": "atk",
+              "skill_name": "Gài bẫy",
+              "skill_params": {
+                "effect": "weak",
+                "target": "primary",
+                "chance": 0.15,
+                "turns": 2
+              }
+            }
+          ]
+        },
+        {
+          "count": 3,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "open",
+              "scale_stat": "atk",
+              "skill_name": "Bịt miệng",
+              "skill_params": {
+                "effect": "silence",
+                "target": "enemy_front",
+                "turns": 1
+              }
+            }
+          ]
+        },
+        {
+          "count": 4,
+          "scope": "members",
+          "stats": [],
+          "skills": [
+            {
+              "trigger": "hit",
+              "scale_stat": "atk",
+              "skill_name": "Rút năng lượng",
+              "skill_params": {
+                "effect": "energy_steal",
+                "target": "primary",
+                "coeff": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

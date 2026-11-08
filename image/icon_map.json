@@ -1,0 +1,44 @@
+{
+  "_comment": "Which icon file draws which concept in rendered images. Paths are relative to image/. Edit freely; missing keys just draw no icon.",
+  "role": {
+    "TANKER": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_1.png",
+    "MARKSMAN": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_2.png",
+    "MAGE": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_3.png",
+    "SUPPORT": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_22.png"
+  },
+  "rarity": {
+    "COMMON": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_4.png",
+    "RARE": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_5.png",
+    "EPIC": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_6.png",
+    "LEGENDARY": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_7.png"
+  },
+  "job": {
+    "SHIELD": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_15.png",
+    "HASTE": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_20.png",
+    "BATTERY": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_9.png",
+    "DEBUFFER": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_11.png",
+    "FOLLOWUP": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_8.png",
+    "HEALER": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_17.png",
+    "BURST": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_12.png",
+    "AOE": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_18.png",
+    "POKE": "icons/job_poke.png",
+    "PROVOKE": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_13.png",
+    "VANGUARD": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_21.png",
+    "BRUISER": "icons/job_bruiser.png",
+    "ASSASSIN": "icons/job_assassin.png",
+    "COUNTER": "icons/job_counter.png"
+  },
+  "slot": {
+    "WEAPON": "icons/job_assassin.png",
+    "ARMOR": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_15.png",
+    "ACCESSORY": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_20.png"
+  },
+  "status": {
+    "DEAD": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_23.png",
+    "ULT": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_16.png",
+    "CRIT": "icons/Gemini_Generated_Image_rwca49rwca49rwca-removebg-preview_18.png"
+  },
+  "power_badge": "badged_icons/power_badge.png",
+  "card_bottom": "bottomCard2.png",
+  "fallback_portrait": "quanhanhgia.png"
+}

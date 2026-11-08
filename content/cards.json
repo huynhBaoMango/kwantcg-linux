@@ -1,0 +1,11251 @@
+{
+
+  "cards": [
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "rare",
+
+      "enabled": true,
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_armstrong_x",
+
+          "weight": 1
+
+        }
+
+      ],
+
+      "id": "quan_armstrong",
+
+      "name": "Quân Armstrong",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 920,
+
+      "base_atk": 90,
+
+      "base_def": 80,
+
+      "base_spd": 70,
+
+      "base_crit": 5,
+
+      "base_dodge": 5,
+
+      "scale_stat": "hp",
+
+      "trigger": "hit",
+
+      "skill_params": {
+
+        "effect": "shield",
+
+        "target": "self",
+
+        "coeff": 0.08
+
+      },
+
+      "skill_name": "Khiên chắn",
+
+      "technique": "tuong_thanh",
+
+      "flavor_text": "Vũ trụ còn nhiều điều bí hiểm.."
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "epic",
+
+      "base_card": "quan_armstrong",
+
+      "id": "quan_armstrong_x",
+
+      "name": "Quân Armstrong Ω",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 1500,
+
+      "base_atk": 200,
+
+      "base_def": 88,
+
+      "base_spd": 77,
+
+      "base_crit": 5,
+
+      "base_dodge": 5,
+
+      "scale_stat": "hp",
+
+      "trigger": "strike",
+
+      "skill_params": {
+
+        "effect": "shield",
+
+        "target": "self",
+
+        "coeff": 0.1
+
+      },
+
+      "skill_name": "Lá chắn quỹ đạo",
+
+      "technique": "tuong_thanh",
+
+      "flavor_text": "Vũ trụ này trong bàn tay tao.",
+
+      "enabled": false,
+
+      "ult_energy": 4,
+
+      "start_energy": 0
+
+    },
+
+    {
+
+      "groups": [
+
+        "giang_ho",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_ninja",
+
+      "name": "Quân ninja vô danh",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 400,
+
+      "base_atk": 170,
+
+      "base_def": 30,
+
+      "base_spd": 90,
+
+      "base_crit": 15,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Lướt bóng truy kích",
+
+      "technique": "ket_lieu",
+
+      "flavor_text": "Luôn cẩn thận phía sau.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "enemy_back",
+        "coeff": 0.6,
+        "when": "target_slowed"
+      },
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_ninja_x",
+
+          "weight": 2
+
+        },
+
+        {
+
+          "card": "quan_hayabusa"
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "epic",
+
+      "enabled": true,
+
+      "id": "quan_dac_cong",
+
+      "name": "Quân đặc công D2",
+
+      "role": "support",
+
+      "job": "aoe",
+
+      "base_hp": 400,
+
+      "base_atk": 120,
+
+      "base_def": 25,
+
+      "base_spd": 100,
+
+      "base_crit": 0,
+
+      "base_dodge": 0,
+
+      "scale_stat": "hp",
+
+      "trigger": "open",
+
+      "skill_params": {
+        "effect": "poison",
+        "target": "all_enemies",
+        "coeff": 0.025,
+        "scale_from": "target",
+        "turns": 2
+      },
+
+      "technique": "khong_kich_d2",
+
+      "skill_name": "Drone khí độc",
+
+      "flavor_text": "Không chừa ai."
+
+    },
+
+    {
+
+      "id": "quan_medic_d2",
+
+      "name": "Quân medic D2",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "groups": [
+
+        "quan_su",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "rare",
+
+      "base_hp": 650,
+
+      "base_atk": 80,
+
+      "base_def": 40,
+
+      "base_spd": 120,
+
+      "base_crit": 0,
+
+      "base_dodge": 0,
+
+      "scale_stat": "hp",
+
+      "trigger": "ally_hit",
+
+      "technique": "cap_cuu_khan",
+
+      "skill_name": "Cấp cứu chiến trường",
+
+      "flavor_text": "Đứng dậy đi, chúng ta còn một trận đánh chưa kết thúc.",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "hit_ally",
+        "coeff": 0.12,
+        "when": "target_hp_below",
+        "when_value": 0.65,
+        "max_uses": 8
+      }
+
+    },
+
+    {
+
+      "id": "quan_ve_si",
+
+      "name": "Quân vệ sĩ",
+
+      "role": "tanker",
+
+      "job": "provoke",
+
+      "groups": [
+
+        "do_thi",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "base_hp": 700,
+
+      "base_atk": 70,
+
+      "base_def": 80,
+
+      "base_spd": 55,
+
+      "base_crit": 5,
+
+      "base_dodge": 4,
+
+      "scale_stat": "atk",
+
+      "trigger": "ally_hit",
+
+      "skill_name": "Đứng sau lưng tôi",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Cút ra ngoài",
+
+      "skill_params": {
+        "effect": "taunt",
+        "target": "self",
+        "turns": 1,
+        "max_uses": 4
+      }
+
+    },
+
+    {
+
+      "id": "quan_linh_cu",
+
+      "name": "Quân lính quèn",
+
+      "role": "tanker",
+
+      "job": "healer",
+
+      "groups": [
+
+        "quan_su",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "base_hp": 760,
+
+      "base_atk": 85,
+
+      "base_def": 70,
+
+      "base_spd": 60,
+
+      "base_crit": 5,
+
+      "base_dodge": 3,
+
+      "scale_stat": "hp",
+
+      "trigger": "death",
+
+      "skill_name": "Di sản",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Giữ lấy cái này.",
+
+      "skill_params": {
+
+        "effect": "heal",
+
+        "target": "ally_adjacent",
+
+        "coeff": 0.15
+
+      },
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_rambo",
+
+          "weight": 2
+
+        },
+
+        {
+
+          "card": "quan_soldier_boy",
+
+          "weight": 1
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "id": "quan_cao_boi",
+
+      "name": "Quân cao bồi",
+
+      "role": "marksman",
+
+      "job": "burst",
+
+      "groups": [
+
+        "do_thi",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "common",
+
+      "base_hp": 420,
+
+      "base_atk": 120,
+
+      "base_def": 25,
+
+      "base_spd": 105,
+
+      "base_crit": 20,
+
+      "scale_stat": "atk",
+
+      "trigger": "crit",
+
+      "skill_name": "Tái nạp thần tốc",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Xem ai rút súng nhanh hơn.",
+
+      "modifiers": [],
+
+      "skill_params": {
+        "effect": "energy",
+        "target": "self",
+        "coeff": 1
+      },
+
+      "base_dodge": 0
+
+    },
+
+    {
+
+      "id": "quan_phu_thuy",
+
+      "name": "Quân phù thủy",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "groups": [
+
+        "huyen_bi",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "base_hp": 480,
+
+      "base_atk": 140,
+
+      "base_def": 20,
+
+      "base_spd": 85,
+
+      "base_crit": 8,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Bùa mê",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Yếu đi.",
+
+      "skill_params": {
+
+        "effect": "weak",
+
+        "target": "all_enemies",
+
+        "coeff": 0.15,
+
+        "turns": 2
+
+      },
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_elsa",
+
+          "weight": 1
+
+        },
+
+        {
+
+          "card": "quan_voldemort",
+
+          "weight": 1
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "id": "quan_y_ta",
+
+      "name": "Quân y tá",
+
+      "groups": [
+
+        "thien_nhien",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 470,
+
+      "base_atk": 50,
+
+      "base_def": 20,
+
+      "base_spd": 110,
+
+      "base_crit": 5,
+
+      "base_dodge": 8,
+
+      "scale_stat": "hp",
+
+      "trigger": "round_start",
+
+      "skill_name": "Chăm sóc vết thương",
+
+      "technique": "quan_cuu",
+
+      "flavor_text": "",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "ally_lowest",
+        "coeff": 0.1,
+        "when": "target_hp_below",
+        "when_value": 0.65
+      },
+
+      "modifiers": [],
+
+      "ult_energy": 0,
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_medic",
+
+          "weight": 1
+
+        },
+
+        {
+
+          "card": "quan_lifeline",
+
+          "weight": 1
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "id": "quan_dj",
+
+      "name": "DJ Quân 98",
+
+      "role": "support",
+
+      "job": "haste",
+
+      "groups": [
+
+        "do_thi",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "rare",
+
+      "base_hp": 450,
+
+      "base_atk": 80,
+
+      "base_def": 30,
+
+      "base_spd": 110,
+
+      "base_dodge": 0,
+
+      "scale_stat": "spd",
+
+      "trigger": "open",
+
+      "skill_name": "Drop beat",
+
+      "technique": "tang_toc",
+
+      "flavor_text": "Quẩy lên đi",
+
+      "skill_params": {
+
+        "effect": "haste",
+
+        "target": "all_allies",
+
+        "coeff": 0.2,
+
+        "turns": 2
+
+      },
+
+      "base_crit": 50
+
+    },
+
+    {
+
+      "id": "quan_jack_sparrow",
+
+      "name": "Quân Jack Sparrow",
+
+      "role": "support",
+
+      "job": "poke",
+
+      "groups": [
+
+        "trung_co",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "epic",
+
+      "base_hp": 500,
+
+      "base_atk": 90,
+
+      "base_def": 30,
+
+      "base_spd": 110,
+
+      "base_crit": 0,
+
+      "base_dodge": 40,
+
+      "scale_stat": "atk",
+
+      "trigger": "dodge",
+
+      "skill_name": "Cướp giữa làn đạn",
+
+      "technique": "bom_khoi",
+
+      "flavor_text": "Tung chiêu đi.",
+
+      "skill_params": {
+        "effect": "energy_steal",
+        "target": "primary",
+        "coeff": 1,
+        "max_uses": 4
+      }
+
+    },
+
+    {
+
+      "id": "quan_agent_47",
+
+      "name": "Quân đặc vụ 47",
+
+      "role": "support",
+
+      "job": "burst",
+
+      "groups": [
+
+        "do_thi",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "epic",
+
+      "base_hp": 500,
+
+      "base_atk": 150,
+
+      "base_def": 20,
+
+      "base_spd": 60,
+
+      "base_crit": 20,
+
+      "base_dodge": 12,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Kết liễu có chuẩn bị",
+
+      "technique": "ket_lieu",
+
+      "flavor_text": "...",
+
+      "skill_params": {
+        "effect": "followup",
+        "target": "primary",
+        "coeff": 0.55,
+        "when": "target_has_status",
+        "when_status": "weak"
+      },
+
+      "ult_energy": 5
+
+    },
+
+    {
+
+      "id": "quan_shelby",
+
+      "name": "Quân Shelby",
+
+      "groups": [
+
+        "giang_ho",
+
+        "muu_meo",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "legendary",
+
+      "enabled": true,
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 900,
+
+      "base_atk": 220,
+
+      "base_def": 90,
+
+      "base_spd": 80,
+
+      "base_crit": 10,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_params": {
+        "effect": "damage_dealt",
+        "target": "self",
+        "coeff": 0.25,
+        "when": "from_round",
+        "when_value": 3
+      },
+
+      "skill_name": "Kế hoạch dài hơi",
+
+      "technique": "lenh_peaky",
+
+      "flavor_text": "Fear is a luxury",
+
+      "modifiers": [],
+
+      "ult_energy": 4
+
+    },
+
+    {
+
+      "id": "quan_bao_ve",
+
+      "name": "Quân bảo vệ siêu thị",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "groups": [
+
+        "do_thi",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "rare",
+
+      "base_hp": 1050,
+
+      "base_atk": 50,
+
+      "base_spd": 50,
+
+      "base_crit": 0,
+
+      "base_dodge": 0,
+
+      "scale_stat": "hp",
+
+      "trigger": "open",
+
+      "skill_name": "Chốt bảo vệ",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Không ai qua được.",
+
+      "base_def": 105,
+
+      "skill_params": {
+        "effect": "shield",
+        "target": "self",
+        "coeff": 0.3
+      }
+
+    },
+
+    {
+
+      "id": "quan_tho_san",
+
+      "name": "Quân thợ săn",
+
+      "role": "marksman",
+
+      "job": "debuffer",
+
+      "groups": [
+
+        "trung_co",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "rare",
+
+      "base_hp": 560,
+
+      "base_atk": 170,
+
+      "base_def": 28,
+
+      "base_spd": 108,
+
+      "base_crit": 14,
+
+      "base_dodge": 9,
+
+      "scale_stat": "hp",
+
+      "trigger": "hit",
+
+      "skill_name": "Bẫy tẩm độc",
+
+      "technique": "none",
+
+      "special": true,
+
+      "flavor_text": "Dính rồi.",
+
+      "skill_params": {
+        "effect": "poison",
+        "target": "primary",
+        "coeff": 0.035,
+        "scale_from": "target",
+        "turns": 3
+      }
+
+    },
+
+    {
+
+      "id": "quan_nhac_cong",
+
+      "name": "Quân nhạc công",
+
+      "role": "support",
+
+      "job": "haste",
+
+      "groups": [
+
+        "do_thi",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "common",
+
+      "base_hp": 500,
+
+      "base_atk": 65,
+
+      "base_def": 25,
+
+      "base_spd": 115,
+
+      "base_crit": 5,
+
+      "base_dodge": 7,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Nhịp dẫn",
+
+      "technique": "quan_toc",
+
+      "flavor_text": "Theo tao.",
+
+      "skill_params": {
+        "effect": "focus",
+        "target": "ally_adjacent",
+        "coeff": 0.12,
+        "turns": 2
+      }
+
+    },
+
+    {
+
+      "groups": [
+
+        "giang_ho",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "epic",
+
+      "base_card": "quan_ninja",
+
+      "id": "quan_ninja_x",
+
+      "name": "Quân ninja ẩn danh",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 450,
+
+      "base_def": 30,
+
+      "base_spd": 100,
+
+      "base_crit": 15,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Phi tiêu nảy",
+
+      "technique": "lien_hoan",
+
+      "flavor_text": "Cẩn thận cũng không giúp ích đâu.",
+
+      "skill_params": {
+
+        "effect": "damage",
+
+        "target": "enemy_back",
+
+        "coeff": 1.2
+
+      },
+
+      "enabled": false,
+
+      "base_atk": 180
+
+    },
+
+    {
+
+      "groups": [
+
+        "giang_ho",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "epic",
+
+      "base_card": "quan_ninja",
+
+      "id": "quan_hayabusa",
+
+      "name": "Quân Ryu Hayabusa",
+
+      "role": "mage",
+
+      "job": "assassin",
+
+      "base_hp": 450,
+
+      "base_atk": 250,
+
+      "base_def": 30,
+
+      "base_spd": 70,
+
+      "base_crit": 10,
+
+      "base_dodge": 0,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Kiếm lửa",
+
+      "technique": "ket_lieu",
+
+      "flavor_text": "Chém banh l",
+
+      "skill_params": {
+
+        "effect": "damage",
+
+        "target": "enemy_back",
+
+        "coeff": 0.9
+
+      },
+
+      "enabled": false,
+
+      "ult_energy": 4
+
+    },
+
+    {
+
+      "id": "quan_spiderman",
+
+      "name": "Quân spiderman",
+
+      "groups": [
+
+        "hoc_duong",
+
+        "muu_meo",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "legendary",
+
+      "enabled": true,
+
+      "role": "tanker",
+
+      "job": "debuffer",
+
+      "base_hp": 800,
+
+      "base_atk": 200,
+
+      "base_def": 100,
+
+      "base_crit": 0,
+
+      "base_dodge": 30,
+
+      "scale_stat": "atk",
+
+      "trigger": "dodge",
+
+      "skill_params": {
+
+        "effect": "stun",
+
+        "target": "primary",
+
+        "turns": 0,
+
+        "chance": 0.3,
+
+        "threshold": 0,
+
+        "on": "dodge",
+
+        "per": "none",
+
+        "per_amount": 0,
+
+        "scale_from": "self",
+
+        "permanent": false,
+
+        "stack_max": 0,
+
+        "max_uses": 0,
+
+        "coeff": 0.3
+
+      },
+
+      "skill_name": "Giác quan nhện",
+
+      "technique": "to_nhen",
+
+      "flavor_text": "Sức mạnh càng lớn, trách nhiệm càng cao.",
+
+      "modifiers": [],
+
+      "base_spd": 100,
+
+      "ult_energy": 4
+
+    },
+
+    {
+
+      "id": "quan_peterquill_1",
+
+      "name": "Quân Peter Quill",
+
+      "role": "marksman",
+
+      "job": "haste",
+
+      "groups": [
+
+        "vu_tru",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "common",
+
+      "base_hp": 250,
+
+      "base_def": 10,
+
+      "base_spd": 110,
+
+      "base_crit": 10,
+
+      "base_dodge": 7,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Lấy đà",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "\"You know what? There's another name you might know me by: Star-Lord\"",
+
+      "base_atk": 60,
+
+      "skill_params": {
+        "effect": "haste",
+        "target": "self",
+        "coeff": 0.025,
+        "permanent": true,
+        "stack_max": 4
+      }
+
+    },
+
+    {
+
+      "id": "quan_peterquill_2",
+
+      "name": "Quân Peter Quill đã căng",
+
+      "role": "marksman",
+
+      "job": "haste",
+
+      "groups": [
+
+        "vu_tru",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "rare",
+
+      "base_hp": 500,
+
+      "base_def": 40,
+
+      "base_spd": 140,
+
+      "base_crit": 20,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "crit",
+
+      "skill_name": "Nhịp súng chiến đội",
+
+      "technique": "ban_tia",
+
+      "flavor_text": "\"Come here baby\"",
+
+      "skill_params": {
+        "effect": "haste",
+        "target": "all_allies",
+        "coeff": 0.08,
+        "turns": 2,
+        "max_uses": 4
+      },
+
+      "base_atk": 120
+
+    },
+
+    {
+
+      "id": "quan_peterquill_3",
+
+      "name": "Quân Star-lord",
+
+      "role": "marksman",
+
+      "job": "haste",
+
+      "groups": [
+
+        "vu_tru",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "epic",
+
+      "base_hp": 800,
+
+      "base_def": 70,
+
+      "base_spd": 190,
+
+      "base_crit": 25,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Vũ điệu Ngân Hà",
+
+      "technique": "combo_lien_hoan",
+
+      "flavor_text": "\"Nghiêm túc rồi đó nha\"",
+
+      "skill_params": {
+        "effect": "overdrive",
+        "target": "all_allies",
+        "coeff": 0.03,
+        "turns": 2,
+        "stack_max": 3
+      },
+
+      "base_atk": 200
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_doi_truong",
+
+      "name": "Quân Captain America",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 760,
+
+      "base_atk": 85,
+
+      "base_def": 75,
+
+      "base_spd": 60,
+
+      "base_crit": 0,
+
+      "base_dodge": 0,
+
+      "scale_stat": "hp",
+
+      "trigger": "attack",
+
+      "skill_name": "Khiên nảy bảo hộ",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Quân sẽ bảo vệ nước Mỹ... bằng niềm tin.",
+
+      "skill_params": {
+        "effect": "shield",
+        "target": "ally_adjacent",
+        "coeff": 0.045
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_nguoi_doi",
+
+      "name": "Quân Batman",
+
+      "role": "tanker",
+
+      "job": "debuffer",
+
+      "base_hp": 740,
+
+      "base_atk": 70,
+
+      "base_def": 85,
+
+      "base_spd": 50,
+
+      "base_crit": 0,
+
+      "base_dodge": 0,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Kế hoạch khắc chế",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Quân không phải người hùng, Quân là nỗi sợ.",
+
+      "skill_params": {
+        "effect": "weak",
+        "target": "enemy_back",
+        "coeff": 0.15,
+        "turns": 2
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_nu_than",
+
+      "name": "Quân Wonder Woman",
+
+      "role": "tanker",
+
+      "job": "counter",
+
+      "base_hp": 780,
+
+      "base_atk": 80,
+
+      "base_def": 70,
+
+      "base_spd": 65,
+
+      "base_crit": 5,
+
+      "base_dodge": 0,
+
+      "scale_stat": "def",
+
+      "trigger": "ally_hit",
+
+      "skill_name": "Phản kích Amazon",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Quân đẹp, Quân mạnh, Quân không cần ai.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "primary",
+        "coeff": 0.6,
+        "chance": 0.6
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_john_wick",
+
+      "name": "Quân John Wick",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 400,
+
+      "base_atk": 130,
+
+      "base_def": 25,
+
+      "base_spd": 105,
+
+      "base_crit": 12,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "kill",
+
+      "skill_name": "Một mạng, một băng đạn",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Quân chỉ muốn nuôi chó.",
+
+      "skill_params": {
+        "effect": "sharpen",
+        "target": "self",
+        "coeff": 0.1,
+        "permanent": true,
+        "stack_max": 3
+      },
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_baba_yaga",
+
+          "weight": 1
+
+        }
+
+      ],
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_tia_chop",
+
+      "name": "Quân The Flash",
+
+      "role": "marksman",
+
+      "job": "haste",
+
+      "base_hp": 380,
+
+      "base_atk": 110,
+
+      "base_def": 20,
+
+      "base_spd": 115,
+
+      "base_crit": 10,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Gia tốc siêu thanh",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Quân chạy nhanh đến mức ảnh AI cũng mờ.",
+
+      "skill_params": {
+        "effect": "haste",
+        "target": "self",
+        "coeff": 0.03,
+        "permanent": true,
+        "stack_max": 5
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_lan_mom",
+
+      "name": "Quân lắm mồm",
+
+      "role": "marksman",
+
+      "job": "debuffer",
+
+      "base_hp": 410,
+
+      "base_atk": 115,
+
+      "base_def": 25,
+
+      "base_spd": 100,
+
+      "base_crit": 10,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Maximum effort",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Quân biết Quân đẹp trai, không cần nhắc.",
+
+      "skill_params": {
+
+        "effect": "silence",
+
+        "target": "primary",
+
+        "turns": 1
+
+      },
+
+      "enabled": true,
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_deadpool",
+
+          "weight": 1
+
+        },
+
+        {
+
+          "card": "quan_peterquill_3",
+
+          "weight": 1
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_cung_ten",
+
+      "name": "Quân cung tên",
+
+      "role": "marksman",
+
+      "job": "followup",
+
+      "base_hp": 430,
+
+      "base_atk": 120,
+
+      "base_def": 25,
+
+      "base_spd": 95,
+
+      "base_crit": 10,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Mũi tên cuối",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Quân có tên, và Quân có cung.",
+
+      "skill_params": {
+
+        "effect": "bleed",
+
+        "target": "primary",
+
+        "coeff": 0.1,
+
+        "turns": 2
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_phap_su_gia",
+
+      "name": "Quân pháp sư già",
+
+      "role": "mage",
+
+      "job": "battery",
+
+      "base_hp": 480,
+
+      "base_atk": 140,
+
+      "base_def": 20,
+
+      "base_spd": 90,
+
+      "base_crit": 8,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Lời cổ ngữ",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Quân không cho ai qua.",
+
+      "skill_params": {
+        "effect": "focus",
+        "target": "all_allies",
+        "coeff": 0.1,
+        "turns": 2
+      },
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_phap_su_trang",
+
+          "weight": 1
+
+        }
+
+      ],
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "hoc_duong",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_hieu_truong",
+
+      "name": "Quân hiệu trưởng",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "base_hp": 460,
+
+      "base_atk": 145,
+
+      "base_def": 18,
+
+      "base_spd": 85,
+
+      "base_crit": 10,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Lửa phượng hoàng",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Quân quản lý trường bằng phép thuật.",
+
+      "skill_params": {
+        "effect": "burn",
+        "target": "enemy_lowest",
+        "coeff": 0.12,
+        "turns": 2,
+        "max_uses": 4
+      },
+
+      "enabled": true,
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_dumbledore",
+
+          "weight": 2
+
+        },
+
+        {
+
+          "card": "quan_giao_su_x",
+
+          "weight": 1
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "groups": [
+
+        "hoc_duong",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_bac_si_phep",
+
+      "name": "Quân bác sĩ phép",
+
+      "role": "mage",
+
+      "job": "shield",
+
+      "base_hp": 470,
+
+      "base_atk": 135,
+
+      "base_def": 20,
+
+      "base_spd": 88,
+
+      "base_crit": 8,
+
+      "base_dodge": 5,
+
+      "scale_stat": "hp",
+
+      "trigger": "open",
+
+      "skill_name": "Vòng tròn hộ thân",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Quân khám bệnh bằng vòng tròn.",
+
+      "skill_params": {
+        "effect": "shield",
+        "target": "all_allies",
+        "coeff": 0.06
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_thien_tai_dien",
+
+      "name": "Quân thiên tài điện",
+
+      "role": "mage",
+
+      "job": "battery",
+
+      "base_hp": 450,
+
+      "base_atk": 150,
+
+      "base_def": 18,
+
+      "base_spd": 92,
+
+      "base_crit": 10,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Cuộn dây tiếp năng",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Quân phát minh ra điện... lần nữa.",
+
+      "skill_params": {
+        "effect": "energy",
+        "target": "ally_random",
+        "coeff": 1,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "tham_lam"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_ty_phu_ten_lua",
+
+      "name": "Quân tỷ phú tên lửa",
+
+      "role": "mage",
+
+      "job": "battery",
+
+      "base_hp": 500,
+
+      "base_atk": 120,
+
+      "base_def": 22,
+
+      "base_spd": 95,
+
+      "base_crit": 5,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Đốt tiền phóng tên lửa",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Quân sẽ đưa meme lên sao Hỏa.",
+
+      "skill_params": {
+        "effect": "skill_power",
+        "target": "self",
+        "coeff": 0.1,
+        "on": "ult",
+        "per": "held_xu",
+        "per_amount": 1000000,
+        "max": 0.3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_thien_than",
+
+      "name": "Quân thiên thần",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 500,
+
+      "base_atk": 55,
+
+      "base_def": 25,
+
+      "base_spd": 110,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "ally_death",
+
+      "skill_name": "Heroes never die",
+
+      "technique": "quan_cuu",
+
+      "flavor_text": "Quân không chết, Quân chỉ đổi ảnh.",
+
+      "skill_params": {
+        "effect": "revive",
+        "target": "ally_dead",
+        "coeff": 0.3,
+        "max_uses": 1
+      },
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_valkyrie",
+
+          "weight": 1
+
+        }
+
+      ],
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_dau_bep",
+
+      "name": "Quân đầu bếp",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 480,
+
+      "base_atk": 60,
+
+      "base_def": 25,
+
+      "base_spd": 118,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "hp",
+
+      "trigger": "round_start",
+
+      "skill_name": "Bữa ăn nóng",
+
+      "technique": "quan_toc",
+
+      "flavor_text": "Món này chưa chín! Quân nói thế.",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "ally_adjacent",
+        "coeff": 0.07
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "tham_lam"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_ty_phu",
+
+      "name": "Quân tỷ phú",
+
+      "role": "support",
+
+      "job": "battery",
+
+      "base_hp": 520,
+
+      "base_atk": 50,
+
+      "base_def": 28,
+
+      "base_spd": 112,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Tài sản kếch xù",
+
+      "technique": "quan_toc",
+
+      "flavor_text": "Quân có tiền, Quân có bộ giáp.",
+
+      "skill_params": {
+
+        "effect": "stat_bonus",
+
+        "target": "self",
+
+        "coeff": 0.02,
+
+        "per": "held_xu",
+
+        "per_amount": 100000,
+
+        "max": 0.5
+
+      },
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_iron_man",
+
+          "weight": 1
+
+        }
+
+      ],
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "hoc_duong",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_giao_su_x",
+
+      "name": "Quân giáo sư X",
+
+      "role": "support",
+
+      "job": "debuffer",
+
+      "base_hp": 490,
+
+      "base_atk": 65,
+
+      "base_def": 25,
+
+      "base_spd": 108,
+
+      "base_crit": 5,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Khống chế tâm trí",
+
+      "technique": "quan_toc",
+
+      "flavor_text": "Quân đọc được suy nghĩ của mày.",
+
+      "skill_params": {
+        "effect": "silence",
+        "target": "enemy_front",
+        "turns": 1
+      },
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_cerebro",
+
+          "weight": 1
+
+        }
+
+      ],
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_quan_gia",
+
+      "name": "Quân quản gia",
+
+      "role": "support",
+
+      "job": "shield",
+
+      "base_hp": 510,
+
+      "base_atk": 60,
+
+      "base_def": 25,
+
+      "base_spd": 105,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "def",
+
+      "trigger": "round_start",
+
+      "skill_name": "Bọc giáp dự phòng",
+
+      "technique": "quan_cuu",
+
+      "flavor_text": "Quân chuẩn bị xe rồi.",
+
+      "skill_params": {
+        "effect": "stat_bonus",
+        "target": "ally_adjacent",
+        "coeff": 0.08,
+        "turns": 2,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_hulk",
+
+      "name": "Quân Hulk",
+
+      "role": "tanker",
+
+      "job": "bruiser",
+
+      "base_hp": 900,
+
+      "base_atk": 95,
+
+      "base_def": 90,
+
+      "base_spd": 60,
+
+      "base_crit": 0,
+
+      "base_dodge": 0,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Càng đau càng khỏe",
+
+      "technique": "none",
+
+      "flavor_text": "Đừng chọc Quân, Quân đang xanh.",
+
+      "base_card": "",
+
+      "skill_params": {
+
+        "effect": "stat_bonus",
+
+        "target": "self",
+
+        "coeff": 0.3,
+
+        "when": "self_hp_below",
+
+        "when_value": 0.5
+
+      },
+
+      "evolutions": [
+
+        {
+
+          "card": "quan_hulk_dien",
+
+          "weight": 1
+
+        }
+
+      ],
+
+      "enabled": false,
+
+      "special": true,
+
+      "stat_step": 0.2
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_baba_yaga",
+
+      "name": "Quân Baba Yaga",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 450,
+
+      "base_atk": 165,
+
+      "base_def": 30,
+
+      "base_spd": 135,
+
+      "base_crit": 15,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "kill",
+
+      "skill_name": "Bút chì",
+
+      "technique": "dao_gam",
+
+      "flavor_text": "Quân không phải ông kẹ. Ông kẹ là Quân.",
+
+      "base_card": "quan_john_wick",
+
+      "skill_params": {
+
+        "effect": "empower",
+
+        "target": "self",
+
+        "coeff": 0.4,
+
+        "turns": 2
+
+      },
+
+      "enabled": false
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_phap_su_trang",
+
+      "name": "Quân pháp sư trắng",
+
+      "role": "mage",
+
+      "job": "healer",
+
+      "base_hp": 520,
+
+      "base_atk": 190,
+
+      "base_def": 30,
+
+      "base_spd": 100,
+
+      "base_crit": 10,
+
+      "base_dodge": 5,
+
+      "scale_stat": "hp",
+
+      "trigger": "round_start",
+
+      "skill_name": "Lửa trắng",
+
+      "technique": "cap_cuu_khan",
+
+      "flavor_text": "Quân trở lại, trắng hơn.",
+
+      "base_card": "quan_phap_su_gia",
+
+      "skill_params": {
+
+        "effect": "heal",
+
+        "target": "all_allies",
+
+        "coeff": 0.1
+
+      },
+
+      "evolutions": [],
+
+      "enabled": false
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_valkyrie",
+
+      "name": "Quân Valkyrie",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 700,
+
+      "base_atk": 75,
+
+      "base_def": 45,
+
+      "base_spd": 120,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "hp",
+
+      "trigger": "death",
+
+      "skill_name": "Valkyrie cứu thế",
+
+      "technique": "hoi_sinh",
+
+      "flavor_text": "Quân không chết, Quân chỉ đổi skin.",
+
+      "base_card": "quan_thien_than",
+
+      "skill_params": {
+
+        "effect": "revive",
+
+        "target": "ally_dead",
+
+        "coeff": 0.2
+
+      },
+
+      "enabled": false
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_cerebro",
+
+      "name": "Quân Cerebro",
+
+      "role": "support",
+
+      "job": "haste",
+
+      "base_hp": 650,
+
+      "base_atk": 80,
+
+      "base_def": 40,
+
+      "base_spd": 122,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "spd",
+
+      "trigger": "open",
+
+      "skill_name": "Cerebro",
+
+      "technique": "tiep_lua",
+
+      "flavor_text": "Quân đội mũ bảo hiểm, đọc được hết.",
+
+      "base_card": "quan_giao_su_x",
+
+      "skill_params": {
+
+        "effect": "haste",
+
+        "target": "all_allies",
+
+        "coeff": 0.15,
+
+        "turns": 2
+
+      },
+
+      "enabled": false
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "tham_lam"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_iron_man",
+
+      "name": "Quân Iron Man",
+
+      "role": "support",
+
+      "job": "aoe",
+
+      "base_hp": 680,
+
+      "base_atk": 70,
+
+      "base_def": 42,
+
+      "base_spd": 115,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "def",
+
+      "trigger": "passive",
+
+      "skill_name": "Giáp tỷ phú",
+
+      "technique": "sac_pin",
+
+      "flavor_text": "Quân là Iron Man. Quân là Quân.",
+
+      "base_card": "quan_ty_phu",
+
+      "skill_params": {
+
+        "effect": "stat_bonus",
+
+        "target": "self",
+
+        "coeff": 0.02,
+
+        "per": "held_xu",
+
+        "per_amount": 100000,
+
+        "max": 0.35
+
+      },
+
+      "enabled": false
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_hulk_dien",
+
+      "name": "Quân Hulk điên",
+
+      "role": "tanker",
+
+      "job": "bruiser",
+
+      "base_hp": 1000,
+
+      "base_atk": 110,
+
+      "base_def": 100,
+
+      "base_spd": 70,
+
+      "base_crit": 5,
+
+      "base_dodge": 0,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Mad Hulk smash",
+
+      "technique": "cuong_no",
+
+      "flavor_text": "Quân phá hết, không cần biết.",
+
+      "base_card": "quan_hulk",
+
+      "skill_params": {
+
+        "effect": "empower",
+
+        "target": "self",
+
+        "coeff": 0.2,
+
+        "turns": 2
+
+      },
+
+      "enabled": false
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_goku",
+
+      "name": "Quân Goku",
+
+      "role": "marksman",
+
+      "job": "burst",
+
+      "base_hp": 550,
+
+      "base_atk": 185,
+
+      "base_def": 35,
+
+      "base_spd": 115,
+
+      "base_crit": 15,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Khí Saiyan",
+
+      "technique": "kamehameha",
+
+      "flavor_text": "Quân là hy vọng của vũ trụ... và của nhóm.",
+
+      "skill_params": {
+        "effect": "empower",
+        "target": "self",
+        "coeff": 0.04,
+        "permanent": true,
+        "stack_max": 5
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_thanos",
+
+      "name": "Quân Thanos",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 950,
+
+      "base_atk": 220,
+
+      "base_def": 95,
+
+      "base_spd": 85,
+
+      "base_crit": 5,
+
+      "base_dodge": 5,
+
+      "scale_stat": "hp",
+
+      "trigger": "passive",
+
+      "skill_name": "Da titan",
+
+      "technique": "ho_menh",
+
+      "flavor_text": "Quân là không thể tránh khỏi.",
+
+      "skill_params": {
+
+        "effect": "damage_taken",
+
+        "target": "self",
+
+        "coeff": -0.2
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_garen",
+
+      "name": "Quân Garen",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 760,
+
+      "base_atk": 85,
+
+      "base_def": 75,
+
+      "base_spd": 60,
+
+      "base_crit": 0,
+
+      "base_dodge": 0,
+
+      "scale_stat": "hp",
+
+      "trigger": "round_start",
+
+      "skill_name": "Bền bỉ Demacia",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Xoay kiếm một vòng, cả team im luôn.",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "self",
+        "coeff": 0.06,
+        "when": "self_hp_below",
+        "when_value": 0.5
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_darius",
+
+      "name": "Quân Darius",
+
+      "role": "tanker",
+
+      "job": "bruiser",
+
+      "base_hp": 770,
+
+      "base_atk": 88,
+
+      "base_def": 77,
+
+      "base_spd": 62,
+
+      "base_crit": 1,
+
+      "base_dodge": 1,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Xuất huyết Noxus",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Một nhát chém, cả đội hình chia đôi.",
+
+      "skill_params": {
+        "effect": "bleed",
+        "target": "primary",
+        "coeff": 0.12,
+        "turns": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_zhongli",
+
+      "name": "Quân Zhongli",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 1030,
+
+      "base_atk": 116,
+
+      "base_def": 104,
+
+      "base_spd": 74,
+
+      "base_crit": 6,
+
+      "base_dodge": 1,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Khiên bất diệt",
+
+      "technique": "ngoc_chuong",
+
+      "flavor_text": "Khiên đá dày, lời nói còn dày hơn.",
+
+      "skill_params": {
+        "effect": "shield_power",
+        "target": "self",
+        "coeff": 0.35
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_malenia",
+
+      "name": "Quân Malenia",
+
+      "role": "tanker",
+
+      "job": "counter",
+
+      "base_hp": 1000,
+
+      "base_atk": 110,
+
+      "base_def": 100,
+
+      "base_spd": 70,
+
+      "base_crit": 5,
+
+      "base_dodge": 0,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Lưỡi kiếm hồi sinh",
+
+      "technique": "vu_dieu_thuy_dieu",
+
+      "flavor_text": "Đánh không thắng, nhưng cũng chẳng chịu chết.",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "self",
+        "coeff": 0.18
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_artorias",
+
+      "name": "Quân Artorias",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 1010,
+
+      "base_atk": 113,
+
+      "base_def": 102,
+
+      "base_spd": 72,
+
+      "base_crit": 6,
+
+      "base_dodge": 1,
+
+      "scale_stat": "atk",
+
+      "trigger": "hit",
+
+      "skill_name": "Kiếm thuật vực thẳm",
+
+      "technique": "vuot_vuc_tham",
+
+      "flavor_text": "Khiên tối, lòng cũng tối.",
+
+      "skill_params": {
+        "effect": "sharpen",
+        "target": "self",
+        "coeff": 0.04,
+        "permanent": true,
+        "stack_max": 5
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_radahn",
+
+      "name": "Quân Radahn",
+
+      "role": "tanker",
+
+      "job": "aoe",
+
+      "base_hp": 970,
+
+      "base_atk": 226,
+
+      "base_def": 99,
+
+      "base_spd": 89,
+
+      "base_crit": 5,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Trọng lực tinh tú",
+
+      "technique": "mua_thien_thach",
+
+      "flavor_text": "Thiên thạch rơi, nhưng không ai né kịp.",
+
+      "skill_params": {
+        "effect": "haste",
+        "target": "enemy_back",
+        "coeff": -0.15,
+        "turns": 2,
+        "max_uses": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_ashe",
+
+      "name": "Quân Ashe",
+
+      "role": "marksman",
+
+      "job": "debuffer",
+
+      "base_hp": 400,
+
+      "base_atk": 125,
+
+      "base_def": 25,
+
+      "base_spd": 105,
+
+      "base_crit": 10,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Mũi tên băng",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Bắn chậm mà trúng, còn hơn nhanh mà trượt.",
+
+      "skill_params": {
+
+        "effect": "haste",
+
+        "target": "primary",
+
+        "coeff": -0.2,
+
+        "turns": 2
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "tham_lam"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_caitlyn",
+
+      "name": "Quân Caitlyn",
+
+      "role": "marksman",
+
+      "job": "poke",
+
+      "base_hp": 410,
+
+      "base_atk": 128,
+
+      "base_def": 27,
+
+      "base_spd": 107,
+
+      "base_crit": 11,
+
+      "base_dodge": 9,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Ngắm bắn tầm xa",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Ngồi xa bắn tỉa, gần thì bỏ chạy.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "enemy_back",
+        "coeff": 0.28,
+        "when": "target_hp_above",
+        "when_value": 0.6
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_jhin",
+
+      "name": "Quân Jhin",
+
+      "role": "marksman",
+
+      "job": "burst",
+
+      "base_hp": 420,
+
+      "base_atk": 131,
+
+      "base_def": 29,
+
+      "base_spd": 109,
+
+      "base_crit": 10,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Màn hạ màn",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Bốn phát đạn, phát thứ tư mới đáng nói.",
+
+      "skill_params": {
+        "effect": "crit_damage",
+        "target": "self",
+        "coeff": 0.6,
+        "when": "target_hp_below",
+        "when_value": 0.4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_jinx",
+
+      "name": "Quân Jinx",
+
+      "role": "marksman",
+
+      "job": "burst",
+
+      "base_hp": 430,
+
+      "base_atk": 125,
+
+      "base_def": 25,
+
+      "base_spd": 105,
+
+      "base_crit": 11,
+
+      "base_dodge": 9,
+
+      "scale_stat": "atk",
+
+      "trigger": "kill",
+
+      "skill_name": "Hưng phấn",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Vào trận là mất kết nối, nhưng vẫn nổ.",
+
+      "skill_params": {
+        "effect": "haste",
+        "target": "self",
+        "coeff": 0.18,
+        "permanent": true,
+        "stack_max": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_wraith",
+
+      "name": "Quân Wraith",
+
+      "role": "marksman",
+
+      "job": "poke",
+
+      "base_hp": 480,
+
+      "base_atk": 163,
+
+      "base_def": 32,
+
+      "base_spd": 122,
+
+      "base_crit": 12,
+
+      "base_dodge": 8,
+
+      "scale_stat": "dodge",
+
+      "trigger": "open",
+
+      "skill_name": "Bước vào hư không",
+
+      "technique": "bom_khoi",
+
+      "flavor_text": "Bóng tối che thân, không che được cái rank.",
+
+      "skill_params": {
+        "effect": "stat_bonus",
+        "target": "self",
+        "coeff": 0.15,
+        "turns": 2
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_sniper_wolf",
+
+      "name": "Quân Sniper Wolf",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 640,
+
+      "base_atk": 216,
+
+      "base_def": 44,
+
+      "base_spd": 144,
+
+      "base_crit": 18,
+
+      "base_dodge": 12,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Con mồi mắc bẫy",
+
+      "technique": "ket_lieu",
+
+      "flavor_text": "Một phát, một mạng, một lời cảm ơn.",
+
+      "skill_params": {
+        "effect": "damage_dealt",
+        "target": "self",
+        "coeff": 0.3,
+        "when": "target_slowed"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_ahri",
+
+      "name": "Quân Ahri",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "base_hp": 470,
+
+      "base_atk": 140,
+
+      "base_def": 20,
+
+      "base_spd": 90,
+
+      "base_crit": 8,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Hôn gió",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Hôn gió xong là cả team mất phương hướng.",
+
+      "skill_params": {
+
+        "effect": "stun",
+
+        "target": "enemy_front",
+
+        "chance": 0.35
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_lux",
+
+      "name": "Quân Lux",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "base_hp": 480,
+
+      "base_atk": 143,
+
+      "base_def": 22,
+
+      "base_spd": 92,
+
+      "base_crit": 9,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Khóa ánh sáng",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Cầu vồng đẹp, nhưng cháy da.",
+
+      "skill_params": {
+        "effect": "stun",
+        "target": "enemy_back",
+        "turns": 1,
+        "chance": 0.4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_veigar",
+
+      "name": "Quân Veigar",
+
+      "role": "mage",
+
+      "job": "poke",
+
+      "base_hp": 500,
+
+      "base_atk": 140,
+
+      "base_def": 20,
+
+      "base_spd": 90,
+
+      "base_crit": 9,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Sức mạnh quỷ quyệt",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Lồng giam nhỏ, cái tôi lớn.",
+
+      "skill_params": {
+        "effect": "overdrive",
+        "target": "self",
+        "coeff": 0.025,
+        "permanent": true,
+        "stack_max": 6
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_reyna",
+
+      "name": "Quân Reyna",
+
+      "role": "mage",
+
+      "job": "assassin",
+
+      "base_hp": 500,
+
+      "base_atk": 140,
+
+      "base_def": 20,
+
+      "base_spd": 90,
+
+      "base_crit": 9,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Đoạt mạng",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Đoạt mạng xong mới nhớ ra team.",
+
+      "skill_params": {
+        "effect": "execute",
+        "target": "primary",
+        "coeff": 0.6,
+        "threshold": 0.35
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_klee",
+
+      "name": "Quân Klee",
+
+      "role": "mage",
+
+      "job": "aoe",
+
+      "base_hp": 530,
+
+      "base_atk": 190,
+
+      "base_def": 30,
+
+      "base_spd": 98,
+
+      "base_crit": 9,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Bom nổ",
+
+      "technique": "bom_nay",
+
+      "flavor_text": "Meme là sức mạnh.",
+
+      "skill_params": {
+
+        "effect": "burn",
+
+        "target": "all_enemies",
+
+        "coeff": 0.12,
+
+        "turns": 3
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_raiden_shogun",
+
+      "name": "Quân Raiden Shogun",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "base_hp": 540,
+
+      "base_atk": 193,
+
+      "base_def": 32,
+
+      "base_spd": 100,
+
+      "base_crit": 8,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Lưỡi kiếm đoạt năng",
+
+      "technique": "tat_dien",
+
+      "flavor_text": "Đoạt năng lượng của địch, trả bằng sấm.",
+
+      "skill_params": {
+        "effect": "energy_steal",
+        "target": "primary",
+        "coeff": 1,
+        "chance": 0.5
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_sona",
+
+      "name": "Quân Sona",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 500,
+
+      "base_atk": 60,
+
+      "base_def": 25,
+
+      "base_spd": 112,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Giai điệu chữa lành",
+
+      "technique": "quan_cuu",
+
+      "flavor_text": "Đánh đàn hay hơn đánh người.",
+
+      "skill_params": {
+        "effect": "heal_power",
+        "target": "self",
+        "coeff": 0.3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_soraka",
+
+      "name": "Quân Soraka",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 510,
+
+      "base_atk": 63,
+
+      "base_def": 27,
+
+      "base_spd": 114,
+
+      "base_crit": 1,
+
+      "base_dodge": 6,
+
+      "scale_stat": "hp",
+
+      "trigger": "round_start",
+
+      "skill_name": "Tinh tú hồi phục",
+
+      "technique": "quan_toc",
+
+      "flavor_text": "Hồi máu cho team, bản thân thì hết máu.",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "ally_lowest",
+        "coeff": 0.035,
+        "scale_from": "target"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_yuumi",
+
+      "name": "Quân Yuumi",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 520,
+
+      "base_atk": 60,
+
+      "base_def": 25,
+
+      "base_spd": 112,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "hp",
+
+      "trigger": "attack",
+
+      "skill_name": "Bám vai tiếp sức",
+
+      "technique": "quan_cuu",
+
+      "flavor_text": "Nằm trên người đồng đội, không cần tự đi.",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "ally_adjacent",
+        "coeff": 0.08
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_sage",
+
+      "name": "Quân Sage",
+
+      "role": "support",
+
+      "job": "shield",
+
+      "base_hp": 500,
+
+      "base_atk": 60,
+
+      "base_def": 25,
+
+      "base_spd": 112,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "def",
+
+      "trigger": "open",
+
+      "skill_name": "Tường băng",
+
+      "technique": "quan_cuu",
+
+      "flavor_text": "Cứu được đồng đội, không cứu được cái rank.",
+
+      "skill_params": {
+        "effect": "stat_bonus",
+        "target": "all_allies",
+        "coeff": 0.12,
+        "turns": 2
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_lifeline",
+
+      "name": "Quân Lifeline",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 700,
+
+      "base_atk": 83,
+
+      "base_def": 44,
+
+      "base_spd": 120,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "hp",
+
+      "trigger": "round_start",
+
+      "skill_name": "Drone cứu thương",
+
+      "technique": "cap_cuu_khan",
+
+      "flavor_text": "Cứu thương giỏi, cứu rank thì không.",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "all_allies",
+        "coeff": 0.06,
+        "max_uses": 6
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_furina",
+
+      "name": "Quân Furina",
+
+      "role": "support",
+
+      "job": "haste",
+
+      "base_hp": 730,
+
+      "base_atk": 93,
+
+      "base_def": 48,
+
+      "base_spd": 124,
+
+      "base_crit": 1,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Sân khấu thủy thần",
+
+      "technique": "khuc_khai_hoan",
+
+      "flavor_text": "Nước mắt hay nước sông cũng đều ướt.",
+
+      "skill_params": {
+        "effect": "overdrive",
+        "target": "all_allies",
+        "coeff": 0.06,
+        "turns": 2,
+        "stack_max": 2,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_kerrigan",
+
+      "name": "Quân Kerrigan",
+
+      "role": "support",
+
+      "job": "battery",
+
+      "base_hp": 840,
+
+      "base_atk": 106,
+
+      "base_def": 56,
+
+      "base_spd": 132,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "kill",
+
+      "skill_name": "Uy lực bầy đàn",
+
+      "technique": "bao_tam_linh",
+
+      "flavor_text": "Hút năng lượng, nhả ra toàn drama.",
+
+      "skill_params": {
+        "effect": "overdrive",
+        "target": "self",
+        "coeff": 0.12,
+        "permanent": true,
+        "stack_max": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_steve",
+
+      "name": "Quân Steve",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 760,
+
+      "base_atk": 85,
+
+      "base_def": 75,
+
+      "base_spd": 60,
+
+      "base_crit": 0,
+
+      "base_dodge": 0,
+
+      "scale_stat": "def",
+
+      "trigger": "round_start",
+
+      "skill_name": "Xây thành từng lớp",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Đào một khối, xây cả cơ nghiệp.",
+
+      "skill_params": {
+        "effect": "stat_bonus",
+        "target": "self",
+        "coeff": 0.06,
+        "permanent": true,
+        "stack_max": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_warden",
+
+      "name": "Quân Warden",
+
+      "role": "tanker",
+
+      "job": "vanguard",
+
+      "base_hp": 950,
+
+      "base_atk": 220,
+
+      "base_def": 95,
+
+      "base_spd": 85,
+
+      "base_crit": 5,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Sóng âm truy dấu",
+
+      "technique": "dap_dat",
+
+      "flavor_text": "Nghe tiếng là tới, một hit là xong.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "enemy_back",
+        "coeff": 0.5,
+        "when": "target_has_status",
+        "when_status": "silence"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_enderman",
+
+      "name": "Quân Enderman",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 460,
+
+      "base_atk": 160,
+
+      "base_def": 30,
+
+      "base_spd": 120,
+
+      "base_crit": 12,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Dịch chuyển",
+
+      "technique": "ket_lieu",
+
+      "flavor_text": "Đừng nhìn vào mắt.",
+
+      "skill_params": {
+
+        "effect": "damage",
+
+        "target": "enemy_back",
+
+        "coeff": 1.1
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_creeper",
+
+      "name": "Quân Creeper",
+
+      "role": "mage",
+
+      "job": "aoe",
+
+      "base_hp": 470,
+
+      "base_atk": 140,
+
+      "base_def": 20,
+
+      "base_spd": 90,
+
+      "base_crit": 8,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "death",
+
+      "skill_name": "Nổ tung",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Creeper? Aw man.",
+
+      "skill_params": {
+
+        "effect": "damage",
+
+        "target": "all_enemies",
+
+        "coeff": 0.5
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_ender_dragon",
+
+      "name": "Quân Ender Dragon",
+
+      "role": "mage",
+
+      "job": "aoe",
+
+      "base_hp": 550,
+
+      "base_atk": 245,
+
+      "base_def": 35,
+
+      "base_spd": 90,
+
+      "base_crit": 10,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Hơi thở rồng",
+
+      "technique": "hoa_tien",
+
+      "flavor_text": "Phá giường, phá luôn team bạn.",
+
+      "skill_params": {
+        "effect": "burn",
+        "target": "all_enemies",
+        "coeff": 0.08,
+        "turns": 2,
+        "max_uses": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_herobrine",
+
+      "name": "Quân Herobrine",
+
+      "role": "support",
+
+      "job": "debuffer",
+
+      "base_hp": 720,
+
+      "base_atk": 90,
+
+      "base_def": 46,
+
+      "base_spd": 122,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Lời nguyền mất tiếng",
+
+      "technique": "cam_khau",
+
+      "flavor_text": "Chỉ là truyền thuyết, cho đến khi ổng vào team.",
+
+      "skill_params": {
+        "effect": "silence",
+        "target": "enemy_back",
+        "turns": 2
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "mau_chien",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_kratos",
+
+      "name": "Quân Kratos",
+
+      "role": "tanker",
+
+      "job": "vanguard",
+
+      "base_hp": 950,
+
+      "base_atk": 224,
+
+      "base_def": 96,
+
+      "base_spd": 90,
+
+      "base_crit": 10,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Lưỡi đao truy huyết",
+
+      "technique": "combo_ragnarok",
+
+      "flavor_text": "Đi đâu cũng gặp thần, và thần nào cũng bị đập.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "primary",
+        "coeff": 0.45,
+        "when": "target_has_status",
+        "when_status": "bleed"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_darth_vader",
+
+      "name": "Quân Darth Vader",
+
+      "role": "tanker",
+
+      "job": "provoke",
+
+      "base_hp": 1350,
+
+      "base_atk": 150,
+
+      "base_def": 100,
+
+      "base_spd": 74,
+
+      "base_crit": 6,
+
+      "base_dodge": 2,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Bóp nghẹt",
+
+      "technique": "cam_khau",
+
+      "flavor_text": "Chỉ hít thở thôi mà cả phòng im.",
+
+      "skill_params": {
+
+        "effect": "silence",
+
+        "target": "all_enemies",
+
+        "turns": 1
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_godzilla",
+
+      "name": "Quân Godzilla",
+
+      "role": "tanker",
+
+      "job": "bruiser",
+
+      "base_hp": 1500,
+
+      "base_atk": 190,
+
+      "base_def": 92,
+
+      "base_spd": 72,
+
+      "base_crit": 8,
+
+      "base_dodge": 1,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Nạp lò phản ứng",
+
+      "technique": "hoi_tho_nguyen_tu",
+
+      "flavor_text": "Bước một bước, thành phố đổi địa chỉ.",
+
+      "skill_params": {
+        "effect": "overdrive",
+        "target": "self",
+        "coeff": 0.12,
+        "permanent": true,
+        "stack_max": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_geralt",
+
+      "name": "Quân Geralt",
+
+      "role": "tanker",
+
+      "job": "counter",
+
+      "base_hp": 980,
+
+      "base_atk": 96,
+
+      "base_def": 102,
+
+      "base_spd": 66,
+
+      "base_crit": 6,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Đề kháng độc dược",
+
+      "technique": "dau_an_igni",
+
+      "flavor_text": "Thử thuốc nhiều hơn thử lòng.",
+
+      "skill_params": {
+        "effect": "dot_resistance",
+        "target": "self",
+        "coeff": 0.4,
+        "when_status": "poison"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_terminator",
+
+      "name": "Quân Terminator",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 1050,
+
+      "base_atk": 88,
+
+      "base_def": 96,
+
+      "base_spd": 54,
+
+      "base_crit": 2,
+
+      "base_dodge": 0,
+
+      "scale_stat": "hp",
+
+      "trigger": "death",
+
+      "skill_name": "Ta sẽ trở lại",
+
+      "technique": "hoi_sinh",
+
+      "flavor_text": "Sẽ trở lại, nhưng phải trả tiền net trước.",
+
+      "skill_params": {
+
+        "effect": "revive",
+
+        "target": "self",
+
+        "coeff": 0.3
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_shrek",
+
+      "name": "Quân Shrek",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 820,
+
+      "base_atk": 80,
+
+      "base_def": 84,
+
+      "base_spd": 52,
+
+      "base_crit": 0,
+
+      "base_dodge": 1,
+
+      "scale_stat": "hp",
+
+      "trigger": "open",
+
+      "skill_name": "Đầm lầy",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Đầm lầy là nhà, khách thì miễn vào.",
+
+      "skill_params": {
+
+        "effect": "taunt",
+
+        "target": "self",
+
+        "turns": 3
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_tyson",
+
+      "name": "Quân Mike Tyson",
+
+      "role": "tanker",
+
+      "job": "vanguard",
+
+      "base_hp": 760,
+
+      "base_atk": 91,
+
+      "base_def": 70,
+
+      "base_spd": 63,
+
+      "base_crit": 6,
+
+      "base_dodge": 3,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Cú móc mở màn",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Chào hỏi bằng một cú móc hàm.",
+
+      "skill_params": {
+        "effect": "stun",
+        "target": "enemy_front",
+        "turns": 1
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_rocky",
+
+      "name": "Quân Rocky",
+
+      "role": "tanker",
+
+      "job": "bruiser",
+
+      "base_hp": 800,
+
+      "base_atk": 86,
+
+      "base_def": 76,
+
+      "base_spd": 57,
+
+      "base_crit": 4,
+
+      "base_dodge": 2,
+
+      "scale_stat": "atk",
+
+      "trigger": "hit",
+
+      "skill_name": "Càng đau càng lì",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Bị đấm mười hiệp vẫn kịp chụp ảnh.",
+
+      "skill_params": {
+        "effect": "empower",
+        "target": "self",
+        "coeff": 0.04,
+        "permanent": true,
+        "stack_max": 5,
+        "when": "self_hp_below",
+        "when_value": 0.6
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_mario",
+
+      "name": "Quân Mario",
+
+      "role": "tanker",
+
+      "job": "provoke",
+
+      "base_hp": 780,
+
+      "base_atk": 74,
+
+      "base_def": 72,
+
+      "base_spd": 61,
+
+      "base_crit": 2,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Nhảy dậm liên hoàn",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Nhảy vào ống nước nhà người khác.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "primary",
+        "coeff": 0.35
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_donkey_kong",
+
+      "name": "Quân Donkey Kong",
+
+      "role": "tanker",
+
+      "job": "counter",
+
+      "base_hp": 810,
+
+      "base_atk": 88,
+
+      "base_def": 78,
+
+      "base_spd": 55,
+
+      "base_crit": 5,
+
+      "base_dodge": 1,
+
+      "scale_stat": "atk",
+
+      "trigger": "dodge",
+
+      "skill_name": "Thùng nổ phản kích",
+
+      "technique": "quan_khien",
+
+      "flavor_text": "Ném thùng rác đúng người, sai chỗ.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "all_enemies",
+        "coeff": 0.22,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "chuan_xac",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_legolas",
+
+      "name": "Quân Legolas",
+
+      "role": "marksman",
+
+      "job": "aoe",
+
+      "base_hp": 640,
+
+      "base_atk": 216,
+
+      "base_def": 44,
+
+      "base_spd": 144,
+
+      "base_crit": 18,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "crit",
+
+      "skill_name": "Mũi tên xuyên trận",
+
+      "technique": "bao_ten",
+
+      "flavor_text": "Hết tên rồi, vẫn đếm được xác.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "enemy_back",
+        "coeff": 0.7,
+        "max_uses": 6
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_deadpool",
+
+      "name": "Quân Deadpool",
+
+      "role": "marksman",
+
+      "job": "followup",
+
+      "base_hp": 700,
+
+      "base_atk": 195,
+
+      "base_def": 58,
+
+      "base_spd": 150,
+
+      "base_crit": 15,
+
+      "base_dodge": 12,
+
+      "scale_stat": "hp",
+
+      "trigger": "death",
+
+      "skill_name": "Không chết",
+
+      "technique": "song_dao",
+
+      "flavor_text": "Phá tường thứ tư, rồi tính tiền tường.",
+
+      "skill_params": {
+
+        "effect": "revive",
+
+        "target": "self",
+
+        "coeff": 0.35
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_lara_croft",
+
+      "name": "Quân Lara Croft",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 620,
+
+      "base_atk": 198,
+
+      "base_def": 50,
+
+      "base_spd": 168,
+
+      "base_crit": 12,
+
+      "base_dodge": 15,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Đạn xuyên giáp",
+
+      "technique": "ket_lieu",
+
+      "flavor_text": "Di tích nào rồi cũng thành nhà của mình.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "enemy_lowest",
+        "coeff": 0.65,
+        "when": "target_has_status",
+        "when_status": "stun"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_hawkeye",
+
+      "name": "Quân Hawkeye",
+
+      "role": "marksman",
+
+      "job": "poke",
+
+      "base_hp": 470,
+
+      "base_atk": 150,
+
+      "base_def": 32,
+
+      "base_spd": 118,
+
+      "base_crit": 12,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Mũi tên chính xác",
+
+      "technique": "mui_ten_chien_thuat",
+
+      "flavor_text": "Bắn xong mới hỏi có ai thấy không.",
+
+      "skill_params": {
+
+        "effect": "weak",
+
+        "target": "enemy_back",
+
+        "coeff": 0.15,
+
+        "turns": 2
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_katniss",
+
+      "name": "Quân Katniss",
+
+      "role": "marksman",
+
+      "job": "debuffer",
+
+      "base_hp": 450,
+
+      "base_atk": 162,
+
+      "base_def": 30,
+
+      "base_spd": 124,
+
+      "base_crit": 14,
+
+      "base_dodge": 9,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Mũi tên lửa",
+
+      "technique": "dao_gam",
+
+      "flavor_text": "Cúi chào khán giả rồi mới bắn.",
+
+      "skill_params": {
+        "effect": "burn",
+        "target": "primary",
+        "coeff": 0.12,
+        "turns": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_ronaldo",
+
+      "name": "Quân Ronaldo",
+
+      "role": "marksman",
+
+      "job": "burst",
+
+      "base_hp": 380,
+
+      "base_atk": 128,
+
+      "base_def": 22,
+
+      "base_spd": 112,
+
+      "base_crit": 12,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Lấy đà sút phạt",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Sút phạt xong thì đứng tạo dáng.",
+
+      "skill_params": {
+        "effect": "sharpen",
+        "target": "self",
+        "coeff": 0.07,
+        "turns": 2,
+        "stack_max": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_messi",
+
+      "name": "Quân Messi",
+
+      "role": "marksman",
+
+      "job": "poke",
+
+      "base_hp": 350,
+
+      "base_atk": 124,
+
+      "base_def": 18,
+
+      "base_spd": 116,
+
+      "base_crit": 10,
+
+      "base_dodge": 10,
+
+      "scale_stat": "spd",
+
+      "trigger": "attack",
+
+      "skill_name": "Đi bóng thần sầu",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Đi bộ cả trận, chạm bóng một lần là xong.",
+
+      "skill_params": {
+
+        "effect": "stat_bonus",
+
+        "target": "self",
+
+        "coeff": 0.03,
+
+        "permanent": true,
+
+        "stack_max": 5
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_rambo",
+
+      "name": "Quân Rambo",
+
+      "role": "marksman",
+
+      "job": "followup",
+
+      "base_hp": 420,
+
+      "base_atk": 118,
+
+      "base_def": 26,
+
+      "base_spd": 106,
+
+      "base_crit": 8,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Bắn yểm trợ",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Một mình cân cả khu rừng, tiếc là hết đạn.",
+
+      "skill_params": {
+        "effect": "followup",
+        "target": "primary",
+        "coeff": 0.25,
+        "chance": 0.5
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_predator",
+
+      "name": "Quân Predator",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 400,
+
+      "base_atk": 131,
+
+      "base_def": 20,
+
+      "base_spd": 110,
+
+      "base_crit": 14,
+
+      "base_dodge": 4,
+
+      "scale_stat": "atk",
+
+      "trigger": "crit",
+
+      "skill_name": "Vết thương săn mồi",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Tàng hình giỏi, nhưng thua cái camera.",
+
+      "skill_params": {
+        "effect": "bleed",
+        "target": "primary",
+        "coeff": 0.2,
+        "turns": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "tham_lam"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_han_solo",
+
+      "name": "Quân Han Solo",
+
+      "role": "marksman",
+
+      "job": "haste",
+
+      "base_hp": 430,
+
+      "base_atk": 120,
+
+      "base_def": 24,
+
+      "base_spd": 108,
+
+      "base_crit": 9,
+
+      "base_dodge": 7,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Vận may con buôn",
+
+      "technique": "quan_ban",
+
+      "flavor_text": "Bắn trước, giải thích sau.",
+
+      "skill_params": {
+
+        "effect": "damage_dealt",
+
+        "target": "self",
+
+        "coeff": 0.15,
+
+        "per": "held_valuables",
+
+        "per_amount": 1,
+
+        "max": 0.3
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "noi_nang",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_gandalf",
+
+      "name": "Quân Gandalf",
+
+      "role": "mage",
+
+      "job": "aoe",
+
+      "base_hp": 640,
+
+      "base_atk": 291,
+
+      "base_def": 44,
+
+      "base_spd": 99,
+
+      "base_crit": 12,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "ally_hit",
+
+      "skill_name": "Bạn không được đi qua",
+
+      "technique": "mua_thien_thach",
+
+      "flavor_text": "Không được đi qua, trừ khi có việc gấp.",
+
+      "skill_params": {
+        "effect": "immune",
+        "target": "hit_ally",
+        "turns": 1,
+        "max_uses": 1,
+        "when": "target_hp_below",
+        "when_value": 0.35
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_voldemort",
+
+      "name": "Quân Voldemort",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "base_hp": 560,
+
+      "base_atk": 250,
+
+      "base_def": 36,
+
+      "base_spd": 88,
+
+      "base_crit": 10,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Avada Kedavra",
+
+      "technique": "cam_khau",
+
+      "flavor_text": "Gọi đúng tên là mất mạng, nên thôi gọi Quân.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "primary",
+        "coeff": 0.6,
+        "when": "target_has_status",
+        "when_status": "weak"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_dr_strange",
+
+      "name": "Quân Doctor Strange",
+
+      "role": "mage",
+
+      "job": "poke",
+
+      "base_hp": 520,
+
+      "base_atk": 248,
+
+      "base_def": 34,
+
+      "base_spd": 96,
+
+      "base_crit": 9,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Vòng lặp thời gian",
+
+      "technique": "vong_lap_dormammu",
+
+      "flavor_text": "Xem một triệu kết cục, chọn cách trốn việc.",
+
+      "skill_params": {
+        "effect": "energy_steal",
+        "target": "enemy_back",
+        "coeff": 1,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "hoc_duong",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_harry_potter",
+
+      "name": "Quân Harry Potter",
+
+      "role": "mage",
+
+      "job": "burst",
+
+      "base_hp": 530,
+
+      "base_atk": 191,
+
+      "base_def": 31,
+
+      "base_spd": 99,
+
+      "base_crit": 9,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Expelliarmus",
+
+      "technique": "hoa_thieu",
+
+      "flavor_text": "Thần chú khó nhất là thần chú làm bài tập.",
+
+      "skill_params": {
+        "effect": "silence",
+        "target": "enemy_back",
+        "turns": 1,
+        "chance": 0.25,
+        "max_uses": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_palpatine",
+
+      "name": "Quân Palpatine",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "base_hp": 540,
+
+      "base_atk": 193,
+
+      "base_def": 32,
+
+      "base_spd": 98,
+
+      "base_crit": 8,
+
+      "base_dodge": 4,
+
+      "scale_stat": "atk",
+
+      "trigger": "hit",
+
+      "skill_name": "Sét hoàng đế",
+
+      "technique": "tat_dien",
+
+      "flavor_text": "Kể chuyện buồn của mình cho cả phòng.",
+
+      "skill_params": {
+
+        "effect": "energy_steal",
+
+        "target": "primary",
+
+        "coeff": 1
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_elsa",
+
+      "name": "Quân Elsa",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "base_hp": 520,
+
+      "base_atk": 190,
+
+      "base_def": 30,
+
+      "base_spd": 100,
+
+      "base_crit": 7,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Băng giá",
+
+      "technique": "bao_tuyet",
+
+      "flavor_text": "Chỉ cần một câu là tan băng cả phòng.",
+
+      "skill_params": {
+
+        "effect": "haste",
+
+        "target": "all_enemies",
+
+        "coeff": -0.2,
+
+        "turns": 2
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "giang_ho",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_subzero",
+
+      "name": "Quân Sub-Zero",
+
+      "role": "mage",
+
+      "job": "burst",
+
+      "base_hp": 480,
+
+      "base_atk": 142,
+
+      "base_def": 22,
+
+      "base_spd": 90,
+
+      "base_crit": 8,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Đóng băng",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Bắt tay xong thì đối thủ hết cảm giác.",
+
+      "skill_params": {
+
+        "effect": "stun",
+
+        "target": "primary",
+
+        "chance": 0.2
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_pikachu",
+
+      "name": "Quân Pikachu",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "base_hp": 460,
+
+      "base_atk": 146,
+
+      "base_def": 20,
+
+      "base_spd": 94,
+
+      "base_crit": 10,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Tê liệt điện",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Sạc pin hộ cả nhà, không lấy tiền điện.",
+
+      "skill_params": {
+        "effect": "haste",
+        "target": "enemy_random",
+        "coeff": -0.1,
+        "turns": 2,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "giang_ho",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_ryu",
+
+      "name": "Quân Ryu",
+
+      "role": "mage",
+
+      "job": "burst",
+
+      "base_hp": 490,
+
+      "base_atk": 148,
+
+      "base_def": 23,
+
+      "base_spd": 88,
+
+      "base_crit": 9,
+
+      "base_dodge": 4,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Rèn quyền",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Luyện cả đời để ra một cú hadouken.",
+
+      "skill_params": {
+        "effect": "sharpen",
+        "target": "self",
+        "coeff": 0.04,
+        "permanent": true,
+        "stack_max": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "tham_lam"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_kirby",
+
+      "name": "Quân Kirby",
+
+      "role": "mage",
+
+      "job": "debuffer",
+
+      "base_hp": 470,
+
+      "base_atk": 138,
+
+      "base_def": 21,
+
+      "base_spd": 92,
+
+      "base_crit": 7,
+
+      "base_dodge": 7,
+
+      "scale_stat": "hp",
+
+      "trigger": "kill",
+
+      "skill_name": "Nuốt chửng",
+
+      "technique": "quan_lua",
+
+      "flavor_text": "Nuốt cả đối thủ, rồi cười thật tươi.",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "self",
+        "coeff": 0.08,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "noi_nang",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_yoda",
+
+      "name": "Quân Yoda",
+
+      "role": "support",
+
+      "job": "haste",
+
+      "base_hp": 840,
+
+      "base_atk": 108,
+
+      "base_def": 56,
+
+      "base_spd": 132,
+
+      "base_crit": 5,
+
+      "base_dodge": 12,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Huấn luyện Thần lực",
+
+      "technique": "co_vu",
+
+      "flavor_text": "Nói ngược câu, nhưng buff thì đúng lượt.",
+
+      "skill_params": {
+        "effect": "focus",
+        "target": "ally_slowest",
+        "coeff": 0.15,
+        "turns": 2,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "trung_co",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_dumbledore",
+
+      "name": "Quân Dumbledore",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 720,
+
+      "base_atk": 96,
+
+      "base_def": 46,
+
+      "base_spd": 120,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "ally_death",
+
+      "skill_name": "Phượng hoàng hộ mệnh",
+
+      "technique": "phuong_hoang_ho_menh",
+
+      "flavor_text": "Chết vẫn kịp lên kế hoạch.",
+
+      "skill_params": {
+        "effect": "immune",
+        "target": "ally_lowest",
+        "turns": 1,
+        "max_uses": 1
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "tham_lam"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_mrbeast",
+
+      "name": "Quân MrBeast",
+
+      "role": "support",
+
+      "job": "battery",
+
+      "base_hp": 700,
+
+      "base_atk": 92,
+
+      "base_def": 40,
+
+      "base_spd": 124,
+
+      "base_crit": 3,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Tài trợ chiến dịch",
+
+      "technique": "sac_pin",
+
+      "flavor_text": "Tặng cả căn nhà, mời đúng một người.",
+
+      "skill_params": {
+        "effect": "overdrive",
+        "target": "all_allies",
+        "coeff": 0.15,
+        "turns": 2
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "hoc_duong",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_hermione",
+
+      "name": "Quân Hermione",
+
+      "role": "support",
+
+      "job": "battery",
+
+      "base_hp": 560,
+
+      "base_atk": 84,
+
+      "base_def": 38,
+
+      "base_spd": 120,
+
+      "base_crit": 0,
+
+      "base_dodge": 6,
+
+      "scale_stat": "spd",
+
+      "trigger": "passive",
+
+      "skill_name": "Nạp năng lượng",
+
+      "technique": "tiep_lua",
+
+      "flavor_text": "Đọc trước cả khi giáo viên giao bài.",
+
+      "skill_params": {
+
+        "effect": "energy_gain",
+
+        "target": "self",
+
+        "coeff": 1
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_medic",
+
+      "name": "Quân Medic",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 640,
+
+      "base_atk": 80,
+
+      "base_def": 40,
+
+      "base_spd": 116,
+
+      "base_crit": 2,
+
+      "base_dodge": 4,
+
+      "scale_stat": "hp",
+
+      "trigger": "ally_hit",
+
+      "skill_name": "Chăm sóc bỏng",
+
+      "technique": "hoi_sinh",
+
+      "flavor_text": "Tiêm xong là chạy, không nhìn lại.",
+
+      "skill_params": {
+        "effect": "shield",
+        "target": "hit_ally",
+        "coeff": 0.05,
+        "max_uses": 6,
+        "when": "target_has_status",
+        "when_status": "burn"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_baymax",
+
+      "name": "Quân Baymax",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 510,
+
+      "base_atk": 52,
+
+      "base_def": 28,
+
+      "base_spd": 108,
+
+      "base_crit": 0,
+
+      "base_dodge": 3,
+
+      "scale_stat": "hp",
+
+      "trigger": "round_start",
+
+      "skill_name": "Ôm bảo hộ",
+
+      "technique": "quan_cuu",
+
+      "flavor_text": "Ôm một cái là lành, khỏi cần bác sĩ.",
+
+      "skill_params": {
+        "effect": "shield",
+        "target": "ally_lowest",
+        "coeff": 0.06,
+        "when": "target_hp_below",
+        "when_value": 0.5
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "giang_ho",
+
+        "noi_nang",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_naruto",
+
+      "name": "Quân Naruto",
+
+      "role": "mage",
+
+      "job": "burst",
+
+      "base_hp": 660,
+
+      "base_atk": 285,
+
+      "base_def": 46,
+
+      "base_spd": 105,
+
+      "base_crit": 12,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Phân thân yểm trợ",
+
+      "technique": "rasenshuriken",
+
+      "flavor_text": "Hứa làm Hokage, nhưng quên làm bài tập.",
+
+      "skill_params": {
+        "effect": "followup",
+        "target": "primary",
+        "coeff": 0.6,
+        "chance": 0.7
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "giang_ho",
+
+        "chuan_xac"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_sasuke",
+
+      "name": "Quân Sasuke",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 680,
+
+      "base_atk": 198,
+
+      "base_def": 48,
+
+      "base_spd": 160,
+
+      "base_crit": 14,
+
+      "base_dodge": 12,
+
+      "scale_stat": "atk",
+
+      "trigger": "crit",
+
+      "skill_name": "Amaterasu",
+
+      "technique": "chidori",
+
+      "flavor_text": "Đi tìm sức mạnh, tiện thể bỏ team.",
+
+      "skill_params": {
+        "effect": "burn",
+        "target": "enemy_back",
+        "coeff": 0.18,
+        "turns": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "giang_ho",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_kakashi",
+
+      "name": "Quân Kakashi",
+
+      "role": "tanker",
+
+      "job": "counter",
+
+      "base_hp": 1200,
+
+      "base_atk": 175,
+
+      "base_def": 96,
+
+      "base_spd": 86,
+
+      "base_crit": 6,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "dodge",
+
+      "skill_name": "Chiến thuật Sharingan",
+
+      "technique": "tai_dien",
+
+      "flavor_text": "Đến muộn vì lạc đường, không phải vì ngủ.",
+
+      "skill_params": {
+        "effect": "focus",
+        "target": "all_allies",
+        "coeff": 0.12,
+        "turns": 2,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "giang_ho",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_sakura",
+
+      "name": "Quân Sakura",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 600,
+
+      "base_atk": 84,
+
+      "base_def": 40,
+
+      "base_spd": 118,
+
+      "base_crit": 0,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Chữa trị chính xác",
+
+      "technique": "cap_cuu_khan",
+
+      "flavor_text": "Đấm một cú, cả đội hết đau.",
+
+      "skill_params": {
+        "effect": "heal",
+        "target": "ally_lowest",
+        "coeff": 0.3,
+        "when": "target_hp_below",
+        "when_value": 0.6
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_gaara",
+
+      "name": "Quân Gaara",
+
+      "role": "tanker",
+
+      "job": "shield",
+
+      "base_hp": 1050,
+
+      "base_atk": 88,
+
+      "base_def": 104,
+
+      "base_spd": 60,
+
+      "base_crit": 2,
+
+      "base_dodge": 2,
+
+      "scale_stat": "def",
+
+      "trigger": "hit",
+
+      "skill_name": "Thành cát",
+
+      "technique": "tuong_thanh",
+
+      "flavor_text": "Cát che chở, còn lòng thì kín.",
+
+      "skill_params": {
+        "effect": "stat_bonus",
+        "target": "all_allies",
+        "coeff": 0.08,
+        "turns": 2,
+        "stack_max": 3,
+        "max_uses": 6
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_vegeta",
+
+      "name": "Quân Vegeta",
+
+      "role": "marksman",
+
+      "job": "burst",
+
+      "base_hp": 700,
+
+      "base_atk": 200,
+
+      "base_def": 55,
+
+      "base_spd": 155,
+
+      "base_crit": 15,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "crit",
+
+      "skill_name": "Big Bang Attack",
+
+      "technique": "final_flash",
+
+      "flavor_text": "Luôn là số hai, nhưng rất tự tin.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "all_enemies",
+        "coeff": 0.28,
+        "when": "target_has_status",
+        "when_status": "burn"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_piccolo",
+
+      "name": "Quân Piccolo",
+
+      "role": "support",
+
+      "job": "battery",
+
+      "base_hp": 680,
+
+      "base_atk": 82,
+
+      "base_def": 44,
+
+      "base_spd": 112,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Truyền năng chiến thuật",
+
+      "technique": "co_vu",
+
+      "flavor_text": "Dạy trẻ con, đánh người lớn.",
+
+      "skill_params": {
+        "effect": "energy",
+        "target": "ally_slowest",
+        "coeff": 1,
+        "max_uses": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "tham_lam",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_frieza",
+
+      "name": "Quân Frieza",
+
+      "role": "mage",
+
+      "job": "aoe",
+
+      "base_hp": 660,
+
+      "base_atk": 300,
+
+      "base_def": 50,
+
+      "base_spd": 110,
+
+      "base_crit": 10,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "strike",
+
+      "skill_name": "Death Beam",
+
+      "technique": "death_ball",
+
+      "flavor_text": "Lịch sự trước, hủy diệt sau.",
+
+      "skill_params": {
+        "effect": "bleed",
+        "target": "enemy_lowest",
+        "coeff": 0.15,
+        "turns": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "huyen_bi",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_cell",
+
+      "name": "Quân Cell",
+
+      "role": "tanker",
+
+      "job": "bruiser",
+
+      "base_hp": 1400,
+
+      "base_atk": 190,
+
+      "base_def": 98,
+
+      "base_spd": 88,
+
+      "base_crit": 8,
+
+      "base_dodge": 4,
+
+      "scale_stat": "atk",
+
+      "trigger": "passive",
+
+      "skill_name": "Hấp thụ sinh lực",
+
+      "technique": "hut_mau",
+
+      "flavor_text": "Hút năng lượng, không trả lại.",
+
+      "skill_params": {
+        "effect": "life_steal",
+        "target": "self",
+        "coeff": 0.15
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "common",
+
+      "id": "quan_bulma",
+
+      "name": "Quân Bulma",
+
+      "role": "support",
+
+      "job": "battery",
+
+      "base_hp": 500,
+
+      "base_atk": 60,
+
+      "base_def": 25,
+
+      "base_spd": 115,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "open",
+
+      "skill_name": "Capsule tăng áp",
+
+      "technique": "quan_toc",
+
+      "flavor_text": "Sửa được tàu vũ trụ, không sửa được tính Goku.",
+
+      "skill_params": {
+        "effect": "overdrive",
+        "target": "ally_adjacent",
+        "coeff": 0.12,
+        "turns": 2
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "mau_chien",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "legendary",
+
+      "id": "quan_homelander",
+
+      "name": "Quân Homelander",
+
+      "role": "marksman",
+
+      "job": "aoe",
+
+      "base_hp": 700,
+
+      "base_atk": 225,
+
+      "base_def": 52,
+
+      "base_spd": 145,
+
+      "base_crit": 16,
+
+      "base_dodge": 9,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Laser mắt",
+
+      "technique": "hoa_tien",
+
+      "flavor_text": "Nụ cười đẹp nhất nước Mỹ, tính bằng laser mắt.",
+
+      "skill_params": {
+        "effect": "burn",
+        "target": "enemy_back",
+        "coeff": 0.14,
+        "turns": 3
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "mau_chien"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_butcher",
+
+      "name": "Quân Butcher",
+
+      "role": "tanker",
+
+      "job": "bruiser",
+
+      "base_hp": 1350,
+
+      "base_atk": 195,
+
+      "base_def": 96,
+
+      "base_spd": 88,
+
+      "base_crit": 8,
+
+      "base_dodge": 4,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Truy sát đến cùng",
+
+      "technique": "dao_gam",
+
+      "flavor_text": "Không cần siêu năng lực, chỉ cần đủ kiên nhẫn.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "primary",
+        "coeff": 0.65,
+        "when": "target_has_status",
+        "when_status": "bleed"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "vu_tru",
+
+        "noi_nang"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_starlight",
+
+      "name": "Quân Starlight",
+
+      "role": "support",
+
+      "job": "healer",
+
+      "base_hp": 720,
+
+      "base_atk": 130,
+
+      "base_def": 46,
+
+      "base_spd": 122,
+
+      "base_crit": 4,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Hấp thụ điện",
+
+      "technique": "anh_sang_cuu_tro",
+
+      "flavor_text": "Sáng nhất trong một đội toàn người tối.",
+
+      "skill_params": {
+        "effect": "energy",
+        "target": "ally_lowest",
+        "coeff": 1,
+        "max_uses": 4
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_black_noir",
+
+      "name": "Quân Black Noir",
+
+      "role": "marksman",
+
+      "job": "assassin",
+
+      "base_hp": 720,
+
+      "base_atk": 200,
+
+      "base_def": 52,
+
+      "base_spd": 160,
+
+      "base_crit": 14,
+
+      "base_dodge": 10,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Lưỡi dao câm lặng",
+
+      "technique": "dao_am_sat",
+
+      "flavor_text": "Không nói câu nào, nhưng ai cũng hiểu.",
+
+      "skill_params": {
+        "effect": "bleed",
+        "target": "enemy_back",
+        "coeff": 0.12,
+        "turns": 2
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "quan_su",
+
+        "kien_cuong"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_soldier_boy",
+
+      "name": "Quân Soldier Boy",
+
+      "role": "tanker",
+
+      "job": "vanguard",
+
+      "base_hp": 1450,
+
+      "base_atk": 190,
+
+      "base_def": 100,
+
+      "base_spd": 82,
+
+      "base_crit": 6,
+
+      "base_dodge": 2,
+
+      "scale_stat": "atk",
+
+      "trigger": "ally_death",
+
+      "skill_name": "Nạp năng lượng báo thù",
+
+      "technique": "chan_dong_hat_nhan",
+
+      "flavor_text": "Người hùng cũ, nhưng nắm đấm vẫn còn mới.",
+
+      "skill_params": {
+        "effect": "overdrive",
+        "target": "self",
+        "coeff": 0.2,
+        "permanent": true,
+        "stack_max": 2,
+        "max_uses": 2
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "nhanh_nhen"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_a_train",
+
+      "name": "Quân A-Train",
+
+      "role": "marksman",
+
+      "job": "haste",
+
+      "base_hp": 480,
+
+      "base_atk": 150,
+
+      "base_def": 32,
+
+      "base_spd": 150,
+
+      "base_crit": 10,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Va chạm siêu tốc",
+
+      "technique": "tang_toc",
+
+      "flavor_text": "Chạy nhanh đến mức bỏ luôn đồng đội.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "primary",
+        "coeff": 0.6,
+        "when": "target_slowed"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "thien_nhien",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_the_deep",
+
+      "name": "Quân The Deep",
+
+      "role": "support",
+
+      "job": "debuffer",
+
+      "base_hp": 560,
+
+      "base_atk": 84,
+
+      "base_def": 38,
+
+      "base_spd": 116,
+
+      "base_crit": 0,
+
+      "base_dodge": 5,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Bầy cá săn mồi",
+
+      "technique": "ran_can",
+
+      "flavor_text": "Nói chuyện với cá voi, bị người thì bơ.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "primary",
+        "coeff": 0.45,
+        "when": "target_has_status",
+        "when_status": "poison"
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "hoc_duong",
+
+        "muu_meo"
+
+      ],
+
+      "rarity": "epic",
+
+      "id": "quan_walter_white",
+
+      "name": "Quân Walter White",
+
+      "role": "mage",
+
+      "job": "aoe",
+
+      "base_hp": 545,
+
+      "base_atk": 244,
+
+      "base_def": 36,
+
+      "base_spd": 94,
+
+      "base_crit": 9,
+
+      "base_dodge": 6,
+
+      "scale_stat": "atk",
+
+      "trigger": "round_start",
+
+      "skill_name": "Công thức xanh",
+
+      "technique": "khi_doc",
+
+      "flavor_text": "Nấu một mẻ, cả thành phố phải ngửi.",
+
+      "skill_params": {
+
+        "effect": "poison",
+
+        "target": "all_enemies",
+
+        "coeff": 0.1,
+
+        "turns": 3
+
+      },
+
+      "enabled": true
+
+    },
+
+    {
+
+      "groups": [
+
+        "do_thi",
+
+        "lay_loi"
+
+      ],
+
+      "rarity": "rare",
+
+      "id": "quan_jesse_pinkman",
+
+      "name": "Quân Jesse Pinkman",
+
+      "role": "support",
+
+      "job": "poke",
+
+      "base_hp": 555,
+
+      "base_atk": 86,
+
+      "base_def": 37,
+
+      "base_spd": 119,
+
+      "base_crit": 2,
+
+      "base_dodge": 8,
+
+      "scale_stat": "atk",
+
+      "trigger": "attack",
+
+      "skill_name": "Mẻ hóa chất thứ hai",
+
+      "technique": "sac_pin",
+
+      "flavor_text": "Thầy bảo an toàn, nhưng chưa ai kiểm chứng.",
+
+      "skill_params": {
+        "effect": "damage",
+        "target": "enemy_lowest",
+        "coeff": 0.5,
+        "when": "target_has_status",
+        "when_status": "poison"
+      },
+
+      "enabled": true
+
+    }
+
+  ],
+
+  "gear_templates": [
+    {
+      "id": "kiem_gi",
+      "name": "Kiếm gỉ",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "base_atk": 10,
+      "base_crit": 3,
+      "value_xu": 14000
+    },
+    {
+      "id": "ao_rach",
+      "name": "Áo rách",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_hp": 58,
+      "base_def": 5,
+      "value_xu": 16000
+    },
+    {
+      "id": "dao_cu",
+      "name": "Dao cũ",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "base_atk": 9,
+      "base_crit": 2,
+      "passive": {
+        "trigger": "strike",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "bleed",
+          "target": "primary",
+          "coeff": 0.036
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.25,
+            0.4
+          ]
+        }
+      },
+      "value_xu": 18000
+    },
+    {
+      "id": "khien_muc",
+      "name": "Khiên mục",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_hp": 42,
+      "base_dodge": 1,
+      "base_def": 4,
+      "value_xu": 20000,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "shield",
+          "target": "self",
+          "max_uses": 2
+        },
+        "skill_name": "Gom mảnh khiên",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.02,
+            0.035
+          ]
+        }
+      }
+    },
+    {
+      "id": "gay_go",
+      "name": "Gậy gỗ",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "base_atk": 9,
+      "base_hp": 52,
+      "value_xu": 22000,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "heal_power",
+          "target": "self"
+        },
+        "skill_name": "Gậy trợ trị",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.04,
+            0.08
+          ]
+        }
+      }
+    },
+    {
+      "id": "mu_vai",
+      "name": "Mũ vải",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_hp": 36,
+      "base_dodge": 1,
+      "base_def": 3,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "shield",
+          "target": "self",
+          "max_uses": 1
+        },
+        "skill_name": "Lót vải mềm",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.08
+          ]
+        }
+      },
+      "value_xu": 14000
+    },
+    {
+      "id": "giay_rach",
+      "name": "Giày rách",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "value_xu": 16000,
+      "base_spd": 7,
+      "base_dodge": 1
+    },
+    {
+      "id": "day_chuyen_dong",
+      "name": "Dây chuyền đồng",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_hp": 52,
+      "base_spd": 4,
+      "value_xu": 18000,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "heal",
+          "target": "ally_lowest",
+          "max_uses": 3
+        },
+        "skill_name": "Lời chúc bình an",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.02,
+            0.03
+          ]
+        }
+      }
+    },
+    {
+      "id": "nhan_da",
+      "name": "Nhẫn đá",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_crit": 3,
+      "base_spd": 4,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "focus",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.12
+          ]
+        }
+      },
+      "value_xu": 20000
+    },
+    {
+      "id": "bua_giay",
+      "name": "Bùa giấy",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_spd": 5,
+      "base_dodge": 2,
+      "value_xu": 22000,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "shield",
+          "target": "ally_lowest",
+          "max_uses": 1
+        },
+        "skill_name": "Bùa hộ thân",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.04,
+            0.07
+          ]
+        }
+      }
+    },
+    {
+      "id": "kiem_doran",
+      "name": "Kiếm Doran",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "value_xu": 14000,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "life_steal",
+          "target": "self"
+        },
+        "skill_name": "Bền bỉ nhập môn",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.02,
+            0.04
+          ]
+        }
+      },
+      "base_atk": 8,
+      "base_hp": 35
+    },
+    {
+      "id": "khien_doran",
+      "name": "Khiên Doran",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_def": 5,
+      "base_hp": 45,
+      "passive": {
+        "trigger": "ally_hit",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "shield",
+          "target": "hit_ally",
+          "coeff": 0.03
+        },
+        "skill_name": "Đỡ đòn cho bạn",
+        "roll": {
+          "field": "max_uses",
+          "range": [
+            2,
+            4
+          ]
+        }
+      },
+      "value_xu": 14000
+    },
+    {
+      "id": "ao_vai_doran",
+      "name": "Nón Doran",
+      "kind": "armor",
+      "rarity": "RARE",
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "heal_power",
+          "target": "self"
+        },
+        "skill_name": "Mầm sống Doran",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.1,
+            0.16
+          ]
+        }
+      },
+      "value_xu": 44000,
+      "base_hp": 74,
+      "base_def": 6,
+      "base_spd": 5
+    },
+    {
+      "id": "nhan_doran",
+      "name": "Nhẫn Doran",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_crit": 6,
+      "base_spd": 8,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "overdrive",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.15,
+            0.3
+          ]
+        }
+      },
+      "value_xu": 48000
+    },
+    {
+      "id": "kiem_dai",
+      "name": "Kiếm dài",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 19,
+      "base_crit": 5,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "target": "self",
+          "when": "target_has_status",
+          "when_status": "bleed"
+        },
+        "skill_name": "Khoét vết rạch",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.1,
+            0.18
+          ]
+        }
+      },
+      "value_xu": 42000
+    },
+    {
+      "id": "ao_giap_da",
+      "name": "Áo giáp da",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 102,
+      "base_def": 9,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "DEF",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "self",
+          "coeff": 0.04,
+          "permanent": true
+        },
+        "skill_name": "Chai lì",
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            3,
+            6
+          ]
+        }
+      },
+      "value_xu": 42000
+    },
+    {
+      "id": "gang_tay_sat",
+      "name": "Găng tay sắt",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_atk": 12,
+      "base_spd": 6,
+      "base_crit": 2,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self",
+          "coeff": 0.04,
+          "permanent": true
+        },
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            3,
+            6
+          ]
+        }
+      },
+      "value_xu": 44000
+    },
+    {
+      "id": "bua_loi_xanh",
+      "name": "Bùa lợi xanh",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_hp": 74,
+      "base_spd": 5,
+      "base_crit": 4,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "ult_cost",
+          "target": "self"
+        },
+        "skill_name": "Dòng chảy năng lượng",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            1,
+            1
+          ]
+        }
+      },
+      "value_xu": 46000
+    },
+    {
+      "id": "kiem_da",
+      "name": "Kiếm đá",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "value_xu": 16000,
+      "base_atk": 14,
+      "base_def": 2
+    },
+    {
+      "id": "giap_da",
+      "name": "Giáp da",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "value_xu": 16000,
+      "base_hp": 30,
+      "base_def": 9
+    },
+    {
+      "id": "xeng_go",
+      "name": "Xẻng gỗ",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "base_atk": 7,
+      "base_hp": 45,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "stun",
+          "target": "primary",
+          "turns": 1
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.08,
+            0.14
+          ]
+        }
+      },
+      "value_xu": 18000
+    },
+    {
+      "id": "cuoc_da",
+      "name": "Cuốc đá",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "base_atk": 9,
+      "base_hp": 52,
+      "value_xu": 20000,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "valuable_chance",
+          "target": "self"
+        },
+        "skill_name": "Đào khoáng quý",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.01,
+            0.025
+          ]
+        }
+      }
+    },
+    {
+      "id": "khien_go",
+      "name": "Khiên gỗ",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_def": 6,
+      "base_hp": 52,
+      "value_xu": 22000,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "weak",
+          "target": "primary",
+          "turns": 2,
+          "max_uses": 3
+        },
+        "skill_name": "Hứng đòn làm lệch tay",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.08
+          ]
+        }
+      }
+    },
+    {
+      "id": "mu_da",
+      "name": "Mũ da",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_hp": 36,
+      "base_dodge": 1,
+      "base_def": 3,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "DODGE",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.024,
+            0.048
+          ]
+        }
+      },
+      "value_xu": 14000
+    },
+    {
+      "id": "giay_da",
+      "name": "Giày da",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "value_xu": 16000,
+      "base_spd": 4,
+      "base_def": 3,
+      "base_dodge": 2
+    },
+    {
+      "id": "bua_xuong",
+      "name": "Bùa xương",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_hp": 42,
+      "base_spd": 3,
+      "base_crit": 2,
+      "value_xu": 18000,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "poison",
+          "target": "enemy_front",
+          "turns": 3
+        },
+        "skill_name": "Nọc xương",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.08
+          ]
+        }
+      }
+    },
+    {
+      "id": "nhan_vang",
+      "name": "Nhẫn vàng",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_crit": 3,
+      "base_spd": 4,
+      "passive": {
+        "trigger": "ult",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "energy",
+          "target": "self",
+          "coeff": 1
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.3,
+            0.5
+          ]
+        }
+      },
+      "value_xu": 20000
+    },
+    {
+      "id": "day_chuyen_than",
+      "name": "Dây chuyền than",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_hp": 52,
+      "base_spd": 4,
+      "value_xu": 22000,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "dot_resistance",
+          "target": "self",
+          "when_status": "burn"
+        },
+        "skill_name": "Lớp than cách nhiệt",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.1,
+            0.18
+          ]
+        }
+      }
+    },
+    {
+      "id": "kiem_sat",
+      "name": "Kiếm sắt",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 19,
+      "base_crit": 5,
+      "passive": {
+        "trigger": "kill",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "empower",
+          "target": "self",
+          "permanent": true,
+          "stack_max": 4
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.08,
+            0.14
+          ]
+        }
+      },
+      "value_xu": 42000
+    },
+    {
+      "id": "giap_sat",
+      "name": "Giáp sắt",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 102,
+      "base_def": 9,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_taken",
+          "target": "self",
+          "when": "self_hp_below",
+          "when_value": 0.4
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            -0.25,
+            -0.15
+          ]
+        }
+      },
+      "value_xu": 44000
+    },
+    {
+      "id": "kiem_netherite",
+      "name": "Kiếm Netherite",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 19,
+      "base_crit": 5,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "crit_damage",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.25,
+            0.45
+          ]
+        }
+      },
+      "value_xu": 48000
+    },
+    {
+      "id": "giap_netherite",
+      "name": "Giáp Netherite",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 102,
+      "base_def": 9,
+      "passive": {
+        "trigger": "death",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "revive",
+          "target": "self",
+          "max_uses": 1
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 48000
+    },
+    {
+      "id": "mu_netherite",
+      "name": "Mũ Netherite",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 74,
+      "base_dodge": 2,
+      "base_def": 6,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "dot_resistance",
+          "target": "self",
+          "when_status": "burn"
+        },
+        "skill_name": "Mũ chịu nhiệt Netherite",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.22,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "giay_netherite",
+      "name": "Giày Netherite",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_spd": 9,
+      "base_dodge": 3,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "haste",
+          "target": "self",
+          "coeff": 0.12
+        },
+        "roll": {
+          "field": "turns",
+          "range": [
+            2,
+            3
+          ]
+        }
+      },
+      "value_xu": 42000
+    },
+    {
+      "id": "khien_netherite",
+      "name": "Khiên Netherite",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_def": 10,
+      "base_hp": 93,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "taunt",
+          "target": "self"
+        },
+        "roll": {
+          "field": "turns",
+          "range": [
+            1,
+            3
+          ]
+        }
+      },
+      "value_xu": 44000
+    },
+    {
+      "id": "bua_lua",
+      "name": "Bùa lửa",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_hp": 74,
+      "base_spd": 5,
+      "base_crit": 4,
+      "passive": {
+        "trigger": "ult",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "burn",
+          "target": "all_enemies",
+          "turns": 3,
+          "max_uses": 3
+        },
+        "skill_name": "Tàn lửa lan truyền",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.07,
+            0.12
+          ]
+        }
+      },
+      "value_xu": 46000
+    },
+    {
+      "id": "kiem_vang",
+      "name": "Kiếm vàng",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 19,
+      "base_crit": 5,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "attack",
+          "target": "primary",
+          "coeff": 0.5
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.15,
+            0.25
+          ]
+        }
+      },
+      "value_xu": 48000
+    },
+    {
+      "id": "ao_da_nether",
+      "name": "Áo da Nether",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 102,
+      "base_def": 9,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "DEF",
+        "skill_params": {
+          "effect": "burn",
+          "target": "primary",
+          "coeff": 0.08
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.25,
+            0.4
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "kiem_blaze",
+      "name": "Kiếm Blaze",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 30,
+      "base_crit": 8,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "target": "self",
+          "when": "target_has_status",
+          "when_status": "burn"
+        },
+        "skill_name": "Thiêu kẻ bén lửa",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.18,
+            0.3
+          ]
+        }
+      },
+      "value_xu": 105000
+    },
+    {
+      "id": "giap_magma",
+      "name": "Giáp magma",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 165,
+      "base_def": 15,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "def",
+        "skill_params": {
+          "effect": "burn",
+          "target": "primary",
+          "turns": 3,
+          "chance": 0.35
+        },
+        "skill_name": "Dung nham bắn ngược",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.12,
+            0.2
+          ]
+        }
+      },
+      "value_xu": 107000
+    },
+    {
+      "id": "mu_wither",
+      "name": "Mũ Wither",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 120,
+      "base_dodge": 4,
+      "base_def": 10,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "target": "self",
+          "when": "target_has_status",
+          "when_status": "poison"
+        },
+        "skill_name": "Khô héo lan sâu",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.15,
+            0.25
+          ]
+        }
+      },
+      "value_xu": 109000
+    },
+    {
+      "id": "ao_ghast",
+      "name": "Áo ghast",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 165,
+      "base_def": 15,
+      "passive": {
+        "trigger": "dodge",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "haste",
+          "target": "ally_adjacent",
+          "turns": 2,
+          "max_uses": 4
+        },
+        "skill_name": "Lướt cùng linh hồn",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.08
+          ]
+        }
+      },
+      "value_xu": 111000
+    },
+    {
+      "id": "gang_piglin",
+      "name": "Găng Piglin",
+      "kind": "accessory",
+      "rarity": "EPIC",
+      "base_atk": 20,
+      "base_spd": 10,
+      "base_crit": 4,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self",
+          "per": "held_xu",
+          "per_amount": 200000,
+          "max": 0.2
+        },
+        "skill_name": "Ham vàng thêm sức",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.01,
+            0.02
+          ]
+        }
+      },
+      "value_xu": 113000
+    },
+    {
+      "id": "khien_netherite_co",
+      "name": "Khiên Netherite cổ",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_def": 17,
+      "base_hp": 150,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "shield",
+          "target": "self",
+          "coeff": 0.09
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.25,
+            0.4
+          ]
+        }
+      },
+      "value_xu": 105000
+    },
+    {
+      "id": "sung_luc_cu",
+      "name": "Súng lục cũ",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "base_atk": 10,
+      "base_crit": 2,
+      "base_spd": 1,
+      "value_xu": 14000
+    },
+    {
+      "id": "dao_gam",
+      "name": "Dao găm",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "base_atk": 9,
+      "base_crit": 2,
+      "passive": {
+        "trigger": "crit",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "bleed",
+          "target": "primary",
+          "turns": 2,
+          "max_uses": 3
+        },
+        "skill_name": "Rạch gân",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.1
+          ]
+        }
+      },
+      "value_xu": 16000
+    },
+    {
+      "id": "ao_rach_chien_truong",
+      "name": "Áo rách chiến trường",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "value_xu": 18000,
+      "base_hp": 50,
+      "base_def": 4,
+      "base_spd": 2
+    },
+    {
+      "id": "mu_luoi_trai",
+      "name": "Mũ lưỡi trai",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "value_xu": 20000,
+      "base_hp": 24,
+      "base_spd": 4,
+      "base_dodge": 2
+    },
+    {
+      "id": "gang_tay_vai",
+      "name": "Găng tay vải",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_atk": 6,
+      "base_spd": 3,
+      "base_crit": 1,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.108
+          ]
+        }
+      },
+      "value_xu": 22000
+    },
+    {
+      "id": "giay_cu_chien_truong",
+      "name": "Giày cũ chiến trường",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_spd": 5,
+      "base_dodge": 2,
+      "value_xu": 14000,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "haste",
+          "target": "all_allies",
+          "turns": 2
+        },
+        "skill_name": "Hành quân cùng nhau",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.05
+          ]
+        }
+      }
+    },
+    {
+      "id": "ba_lo_cu",
+      "name": "Ba lô cũ",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_hp": 52,
+      "base_def": 2,
+      "base_spd": 3,
+      "value_xu": 16000
+    },
+    {
+      "id": "kinh_ram",
+      "name": "Kính râm",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_hp": 36,
+      "base_dodge": 1,
+      "base_def": 3,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "crit",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "ally_adjacent",
+          "turns": 2,
+          "max_uses": 1
+        },
+        "skill_name": "Tạo dáng tự tin",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.05
+          ]
+        }
+      },
+      "value_xu": 18000
+    },
+    {
+      "id": "sung_ngan",
+      "name": "Súng ngắn",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 17,
+      "base_crit": 4,
+      "base_spd": 2,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "target": "self",
+          "when": "target_full_hp"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "ao_kevlar",
+      "name": "Áo Kevlar",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 102,
+      "base_def": 9,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "energy",
+          "target": "self",
+          "coeff": 1
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.15,
+            0.3
+          ]
+        }
+      },
+      "value_xu": 52000
+    },
+    {
+      "id": "mu_chong_dan",
+      "name": "Mũ chống đạn",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 74,
+      "base_dodge": 2,
+      "base_def": 6,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "def",
+        "skill_params": {
+          "effect": "shield",
+          "target": "self",
+          "max_uses": 3
+        },
+        "skill_name": "Mũ hấp thụ xung lực",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            1,
+            1.5
+          ]
+        }
+      },
+      "value_xu": 42000
+    },
+    {
+      "id": "gang_tay_chien_thuat",
+      "name": "Găng tay chiến thuật",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_atk": 12,
+      "base_spd": 6,
+      "base_crit": 2,
+      "passive": {
+        "trigger": "crit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "attack",
+          "target": "primary",
+          "coeff": 0.5
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.3,
+            0.5
+          ]
+        }
+      },
+      "value_xu": 44000
+    },
+    {
+      "id": "ba_lo_chien_thuat",
+      "name": "Ba lô chiến thuật",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_hp": 93,
+      "base_def": 4,
+      "base_spd": 5,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "loot_xu",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.1
+          ]
+        }
+      },
+      "value_xu": 46000
+    },
+    {
+      "id": "sung_tieu_lien",
+      "name": "Súng tiểu liên",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 17,
+      "base_crit": 4,
+      "base_spd": 2,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "attack",
+          "target": "primary",
+          "coeff": 0.35
+        },
+        "skill_name": "Loạt đạn ngắn",
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 48000
+    },
+    {
+      "id": "sung_shotgun",
+      "name": "Súng shotgun",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 17,
+      "base_crit": 4,
+      "base_spd": 2,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "bleed",
+          "target": "enemy_front",
+          "turns": 2,
+          "chance": 0.4
+        },
+        "skill_name": "Đạn ghém xé thịt",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.1,
+            0.17
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "bo_go_bom",
+      "name": "Bộ gỡ bom",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "energy_steal",
+          "target": "all_enemies"
+        },
+        "skill_name": "Tháo kíp nổ",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            1,
+            2
+          ]
+        }
+      },
+      "value_xu": 42000,
+      "base_hp": 60,
+      "base_def": 8,
+      "base_spd": 6
+    },
+    {
+      "id": "awp_dragon",
+      "name": "AWP Dragon Lore",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 28,
+      "base_crit": 6,
+      "base_spd": 4,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "damage",
+          "target": "enemy_back",
+          "max_uses": 1
+        },
+        "skill_name": "Phát bắn phục kích",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            1,
+            1.5
+          ]
+        }
+      },
+      "value_xu": 110000
+    },
+    {
+      "id": "giap_chien_thuat",
+      "name": "Giáp chiến thuật",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 165,
+      "base_def": 15,
+      "passive": {
+        "trigger": "ally_death",
+        "scale_stat": "DEF",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "self",
+          "permanent": true,
+          "stack_max": 3
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.12,
+            0.21
+          ]
+        }
+      },
+      "value_xu": 110000
+    },
+    {
+      "id": "ak_47_huyen_thoai",
+      "name": "AK-47 huyền thoại",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 28,
+      "base_crit": 6,
+      "base_spd": 4,
+      "passive": {
+        "trigger": "kill",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "focus",
+          "target": "self",
+          "coeff": 0.12,
+          "permanent": true
+        },
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            2,
+            4
+          ]
+        }
+      },
+      "value_xu": 111000
+    },
+    {
+      "id": "m4a4",
+      "name": "M4A4",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 28,
+      "base_crit": 6,
+      "base_spd": 4,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self",
+          "when": "first_attack"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.6,
+            1.05
+          ]
+        }
+      },
+      "value_xu": 113000
+    },
+    {
+      "id": "gang_tay_the_thao_xanh",
+      "name": "Găng tay thể thao xanh",
+      "kind": "accessory",
+      "rarity": "EPIC",
+      "base_atk": 20,
+      "base_spd": 10,
+      "base_crit": 4,
+      "passive": {
+        "trigger": "crit",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "haste",
+          "target": "self",
+          "permanent": true,
+          "stack_max": 4,
+          "max_uses": 4
+        },
+        "skill_name": "Giữ nhịp sau chí mạng",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.05
+          ]
+        }
+      },
+      "value_xu": 105000
+    },
+    {
+      "id": "mat_na_phong_doc",
+      "name": "Mặt nạ phòng độc",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 120,
+      "base_dodge": 4,
+      "base_def": 10,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "dot_resistance",
+          "target": "self",
+          "when_status": "poison"
+        },
+        "skill_name": "Bộ lọc độc khí",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.4,
+            0.6
+          ]
+        }
+      },
+      "value_xu": 107000
+    },
+    {
+      "id": "sung_may_hang_nang",
+      "name": "Súng máy hạng nặng",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 28,
+      "base_crit": 6,
+      "base_spd": 4,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "attack",
+          "target": "enemy_front",
+          "when": "from_round",
+          "when_value": 2,
+          "max_uses": 6
+        },
+        "skill_name": "Giữ cò áp chế",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.4,
+            0.65
+          ]
+        }
+      },
+      "value_xu": 109000
+    },
+    {
+      "id": "ao_giap_hang_nang",
+      "name": "Áo giáp hạng nặng",
+      "kind": "armor",
+      "rarity": "epic",
+      "pct_hp": 25,
+      "pct_def": 25,
+      "pct_spd": -10,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "def",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "self",
+          "coeff": 0.06,
+          "permanent": true
+        },
+        "skill_name": "Chai lì",
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            3,
+            6
+          ]
+        }
+      },
+      "value_xu": 111000
+    },
+    {
+      "id": "dao_karambit_lua",
+      "name": "Dao Karambit lửa",
+      "kind": "weapon",
+      "rarity": "LEGENDARY",
+      "base_atk": 45,
+      "base_crit": 12,
+      "passive": {
+        "trigger": "crit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "attack",
+          "target": "primary",
+          "coeff": 1
+        },
+        "skill_name": "Lửa liên hoàn",
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.4,
+            0.6
+          ]
+        }
+      },
+      "value_xu": 288000
+    },
+    {
+      "id": "gang_tay_pandora_box",
+      "name": "Găng tay Pandora Box",
+      "kind": "accessory",
+      "rarity": "LEGENDARY",
+      "base_atk": 30,
+      "base_spd": 15,
+      "base_crit": 6,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage",
+          "target": "enemy_random"
+        },
+        "skill_name": "Hộp Pandora",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.4,
+            0.7
+          ]
+        }
+      },
+      "value_xu": 280000
+    },
+    {
+      "id": "awp_gungnir_vang",
+      "name": "AWP Gungnir vàng",
+      "kind": "weapon",
+      "rarity": "LEGENDARY",
+      "base_atk": 41,
+      "base_crit": 9,
+      "base_spd": 6,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "target": "self",
+          "when": "target_full_hp"
+        },
+        "skill_name": "Phát đầu chí tử",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.6,
+            1
+          ]
+        }
+      },
+      "value_xu": 282000
+    },
+    {
+      "id": "ao_giap_crimson",
+      "name": "Áo giáp Crimson",
+      "kind": "armor",
+      "rarity": "LEGENDARY",
+      "base_hp": 248,
+      "base_def": 22,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "empower",
+          "target": "self",
+          "coeff": 0.03,
+          "permanent": true
+        },
+        "skill_name": "Máu nóng",
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            5,
+            10
+          ]
+        }
+      },
+      "value_xu": 284000
+    },
+    {
+      "id": "kunai_cu",
+      "name": "Kunai cũ",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "base_atk": 7,
+      "base_spd": 4,
+      "base_crit": 1,
+      "value_xu": 14000
+    },
+    {
+      "id": "phi_tieu",
+      "name": "Phi tiêu",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "value_xu": 16000,
+      "base_atk": 5,
+      "base_spd": 7,
+      "base_crit": 1
+    },
+    {
+      "id": "ao_vai_ninja",
+      "name": "Áo vải ninja",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_hp": 49,
+      "base_def": 4,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "dodge",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "self",
+          "turns": 3
+        },
+        "skill_name": "Ẩn dưới lớp vải",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.05
+          ]
+        }
+      },
+      "value_xu": 18000
+    },
+    {
+      "id": "gang_tay_vai_ninja",
+      "name": "Găng tay vải ninja",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_atk": 7,
+      "base_spd": 4,
+      "base_crit": 1,
+      "value_xu": 22000,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "energy",
+          "target": "ally_slowest",
+          "coeff": 1,
+          "max_uses": 2
+        },
+        "skill_name": "Trao nhịp chakra",
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.08,
+            0.12
+          ]
+        }
+      }
+    },
+    {
+      "id": "giay_ninja",
+      "name": "Giày ninja",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_spd": 4,
+      "base_dodge": 1,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "haste",
+          "target": "self",
+          "coeff": 0.018,
+          "permanent": true
+        },
+        "skill_name": "Càng chạy càng nhanh",
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            4,
+            8
+          ]
+        }
+      },
+      "value_xu": 14000
+    },
+    {
+      "id": "bua_giay_lang_la",
+      "name": "Bùa giấy Làng Mưa",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_spd": 5,
+      "base_dodge": 2,
+      "value_xu": 16000,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "def",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "all_allies",
+          "turns": 2
+        },
+        "skill_name": "Bùa giữ đội hình",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.04,
+            0.07
+          ]
+        }
+      }
+    },
+    {
+      "id": "ong_dung_kunai",
+      "name": "Ống đựng kunai",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_hp": 52,
+      "base_def": 2,
+      "base_spd": 3,
+      "value_xu": 18000,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "target": "self",
+          "when": "first_attack"
+        },
+        "skill_name": "Rút kunai dự phòng",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.1
+          ]
+        }
+      }
+    },
+    {
+      "id": "kunai_ninja",
+      "name": "Kunai ninja",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 12,
+      "base_spd": 6,
+      "base_crit": 2,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage",
+          "target": "enemy_back",
+          "coeff": 0.35
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "ao_ninja",
+      "name": "Áo ninja",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 102,
+      "base_def": 9,
+      "passive": {
+        "trigger": "dodge",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "shield",
+          "target": "self",
+          "max_uses": 3
+        },
+        "skill_name": "Thoát thân trong bóng",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.08
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "kiem_chakra",
+      "name": "Kiếm chakra",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 30,
+      "base_crit": 8,
+      "passive": {
+        "trigger": "crit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self",
+          "coeff": 0.075,
+          "permanent": true
+        },
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            3,
+            6
+          ]
+        }
+      },
+      "value_xu": 115000
+    },
+    {
+      "id": "bang_do_lang_la",
+      "name": "Băng đô Làng Mưa",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 74,
+      "base_dodge": 2,
+      "base_def": 6,
+      "passive": {
+        "trigger": "ally_death",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "empower",
+          "target": "all_allies",
+          "permanent": true,
+          "stack_max": 2,
+          "max_uses": 2
+        },
+        "skill_name": "Ý chí đồng đội",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.1
+          ]
+        }
+      },
+      "value_xu": 44000
+    },
+    {
+      "id": "gang_tay_ninja",
+      "name": "Găng tay ninja",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_atk": 12,
+      "base_spd": 6,
+      "base_crit": 2,
+      "passive": {
+        "trigger": "strike",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "empower",
+          "target": "self",
+          "chance": 0.3,
+          "turns": 2
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.08,
+            0.14
+          ]
+        }
+      },
+      "value_xu": 46000
+    },
+    {
+      "id": "giay_ninja_chuyen_dung",
+      "name": "Giày ninja chuyên dụng",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_spd": 9,
+      "base_dodge": 3,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "haste",
+          "target": "self",
+          "when": "from_round",
+          "when_value": 3
+        },
+        "skill_name": "Nhẫn nại tăng tốc",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.08,
+            0.14
+          ]
+        }
+      },
+      "value_xu": 48000
+    },
+    {
+      "id": "bua_no",
+      "name": "Bùa nổ",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 22,
+      "base_spd": 5,
+      "passive": {
+        "trigger": "death",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "burn",
+          "target": "all_enemies"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.08,
+            0.12
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "ao_giap_lang_la",
+      "name": "Áo giáp Làng Mưa",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 102,
+      "base_def": 9,
+      "passive": {
+        "trigger": "ally_hit",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "heal",
+          "target": "hit_ally",
+          "max_uses": 4
+        },
+        "skill_name": "Túi cứu thương tiền tuyến",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.025,
+            0.04
+          ]
+        }
+      },
+      "value_xu": 42000
+    },
+    {
+      "id": "ao_choang_hokage_chien",
+      "name": "Áo choàng Akatsuki",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_dodge": 6,
+      "base_hp": 150,
+      "passive": {
+        "trigger": "dodge",
+        "scale_stat": "DODGE",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "self",
+          "coeff": 0.045,
+          "permanent": true
+        },
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            3,
+            5
+          ]
+        }
+      },
+      "value_xu": 107000
+    },
+    {
+      "id": "mu_hokage_lua",
+      "name": "Nón lá Akatsuki",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 120,
+      "base_dodge": 4,
+      "base_def": 10,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "energy",
+          "target": "all_allies"
+        },
+        "skill_name": "Mật lệnh tiếp năng",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            1,
+            1
+          ]
+        }
+      },
+      "value_xu": 109000
+    },
+    {
+      "id": "gang_tay_cuu_vi",
+      "name": "Găng tay Akatsuki",
+      "kind": "accessory",
+      "rarity": "EPIC",
+      "base_atk": 20,
+      "base_spd": 10,
+      "base_crit": 4,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.15,
+            0.27
+          ]
+        }
+      },
+      "value_xu": 111000
+    },
+    {
+      "id": "bua_an",
+      "name": "Bùa ấn",
+      "kind": "accessory",
+      "rarity": "EPIC",
+      "base_hp": 120,
+      "base_spd": 8,
+      "base_crit": 6,
+      "passive": {
+        "trigger": "ult",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "silence",
+          "target": "all_enemies",
+          "turns": 2,
+          "max_uses": 2
+        },
+        "skill_name": "Ấn khóa bí kíp",
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.5,
+            0.7
+          ]
+        }
+      },
+      "value_xu": 113000
+    },
+    {
+      "id": "kiem_samehada",
+      "name": "Kiếm Samehada",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 30,
+      "base_crit": 8,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "energy_steal",
+          "target": "primary",
+          "coeff": 1,
+          "max_uses": 4
+        },
+        "skill_name": "Cắn nuốt chakra",
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.25,
+            0.4
+          ]
+        }
+      },
+      "value_xu": 105000
+    },
+    {
+      "id": "kiem_chakra_nang_cap",
+      "name": "Kiếm chakra nâng cấp",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 30,
+      "base_crit": 8,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "crit_damage",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.375,
+            0.675
+          ]
+        }
+      },
+      "value_xu": 107000
+    },
+    {
+      "id": "ao_giap_anbu",
+      "name": "Áo giáp phản nhẫn",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 165,
+      "base_def": 15,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "dodge",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "all_allies",
+          "turns": 3
+        },
+        "skill_name": "Che giấu cả đội",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.06
+          ]
+        }
+      },
+      "value_xu": 109000
+    },
+    {
+      "id": "mat_na_anbu",
+      "name": "Mặt nạ xoáy Obito",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 120,
+      "base_dodge": 4,
+      "base_def": 10,
+      "passive": {
+        "trigger": "kill",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "immune",
+          "target": "self",
+          "turns": 1
+        },
+        "skill_name": "Biến mất sau ám sát",
+        "roll": {
+          "field": "max_uses",
+          "range": [
+            1,
+            2
+          ]
+        }
+      },
+      "value_xu": 111000
+    },
+    {
+      "id": "kiem_kusanagi",
+      "name": "Kiếm Kusanagi",
+      "kind": "weapon",
+      "rarity": "LEGENDARY",
+      "base_atk": 45,
+      "base_crit": 12,
+      "passive": {
+        "trigger": "kill",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "empower",
+          "target": "all_allies",
+          "permanent": true,
+          "stack_max": 5
+        },
+        "skill_name": "Kiếm thần dẫn đường",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.1,
+            0.16
+          ]
+        }
+      },
+      "value_xu": 288000
+    },
+    {
+      "id": "ao_choang_luc_dao",
+      "name": "Áo choàng Lục đạo",
+      "kind": "armor",
+      "rarity": "LEGENDARY",
+      "base_dodge": 9,
+      "base_hp": 225,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "revive",
+          "target": "ally_dead",
+          "when": "allies_alive_at_most",
+          "when_value": 2,
+          "max_uses": 1
+        },
+        "skill_name": "Luân hồi cứu đồng đội",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.3,
+            0.45
+          ]
+        }
+      },
+      "value_xu": 280000
+    },
+    {
+      "id": "kiem_totsuka",
+      "name": "Kiếm Totsuka",
+      "kind": "weapon",
+      "rarity": "LEGENDARY",
+      "base_atk": 45,
+      "base_crit": 12,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "execute",
+          "target": "primary",
+          "coeff": 1.5
+        },
+        "skill_name": "Phong ấn",
+        "roll": {
+          "field": "threshold",
+          "range": [
+            0.15,
+            0.25
+          ]
+        }
+      },
+      "value_xu": 282000
+    },
+    {
+      "id": "ao_giap_cuu_vi",
+      "name": "Áo giáp Bạch Zetsu",
+      "kind": "armor",
+      "rarity": "LEGENDARY",
+      "base_hp": 248,
+      "base_def": 22,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "heal",
+          "target": "self",
+          "when": "self_hp_below",
+          "when_value": 0.5
+        },
+        "skill_name": "Bào tử tái sinh",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.1
+          ]
+        }
+      },
+      "value_xu": 284000
+    },
+    {
+      "id": "giap_linh_frieza",
+      "name": "Giáp lính Frieza",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_hp": 49,
+      "base_def": 4,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "shield",
+          "target": "self",
+          "coeff": 0.042,
+          "when": "self_hp_below"
+        },
+        "roll": {
+          "field": "when_value",
+          "range": [
+            0.4,
+            0.6
+          ]
+        }
+      },
+      "value_xu": 14000
+    },
+    {
+      "id": "sung_nang_luong_cu",
+      "name": "Súng năng lượng cũ",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "value_xu": 16000,
+      "base_atk": 8,
+      "base_spd": 3,
+      "base_crit": 1
+    },
+    {
+      "id": "bang_do_saiyan",
+      "name": "Băng đô Saiyan",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_hp": 42,
+      "base_dodge": 1,
+      "base_def": 4,
+      "value_xu": 18000,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "empower",
+          "target": "self",
+          "turns": 2,
+          "max_uses": 1,
+          "when": "self_hp_below",
+          "when_value": 0.4
+        },
+        "skill_name": "Không chịu khuất phục",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.1
+          ]
+        }
+      }
+    },
+    {
+      "id": "gang_tay_vai_chien_binh",
+      "name": "Băng tay vải chiến binh",
+      "kind": "accessory",
+      "rarity": "common",
+      "base_atk": 6,
+      "base_spd": 3,
+      "base_crit": 1,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self",
+          "turns": 2,
+          "stack_max": 2,
+          "max_uses": 3
+        },
+        "skill_name": "Quấn chặt nắm đấm",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.02,
+            0.035
+          ]
+        }
+      },
+      "value_xu": 20000
+    },
+    {
+      "id": "giay_chien_binh",
+      "name": "Giày chiến binh",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_spd": 5,
+      "base_dodge": 2,
+      "value_xu": 22000,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "empower",
+          "target": "self",
+          "turns": 2,
+          "stack_max": 2,
+          "max_uses": 4
+        },
+        "skill_name": "Bước chân chiến đấu",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.015,
+            0.025
+          ]
+        }
+      }
+    },
+    {
+      "id": "ao_da_vu_tru",
+      "name": "Áo da vũ trụ",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "value_xu": 14000,
+      "base_hp": 75,
+      "base_def": 2
+    },
+    {
+      "id": "bua_namek",
+      "name": "Bùa Namek",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_hp": 36,
+      "base_spd": 2,
+      "base_crit": 2,
+      "passive": {
+        "trigger": "ult",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "heal",
+          "target": "all_allies",
+          "max_uses": 3
+        },
+        "skill_name": "Lời nguyện hồi phục",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.05
+          ]
+        }
+      },
+      "value_xu": 16000
+    },
+    {
+      "id": "mu_vai_vu_tru",
+      "name": "Mũ vải vũ trụ",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "base_hp": 42,
+      "base_dodge": 1,
+      "base_def": 4,
+      "value_xu": 18000,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "shield",
+          "target": "ally_adjacent",
+          "max_uses": 1
+        },
+        "skill_name": "Lớp vải cách áp",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.05
+          ]
+        }
+      }
+    },
+    {
+      "id": "giap_saiyan_chien",
+      "name": "Giáp Saiyan chiến",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 165,
+      "base_def": 15,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "energy",
+          "target": "self",
+          "coeff": 1
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.15,
+            0.3
+          ]
+        }
+      },
+      "value_xu": 111000
+    },
+    {
+      "id": "kiem_z",
+      "name": "Kiếm Z",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 30,
+      "base_crit": 8,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "energy",
+          "target": "self",
+          "coeff": 1,
+          "max_uses": 4,
+          "when": "self_hp_above",
+          "when_value": 0.5
+        },
+        "skill_name": "Dẫn ki qua lưỡi kiếm",
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 120000
+    },
+    {
+      "id": "gang_tay_chien_dau",
+      "name": "Găng tay chiến đấu",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_atk": 12,
+      "base_spd": 6,
+      "base_crit": 2,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self",
+          "permanent": true,
+          "stack_max": 3,
+          "max_uses": 3
+        },
+        "skill_name": "Phản lực nắm đấm",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.04,
+            0.07
+          ]
+        }
+      },
+      "value_xu": 42000
+    },
+    {
+      "id": "giay_saiyan",
+      "name": "Giày Saiyan",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_spd": 9,
+      "base_dodge": 3,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "start_energy",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            1,
+            1
+          ]
+        }
+      },
+      "value_xu": 44000
+    },
+    {
+      "id": "bo_giap_namek",
+      "name": "Bộ giáp Namek",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_hp": 102,
+      "base_def": 9,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "heal",
+          "target": "ally_lowest",
+          "max_uses": 4
+        },
+        "skill_name": "Tái tạo cho đồng đội",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.035,
+            0.055
+          ]
+        }
+      },
+      "value_xu": 46000
+    },
+    {
+      "id": "sung_frieza",
+      "name": "Súng Frieza",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_atk": 17,
+      "base_crit": 4,
+      "base_spd": 2,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "energy",
+          "target": "enemy_back",
+          "coeff": -1,
+          "max_uses": 3
+        },
+        "skill_name": "Tia triệt ki",
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 48000
+    },
+    {
+      "id": "khien_nang_luong",
+      "name": "Khiên năng lượng",
+      "kind": "armor",
+      "rarity": "RARE",
+      "base_def": 10,
+      "base_hp": 93,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_taken",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            -0.14,
+            -0.08
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "bua_porunga",
+      "name": "Bùa Porunga",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_hp": 74,
+      "base_spd": 5,
+      "base_crit": 4,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "revive",
+          "target": "ally_dead",
+          "max_uses": 1
+        },
+        "skill_name": "Điều ước cứu mạng",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.15,
+            0.25
+          ]
+        }
+      },
+      "value_xu": 42000
+    },
+    {
+      "id": "kiem_z_nang_cap",
+      "name": "Kiếm Z nâng cấp",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 30,
+      "base_crit": 8,
+      "passive": {
+        "trigger": "crit",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "bleed",
+          "target": "primary",
+          "turns": 3,
+          "max_uses": 4
+        },
+        "skill_name": "Kiếm khí rạch sâu",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.18,
+            0.3
+          ]
+        }
+      },
+      "value_xu": 107000
+    },
+    {
+      "id": "giap_saiyan_hoang_gia",
+      "name": "Giáp Saiyan hoàng gia",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 165,
+      "base_def": 15,
+      "passive": {
+        "trigger": "ally_hit",
+        "scale_stat": "def",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "hit_ally",
+          "turns": 2,
+          "max_uses": 5
+        },
+        "skill_name": "Uy thế bảo vệ hoàng tộc",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.1
+          ]
+        }
+      },
+      "value_xu": 109000
+    },
+    {
+      "id": "gang_tay_ginyu",
+      "name": "Găng tay Ginyu",
+      "kind": "accessory",
+      "rarity": "EPIC",
+      "base_atk": 20,
+      "base_spd": 10,
+      "base_crit": 4,
+      "passive": {
+        "trigger": "crit",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "energy",
+          "target": "ally_random",
+          "coeff": 1,
+          "max_uses": 4
+        },
+        "skill_name": "Tiểu đội đồng bộ ki",
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.25,
+            0.4
+          ]
+        }
+      },
+      "value_xu": 111000
+    },
+    {
+      "id": "giap_namek_chien_binh",
+      "name": "Giáp Namek chiến binh",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 165,
+      "base_def": 15,
+      "passive": {
+        "trigger": "ally_hit",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "heal",
+          "target": "hit_ally",
+          "max_uses": 5
+        },
+        "skill_name": "Tái tạo tuyến đầu",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.05
+          ]
+        }
+      },
+      "value_xu": 113000
+    },
+    {
+      "id": "sung_tu_than",
+      "name": "Súng tử thần",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_atk": 28,
+      "base_crit": 6,
+      "base_spd": 4,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "crit_damage",
+          "target": "self",
+          "when": "target_hp_below",
+          "when_value": 0.4
+        },
+        "skill_name": "Tia chí tử",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.4,
+            0.65
+          ]
+        }
+      },
+      "value_xu": 105000
+    },
+    {
+      "id": "mu_giap_frieza",
+      "name": "Mũ giáp Frieza",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 120,
+      "base_dodge": 4,
+      "base_def": 10,
+      "passive": {
+        "trigger": "dodge",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "haste",
+          "target": "self",
+          "coeff": 0.075,
+          "permanent": true
+        },
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            3,
+            5
+          ]
+        }
+      },
+      "value_xu": 107000
+    },
+    {
+      "id": "giap_dodoria",
+      "name": "Giáp Dodoria",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 165,
+      "base_def": 15,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "shield",
+          "target": "self",
+          "when": "self_hp_below",
+          "when_value": 0.45,
+          "max_uses": 2
+        },
+        "skill_name": "Chống đỡ lúc nguy cấp",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.1
+          ]
+        }
+      },
+      "value_xu": 109000
+    },
+    {
+      "id": "bo_giap_zarbon",
+      "name": "Bộ giáp Zarbon",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "base_hp": 165,
+      "base_def": 15,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "hp",
+        "skill_params": {
+          "effect": "heal",
+          "target": "self",
+          "when": "self_hp_below",
+          "when_value": 0.5,
+          "max_uses": 3
+        },
+        "skill_name": "Lột xác hồi phục",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.035,
+            0.06
+          ]
+        }
+      },
+      "value_xu": 111000
+    },
+    {
+      "id": "kiem_vo_cuc",
+      "name": "Kiếm Vô Cực",
+      "kind": "weapon",
+      "rarity": "LEGENDARY",
+      "base_atk": 45,
+      "base_crit": 12,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "crit_damage",
+          "target": "self",
+          "when": "target_hp_above",
+          "when_value": 0.7
+        },
+        "skill_name": "Chí mạng vô cực",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.5,
+            0.8
+          ]
+        }
+      },
+      "value_xu": 300000
+    },
+    {
+      "id": "giap_thien_than",
+      "name": "Giáp Thiên Thần",
+      "kind": "armor",
+      "rarity": "LEGENDARY",
+      "base_hp": 248,
+      "base_def": 22,
+      "passive": {
+        "trigger": "death",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "revive",
+          "target": "self",
+          "max_uses": 1
+        },
+        "skill_name": "Thiên thần tái sinh",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.4,
+            0.6
+          ]
+        }
+      },
+      "value_xu": 300000
+    },
+    {
+      "id": "kiem_z_toi_thuong",
+      "name": "Kiếm Z tối thượng",
+      "kind": "weapon",
+      "rarity": "LEGENDARY",
+      "base_atk": 45,
+      "base_crit": 12,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "overdrive",
+          "target": "self"
+        },
+        "skill_name": "Sức mạnh Z",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.4,
+            0.6
+          ]
+        }
+      },
+      "value_xu": 282000
+    },
+    {
+      "id": "giap_super_saiyan",
+      "name": "Giáp Super Saiyan",
+      "kind": "armor",
+      "rarity": "LEGENDARY",
+      "base_hp": 248,
+      "base_def": 22,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "self",
+          "when": "self_hp_below",
+          "when_value": 0.3
+        },
+        "skill_name": "Biến hình",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.4,
+            0.6
+          ]
+        }
+      },
+      "value_xu": 284000
+    },
+    {
+      "id": "kiem_vegito",
+      "name": "Kiếm Vegito",
+      "kind": "weapon",
+      "rarity": "LEGENDARY",
+      "base_atk": 45,
+      "base_crit": 12,
+      "passive": {
+        "trigger": "ult",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage",
+          "target": "all_enemies"
+        },
+        "skill_name": "Kiếm khí hợp thể",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.5,
+            0.8
+          ]
+        }
+      },
+      "value_xu": 286000
+    },
+    {
+      "id": "giap_gogeta",
+      "name": "Giáp Gogeta",
+      "kind": "armor",
+      "rarity": "LEGENDARY",
+      "base_hp": 248,
+      "base_def": 22,
+      "passive": {
+        "trigger": "open",
+        "scale_stat": "DEF",
+        "skill_params": {
+          "effect": "shield",
+          "target": "all_allies"
+        },
+        "skill_name": "Hợp thể",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.6,
+            0.9
+          ]
+        }
+      },
+      "value_xu": 288000
+    },
+    {
+      "id": "gang_tay_ginyu_vang",
+      "name": "Găng tay Ginyu vàng",
+      "kind": "accessory",
+      "rarity": "LEGENDARY",
+      "base_atk": 30,
+      "base_spd": 15,
+      "base_crit": 6,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "energy_steal",
+          "target": "primary",
+          "coeff": 1
+        },
+        "skill_name": "Đổi xác",
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 280000
+    },
+    {
+      "id": "giap_frieza_vang",
+      "name": "Giáp Frieza vàng",
+      "kind": "armor",
+      "rarity": "LEGENDARY",
+      "base_hp": 248,
+      "base_def": 22,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "damage_taken",
+          "target": "self",
+          "when": "self_hp_above",
+          "when_value": 0.5
+        },
+        "skill_name": "Vỏ vàng áp đảo",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            -0.28,
+            -0.18
+          ]
+        }
+      },
+      "value_xu": 282000
+    },
+    {
+      "id": "noi_gang",
+      "name": "Nồi gang",
+      "kind": "armor",
+      "rarity": "COMMON",
+      "pct_hp": 12,
+      "pct_def": 20,
+      "pct_spd": -8,
+      "value_xu": 18000
+    },
+    {
+      "id": "dao_bau",
+      "name": "Dao bầu",
+      "kind": "weapon",
+      "rarity": "COMMON",
+      "base_crit": 2,
+      "pct_atk": 15,
+      "pct_hp": -10,
+      "pct_def": -8,
+      "value_xu": 18000
+    },
+    {
+      "id": "dep_to_ong",
+      "name": "Dép tổ ong",
+      "kind": "accessory",
+      "rarity": "COMMON",
+      "base_dodge": 3,
+      "pct_spd": 10,
+      "pct_hp": -12,
+      "value_xu": 18000
+    },
+    {
+      "id": "giap_tam_sat",
+      "name": "Mái tôn",
+      "kind": "armor",
+      "rarity": "rare",
+      "pct_hp": 18,
+      "pct_def": 35,
+      "pct_spd": -12,
+      "passive": {
+        "trigger": "ally_hit",
+        "scale_stat": "def",
+        "skill_params": {
+          "effect": "shield",
+          "target": "hit_ally",
+          "max_uses": 4
+        },
+        "skill_name": "Mái che cho đồng đội",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.4,
+            0.6
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "mai_rua",
+      "name": "Mai rùa",
+      "kind": "armor",
+      "rarity": "RARE",
+      "pct_hp": 35,
+      "pct_def": 20,
+      "pct_atk": -15,
+      "pct_spd": -10,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "shield",
+          "target": "self",
+          "chance": 0.5
+        },
+        "skill_name": "Rụt cổ",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.05
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "kiem_thuy_tinh",
+      "name": "Kiếm thủy tinh",
+      "kind": "weapon",
+      "rarity": "RARE",
+      "base_crit": 6,
+      "pct_atk": 25,
+      "pct_hp": -15,
+      "pct_def": -10,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "crit_damage",
+          "target": "self",
+          "when": "self_hp_above",
+          "when_value": 0.6
+        },
+        "skill_name": "Lưỡi kiếm nguyên vẹn",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "giay_long_vu",
+      "name": "Giày lông vũ",
+      "kind": "accessory",
+      "rarity": "RARE",
+      "base_dodge": 6,
+      "pct_spd": 15,
+      "pct_hp": -20,
+      "passive": {
+        "trigger": "dodge",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "haste",
+          "target": "self",
+          "turns": 2
+        },
+        "skill_name": "Nhẹ như lông",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.1
+          ]
+        }
+      },
+      "value_xu": 50000
+    },
+    {
+      "id": "riu_cuong_chien",
+      "name": "Rìu cuồng chiến",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_crit": 4,
+      "pct_atk": 35,
+      "pct_def": -25,
+      "pct_hp": -15,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self",
+          "permanent": true,
+          "stack_max": 5
+        },
+        "skill_name": "Máu điên",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.08
+          ]
+        }
+      },
+      "value_xu": 115000
+    },
+    {
+      "id": "giap_chi_nang",
+      "name": "Giáp chì nặng",
+      "kind": "armor",
+      "rarity": "EPIC",
+      "pct_hp": 30,
+      "pct_def": 45,
+      "pct_spd": -20,
+      "passive": {
+        "trigger": "round_start",
+        "scale_stat": "DEF",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "target": "self",
+          "permanent": true,
+          "stack_max": 6
+        },
+        "skill_name": "Nặng trịch",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.05
+          ]
+        }
+      },
+      "value_xu": 115000
+    },
+    {
+      "id": "phao_tay",
+      "name": "Pháo tay",
+      "kind": "weapon",
+      "rarity": "EPIC",
+      "base_crit": 8,
+      "pct_atk": 35,
+      "pct_spd": -20,
+      "passive": {
+        "trigger": "attack",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage",
+          "target": "enemy_back",
+          "chance": 0.35
+        },
+        "skill_name": "Đạn lan",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.35,
+            0.55
+          ]
+        }
+      },
+      "value_xu": 115000
+    },
+    {
+      "id": "ao_choang_bong_ma",
+      "name": "Áo choàng bóng ma",
+      "kind": "accessory",
+      "rarity": "EPIC",
+      "base_dodge": 10,
+      "base_crit": 4,
+      "pct_spd": 20,
+      "pct_hp": -25,
+      "passive": {
+        "trigger": "dodge",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "empower",
+          "target": "self",
+          "permanent": true,
+          "stack_max": 4
+        },
+        "skill_name": "Bóng ma",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.08
+          ]
+        }
+      },
+      "value_xu": 115000
+    },
+    {
+      "id": "nhan_huyet_khe",
+      "name": "Nhẫn huyết khế",
+      "kind": "accessory",
+      "rarity": "EPIC",
+      "base_crit": 6,
+      "pct_atk": 20,
+      "pct_spd": 8,
+      "pct_hp": -25,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "life_steal",
+          "target": "self"
+        },
+        "skill_name": "Khế ước máu",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.12,
+            0.18
+          ]
+        }
+      },
+      "value_xu": 115000
+    },
+    {
+      "id": "bua_nguyen",
+      "name": "Bùa nguyền",
+      "kind": "accessory",
+      "rarity": "EPIC",
+      "base_crit": 5,
+      "base_dodge": 3,
+      "pct_atk": 15,
+      "pct_spd": 10,
+      "pct_hp": -30,
+      "passive": {
+        "trigger": "passive",
+        "scale_stat": "atk",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "target": "self",
+          "when": "target_has_status",
+          "when_status": "weak"
+        },
+        "skill_name": "Nguyền rủa kẻ suy yếu",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      },
+      "value_xu": 115000
+    },
+    {
+      "id": "kiem_tu_than",
+      "name": "Kiếm tử thần",
+      "kind": "weapon",
+      "rarity": "LEGENDARY",
+      "base_crit": 14,
+      "pct_atk": 45,
+      "pct_hp": -30,
+      "pct_def": -20,
+      "passive": {
+        "trigger": "strike",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "execute",
+          "target": "primary",
+          "coeff": 1.2
+        },
+        "skill_name": "Lưỡi hái",
+        "roll": {
+          "field": "threshold",
+          "range": [
+            0.15,
+            0.22
+          ]
+        }
+      },
+      "value_xu": 290000
+    },
+    {
+      "id": "thanh_luy_di_dong",
+      "name": "Thành lũy di động",
+      "kind": "armor",
+      "rarity": "LEGENDARY",
+      "pct_hp": 50,
+      "pct_def": 60,
+      "pct_spd": -25,
+      "pct_atk": -15,
+      "passive": {
+        "trigger": "ally_hit",
+        "scale_stat": "DEF",
+        "skill_params": {
+          "effect": "shield",
+          "target": "hit_ally",
+          "chance": 0.5
+        },
+        "skill_name": "Tường thành",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.6,
+            0.9
+          ]
+        }
+      },
+      "value_xu": 290000
+    },
+    {
+      "id": "mat_na_cuong_no",
+      "name": "Mặt nạ cuồng nộ",
+      "kind": "accessory",
+      "rarity": "LEGENDARY",
+      "base_crit": 8,
+      "pct_atk": 30,
+      "pct_spd": 20,
+      "pct_def": -30,
+      "pct_hp": -20,
+      "passive": {
+        "trigger": "hit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "empower",
+          "target": "self",
+          "permanent": true,
+          "stack_max": 8
+        },
+        "skill_name": "Càng đau càng điên",
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.04,
+            0.06
+          ]
+        }
+      },
+      "value_xu": 290000
+    }
+  ]
+
+}

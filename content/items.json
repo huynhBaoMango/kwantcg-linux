@@ -1,0 +1,1156 @@
+{
+  "_comment": "rarity: màu khung card (với linh kiện: rèn được gear cùng độ hiếm). pack_weight: tỉ trọng ra trong pack (0 = không ra). price_xu 0 = không bán ở Cửa hàng. tier: hầm tier mấy mới dùng được (0 = mọi hầm). family: cùng loại qua các tier (mỗi loại buff chỉ chạy một cái). Hiệu ứng cộng thẳng: hp (hồi/hồi sinh), atk/def/spd/crit/dodge/shield/exp (buff, duration = số trận), xu (fortune, duration = số phòng), danger (đuốc). replaces: id cũ đã bỏ, đổi sang món này khi bot khởi động. VALUABLE: đồ bán lấy Xu từ giá trị thấp đến cao (tiền cổ, khoáng vật, tác phẩm, kỷ vật); không dùng concept vũ khí, giáp, phụ kiện hay vật phẩm chiến đấu. Giữ id cũ để tương thích kho, bộ sưu tập, bảng rơi và giá chợ theo ngày.",
+  "items": [
+    {
+      "id": "thuoc_hoi",
+      "name": "Thuốc hồi I",
+      "icon": "🧪",
+      "effect": "HEAL",
+      "tier": 1,
+      "family": "thuoc_hoi",
+      "hp": 250,
+      "price_xu": 45000,
+      "rarity": "COMMON",
+      "pack_weight": 40,
+      "replaces": [
+        "banh_mi_pate",
+        "tra_sua",
+        "com_tam"
+      ]
+    },
+    {
+      "id": "thuoc_hoi_2",
+      "name": "Thuốc hồi II",
+      "icon": "🧪",
+      "effect": "HEAL",
+      "tier": 2,
+      "family": "thuoc_hoi",
+      "hp": 450,
+      "price_xu": 96000,
+      "rarity": "RARE",
+      "pack_weight": 14
+    },
+    {
+      "id": "thuoc_hoi_3",
+      "name": "Thuốc hồi III",
+      "icon": "🧪",
+      "effect": "HEAL",
+      "tier": 3,
+      "family": "thuoc_hoi",
+      "hp": 700,
+      "price_xu": 195000,
+      "rarity": "EPIC",
+      "pack_weight": 5
+    },
+    {
+      "id": "lau_thai",
+      "name": "Nồi lẩu I",
+      "icon": "🍲",
+      "effect": "heal_all",
+      "tier": 1,
+      "family": "lau_thai",
+      "hp": 150,
+      "price_xu": 120000,
+      "rarity": "COMMON",
+      "pack_weight": 15,
+      "replaces": [
+        "mi_tom",
+        "ve_buffet"
+      ]
+    },
+    {
+      "id": "lau_thai_2",
+      "name": "Nồi lẩu II",
+      "icon": "🍲",
+      "effect": "heal_all",
+      "tier": 2,
+      "family": "lau_thai",
+      "hp": 270,
+      "price_xu": 255000,
+      "rarity": "RARE",
+      "pack_weight": 6
+    },
+    {
+      "id": "lau_thai_3",
+      "name": "Nồi lẩu III",
+      "icon": "🍲",
+      "effect": "heal_all",
+      "tier": 3,
+      "family": "lau_thai",
+      "hp": 420,
+      "price_xu": 510000,
+      "rarity": "EPIC",
+      "pack_weight": 2
+    },
+    {
+      "id": "cuon_cuu_ho",
+      "name": "Cuộn cứu hộ I",
+      "icon": "📜",
+      "effect": "REVIVE",
+      "tier": 1,
+      "family": "cuon_cuu_ho",
+      "hp": 300,
+      "price_xu": 120000,
+      "rarity": "COMMON",
+      "pack_weight": 10,
+      "replaces": [
+        "dau_gio",
+        "may_soc_tim",
+        "cuoc_goi_cua_me"
+      ]
+    },
+    {
+      "id": "cuon_cuu_ho_2",
+      "name": "Cuộn cứu hộ II",
+      "icon": "📜",
+      "effect": "REVIVE",
+      "tier": 2,
+      "family": "cuon_cuu_ho",
+      "hp": 550,
+      "price_xu": 255000,
+      "rarity": "RARE",
+      "pack_weight": 4
+    },
+    {
+      "id": "cuon_cuu_ho_3",
+      "name": "Cuộn cứu hộ III",
+      "icon": "📜",
+      "effect": "REVIVE",
+      "tier": 3,
+      "family": "cuon_cuu_ho",
+      "hp": 850,
+      "price_xu": 510000,
+      "rarity": "EPIC",
+      "pack_weight": 1
+    },
+    {
+      "id": "ca_phe_den",
+      "name": "Cà phê I",
+      "icon": "☕",
+      "effect": "BUFF",
+      "tier": 1,
+      "family": "ca_phe_den",
+      "atk": 25,
+      "spd": 10,
+      "duration": 1,
+      "price_xu": 60000,
+      "rarity": "COMMON",
+      "pack_weight": 20,
+      "replaces": [
+        "bo_huc",
+        "ca_phe_sua_da",
+        "giay_ba_ta"
+      ]
+    },
+    {
+      "id": "ca_phe_den_2",
+      "name": "Cà phê II",
+      "icon": "☕",
+      "effect": "BUFF",
+      "tier": 2,
+      "family": "ca_phe_den",
+      "atk": 45,
+      "spd": 18,
+      "duration": 1,
+      "price_xu": 126000,
+      "rarity": "RARE",
+      "pack_weight": 8
+    },
+    {
+      "id": "ca_phe_den_3",
+      "name": "Cà phê III",
+      "icon": "☕",
+      "effect": "BUFF",
+      "tier": 3,
+      "family": "ca_phe_den",
+      "atk": 70,
+      "spd": 28,
+      "duration": 1,
+      "price_xu": 255000,
+      "rarity": "EPIC",
+      "pack_weight": 3
+    },
+    {
+      "id": "giap_xop",
+      "name": "Giáp xốp I",
+      "icon": "📦",
+      "effect": "BUFF",
+      "tier": 1,
+      "family": "giap_xop",
+      "def": 15,
+      "shield": 150,
+      "duration": 1,
+      "price_xu": 75000,
+      "rarity": "COMMON",
+      "pack_weight": 18,
+      "replaces": [
+        "ao_mua_giay",
+        "mu_bao_hiem",
+        "nap_noi"
+      ]
+    },
+    {
+      "id": "giap_xop_2",
+      "name": "Giáp xốp II",
+      "icon": "📦",
+      "effect": "BUFF",
+      "tier": 2,
+      "family": "giap_xop",
+      "def": 28,
+      "shield": 280,
+      "duration": 1,
+      "price_xu": 156000,
+      "rarity": "RARE",
+      "pack_weight": 7
+    },
+    {
+      "id": "giap_xop_3",
+      "name": "Giáp xốp III",
+      "icon": "📦",
+      "effect": "BUFF",
+      "tier": 3,
+      "family": "giap_xop",
+      "def": 45,
+      "shield": 450,
+      "duration": 1,
+      "price_xu": 315000,
+      "rarity": "EPIC",
+      "pack_weight": 3
+    },
+    {
+      "id": "bua_may_man",
+      "name": "Bùa may mắn I",
+      "icon": "🧧",
+      "effect": "BUFF",
+      "tier": 1,
+      "family": "bua_may_man",
+      "crit": 10,
+      "dodge": 5,
+      "duration": 2,
+      "price_xu": 105000,
+      "rarity": "COMMON",
+      "pack_weight": 8,
+      "replaces": [
+        "kinh_ram",
+        "ao_chong_nang"
+      ]
+    },
+    {
+      "id": "bua_may_man_2",
+      "name": "Bùa may mắn II",
+      "icon": "🧧",
+      "effect": "BUFF",
+      "tier": 2,
+      "family": "bua_may_man",
+      "crit": 14,
+      "dodge": 7,
+      "duration": 2,
+      "price_xu": 225000,
+      "rarity": "RARE",
+      "pack_weight": 3
+    },
+    {
+      "id": "bua_may_man_3",
+      "name": "Bùa may mắn III",
+      "icon": "🧧",
+      "effect": "BUFF",
+      "tier": 3,
+      "family": "bua_may_man",
+      "crit": 18,
+      "dodge": 9,
+      "duration": 2,
+      "price_xu": 450000,
+      "rarity": "EPIC",
+      "pack_weight": 1
+    },
+    {
+      "id": "duoc",
+      "name": "Đuốc I",
+      "icon": "🔦",
+      "effect": "TORCH",
+      "tier": 1,
+      "family": "duoc",
+      "danger": 2,
+      "price_xu": 60000,
+      "rarity": "COMMON",
+      "pack_weight": 25,
+      "replaces": [
+        "den_pin"
+      ]
+    },
+    {
+      "id": "duoc_2",
+      "name": "Đuốc II",
+      "icon": "🔦",
+      "effect": "TORCH",
+      "tier": 2,
+      "family": "duoc",
+      "danger": 3,
+      "price_xu": 126000,
+      "rarity": "RARE",
+      "pack_weight": 10
+    },
+    {
+      "id": "duoc_3",
+      "name": "Đuốc III",
+      "icon": "🔦",
+      "effect": "TORCH",
+      "tier": 3,
+      "family": "duoc",
+      "danger": 4,
+      "price_xu": 255000,
+      "rarity": "EPIC",
+      "pack_weight": 4
+    },
+    {
+      "id": "bao_tai_dua",
+      "name": "Bao tải dứa I",
+      "icon": "🛍️",
+      "effect": "FORTUNE",
+      "tier": 1,
+      "family": "bao_tai_dua",
+      "xu": 20000,
+      "duration": 3,
+      "price_xu": 135000,
+      "rarity": "COMMON",
+      "pack_weight": 8,
+      "replaces": [
+        "kinh_lup"
+      ]
+    },
+    {
+      "id": "bao_tai_dua_2",
+      "name": "Bao tải dứa II",
+      "icon": "🛍️",
+      "effect": "FORTUNE",
+      "tier": 2,
+      "family": "bao_tai_dua",
+      "xu": 40000,
+      "duration": 3,
+      "price_xu": 270000,
+      "rarity": "RARE",
+      "pack_weight": 3
+    },
+    {
+      "id": "bao_tai_dua_3",
+      "name": "Bao tải dứa III",
+      "icon": "🛍️",
+      "effect": "FORTUNE",
+      "tier": 3,
+      "family": "bao_tai_dua",
+      "xu": 75000,
+      "duration": 3,
+      "price_xu": 510000,
+      "rarity": "EPIC",
+      "pack_weight": 1
+    },
+    {
+      "id": "sach_self_help",
+      "name": "Sách self-help I",
+      "icon": "📘",
+      "effect": "BUFF",
+      "tier": 1,
+      "family": "sach_self_help",
+      "exp": 30,
+      "duration": 3,
+      "price_xu": 90000,
+      "rarity": "COMMON",
+      "pack_weight": 10
+    },
+    {
+      "id": "sach_self_help_2",
+      "name": "Sách self-help II",
+      "icon": "📘",
+      "effect": "BUFF",
+      "tier": 2,
+      "family": "sach_self_help",
+      "exp": 60,
+      "duration": 3,
+      "price_xu": 195000,
+      "rarity": "RARE",
+      "pack_weight": 4
+    },
+    {
+      "id": "sach_self_help_3",
+      "name": "Sách self-help III",
+      "icon": "📘",
+      "effect": "BUFF",
+      "tier": 3,
+      "family": "sach_self_help",
+      "exp": 100,
+      "duration": 3,
+      "price_xu": 390000,
+      "rarity": "EPIC",
+      "pack_weight": 1
+    },
+    {
+      "id": "cuon_thoat",
+      "name": "Cuộn thoát",
+      "icon": "🏃",
+      "effect": "ESCAPE",
+      "price_xu": 105000,
+      "rarity": "RARE",
+      "pack_weight": 15
+    },
+    {
+      "id": "bang_ca_nhan",
+      "name": "Băng cá nhân",
+      "icon": "🩹",
+      "effect": "cure_wound",
+      "price_xu": 75000,
+      "rarity": "COMMON",
+      "pack_weight": 20,
+      "cure_minutes": 60
+    },
+    {
+      "id": "bang_gac_y_te",
+      "name": "Băng gạc y tế",
+      "icon": "🩹",
+      "effect": "cure_wound",
+      "price_xu": 270000,
+      "rarity": "RARE",
+      "pack_weight": 8,
+      "cure_minutes": 180
+    },
+    {
+      "id": "bo_so_cuu",
+      "name": "Bộ sơ cứu",
+      "icon": "⛑️",
+      "effect": "cure_wound",
+      "price_xu": 750000,
+      "rarity": "EPIC",
+      "pack_weight": 3
+    },
+    {
+      "id": "linh_kien_common",
+      "name": "Linh kiện thường",
+      "icon": "🔩",
+      "effect": "MATERIAL",
+      "price_xu": 10000,
+      "rarity": "COMMON",
+      "pack_weight": 12
+    },
+    {
+      "id": "linh_kien_rare",
+      "name": "Linh kiện hiếm",
+      "icon": "🔩",
+      "effect": "MATERIAL",
+      "price_xu": 0,
+      "rarity": "RARE",
+      "pack_weight": 0
+    },
+    {
+      "id": "linh_kien_epic",
+      "name": "Linh kiện sử thi",
+      "icon": "🔩",
+      "effect": "MATERIAL",
+      "price_xu": 0,
+      "rarity": "EPIC",
+      "pack_weight": 0
+    },
+    {
+      "id": "da_tien_hoa",
+      "name": "Đá tiến hóa",
+      "icon": "💠",
+      "effect": "MATERIAL",
+      "price_xu": 0,
+      "rarity": "EPIC",
+      "pack_weight": 0
+    },
+    {
+      "id": "linh_kien_legendary",
+      "name": "Linh kiện huyền thoại",
+      "icon": "🔩",
+      "effect": "MATERIAL",
+      "price_xu": 0,
+      "rarity": "LEGENDARY",
+      "pack_weight": 0
+    },
+    {
+      "id": "tinh_chat_xanh",
+      "name": "Tinh chất xanh",
+      "icon": "🧪",
+      "effect": "VALUABLE",
+      "rarity": "COMMON",
+      "value_xu": 12000
+    },
+    {
+      "id": "dong_vang",
+      "name": "Đồng vàng",
+      "icon": "🪙",
+      "effect": "VALUABLE",
+      "rarity": "COMMON",
+      "value_xu": 18000
+    },
+    {
+      "id": "bua_rung",
+      "name": "Pha lê rừng",
+      "icon": "🔹",
+      "effect": "VALUABLE",
+      "rarity": "RARE",
+      "value_xu": 65000
+    },
+    {
+      "id": "quang_vang_nether",
+      "name": "Quặng vàng Nether",
+      "icon": "✨",
+      "effect": "VALUABLE",
+      "rarity": "EPIC",
+      "value_xu": 450000
+    },
+    {
+      "id": "penta_kill",
+      "name": "Kỷ niệm chương Penta Kill",
+      "icon": "🏅",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 5500000
+    },
+    {
+      "id": "ngoc_bo_tro",
+      "name": "Mảnh ngọc lam",
+      "icon": "🔷",
+      "effect": "VALUABLE",
+      "rarity": "COMMON",
+      "value_xu": 25000
+    },
+    {
+      "id": "bot_lua",
+      "name": "Bột lửa",
+      "icon": "🔥",
+      "effect": "VALUABLE",
+      "rarity": "RARE",
+      "value_xu": 120000
+    },
+    {
+      "id": "bang_dan_vang",
+      "name": "Thỏi vàng",
+      "icon": "🟨",
+      "effect": "VALUABLE",
+      "rarity": "EPIC",
+      "value_xu": 800000
+    },
+    {
+      "id": "bo_giap_netherite",
+      "name": "Khối Netherite nguyên chất",
+      "icon": "🧱",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 10000000
+    },
+    {
+      "id": "da_nether",
+      "name": "Đá Nether",
+      "icon": "🧱",
+      "effect": "VALUABLE",
+      "rarity": "RARE",
+      "value_xu": 200000
+    },
+    {
+      "id": "gang_tay_the_thao",
+      "name": "Đồng xu Major bạc",
+      "icon": "🪙",
+      "effect": "VALUABLE",
+      "rarity": "EPIC",
+      "value_xu": 1300000
+    },
+    {
+      "id": "gang_tay_crimson",
+      "name": "Hồng ngọc Crimson",
+      "icon": "🔴",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 18000000
+    },
+    {
+      "id": "skin_huyen_thoai",
+      "name": "Tranh cổ Summoner's Rift",
+      "icon": "🖼️",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 9000000
+    },
+    {
+      "id": "cup_cktg",
+      "name": "Cúp CKTG",
+      "icon": "🏆",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 10000000
+    },
+    {
+      "id": "acc_thach_dau",
+      "name": "Kỷ niệm chương Thách Đấu",
+      "icon": "🏅",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 11000000
+    },
+    {
+      "id": "ngoi_sao_nether",
+      "name": "Ngôi sao Nether",
+      "icon": "⭐",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 16000000
+    },
+    {
+      "id": "vuong_mien_wither",
+      "name": "Tượng Wither cổ",
+      "icon": "🗿",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 18000000
+    },
+    {
+      "id": "loi_nether",
+      "name": "Lõi Nether",
+      "icon": "🔮",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 20000000
+    },
+    {
+      "id": "da_dia_nguc_toi_thuong",
+      "name": "Đá Địa Ngục tối thượng",
+      "icon": "🪨",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 28000000
+    },
+    {
+      "id": "trung_ender_dragon",
+      "name": "Trứng Ender Dragon",
+      "icon": "🥚",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 30000000
+    },
+    {
+      "id": "dao_butterfly",
+      "name": "Hổ phách cánh bướm",
+      "icon": "🟠",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 34000000
+    },
+    {
+      "id": "trang_bi_doran",
+      "name": "Đồng xu Doran cổ",
+      "icon": "🪙",
+      "effect": "VALUABLE",
+      "rarity": "COMMON",
+      "value_xu": 45000
+    },
+    {
+      "id": "trai_blaze",
+      "name": "Tinh thể Blaze",
+      "icon": "🔶",
+      "effect": "VALUABLE",
+      "rarity": "RARE",
+      "value_xu": 650000
+    },
+    {
+      "id": "giap_kevlar",
+      "name": "Đĩa nhạc Dust 2 hiếm",
+      "icon": "💿",
+      "effect": "VALUABLE",
+      "rarity": "EPIC",
+      "value_xu": 4000000
+    },
+    {
+      "id": "gang_tay_pandora",
+      "name": "Bình gốm Pandora cổ",
+      "icon": "🏺",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 58000000
+    },
+    {
+      "id": "awp_gungnir",
+      "name": "Bản thảo Gungnir cổ",
+      "icon": "📜",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 62000000
+    },
+    {
+      "id": "kho_skin_cs2",
+      "name": "Bộ tem CS2 nguyên bản",
+      "icon": "🗃️",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 66000000
+    },
+    {
+      "id": "ngoc_ender",
+      "name": "Ngọc Ender",
+      "icon": "🟣",
+      "effect": "VALUABLE",
+      "rarity": "COMMON",
+      "value_xu": 90000
+    },
+    {
+      "id": "dao_karambit",
+      "name": "Huy chương chiến dịch",
+      "icon": "🎖️",
+      "effect": "VALUABLE",
+      "rarity": "RARE",
+      "value_xu": 1500000
+    },
+    {
+      "id": "awp_dragon_lore",
+      "name": "Lót chuột Dragon Lore",
+      "icon": "🖼️",
+      "effect": "valuable",
+      "rarity": "epic",
+      "value_xu": 8000000
+    },
+    {
+      "id": "acc_global_elite",
+      "name": "Kỷ niệm chương Global Elite",
+      "icon": "🏅",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 110000000
+    },
+    {
+      "id": "cup_major",
+      "name": "Cúp Major",
+      "icon": "🏆",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 125000000
+    },
+    {
+      "id": "skin_ruby",
+      "name": "Khối ruby sao",
+      "icon": "💎",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 140000000
+    },
+    {
+      "id": "thuoc_hoi_4",
+      "name": "Thuốc hồi IV",
+      "icon": "🧪",
+      "effect": "HEAL",
+      "tier": 4,
+      "family": "thuoc_hoi",
+      "hp": 1050,
+      "price_xu": 390000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 2
+    },
+    {
+      "id": "thuoc_hoi_5",
+      "name": "Thuốc hồi V",
+      "icon": "🧪",
+      "effect": "HEAL",
+      "tier": 5,
+      "family": "thuoc_hoi",
+      "hp": 1500,
+      "price_xu": 780000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 1
+    },
+    {
+      "id": "lau_thai_4",
+      "name": "Nồi lẩu IV",
+      "icon": "🍲",
+      "effect": "heal_all",
+      "tier": 4,
+      "family": "lau_thai",
+      "hp": 620,
+      "price_xu": 1000000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 2
+    },
+    {
+      "id": "lau_thai_5",
+      "name": "Nồi lẩu V",
+      "icon": "🍲",
+      "effect": "heal_all",
+      "tier": 5,
+      "family": "lau_thai",
+      "hp": 900,
+      "price_xu": 2000000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 1
+    },
+    {
+      "id": "cuon_cuu_ho_4",
+      "name": "Cuộn cứu hộ IV",
+      "icon": "📜",
+      "effect": "REVIVE",
+      "tier": 4,
+      "family": "cuon_cuu_ho",
+      "hp": 1250,
+      "price_xu": 1000000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 2
+    },
+    {
+      "id": "cuon_cuu_ho_5",
+      "name": "Cuộn cứu hộ V",
+      "icon": "📜",
+      "effect": "REVIVE",
+      "tier": 5,
+      "family": "cuon_cuu_ho",
+      "hp": 1800,
+      "price_xu": 2000000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 1
+    },
+    {
+      "id": "ca_phe_den_4",
+      "name": "Cà phê IV",
+      "icon": "☕",
+      "effect": "BUFF",
+      "tier": 4,
+      "family": "ca_phe_den",
+      "atk": 100,
+      "spd": 40,
+      "duration": 1,
+      "price_xu": 510000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 2
+    },
+    {
+      "id": "ca_phe_den_5",
+      "name": "Cà phê V",
+      "icon": "☕",
+      "effect": "BUFF",
+      "tier": 5,
+      "family": "ca_phe_den",
+      "atk": 140,
+      "spd": 56,
+      "duration": 1,
+      "price_xu": 1020000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 1
+    },
+    {
+      "id": "giap_xop_4",
+      "name": "Giáp xốp IV",
+      "icon": "📦",
+      "effect": "BUFF",
+      "tier": 4,
+      "family": "giap_xop",
+      "def": 65,
+      "shield": 650,
+      "duration": 1,
+      "price_xu": 630000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 2
+    },
+    {
+      "id": "giap_xop_5",
+      "name": "Giáp xốp V",
+      "icon": "📦",
+      "effect": "BUFF",
+      "tier": 5,
+      "family": "giap_xop",
+      "def": 90,
+      "shield": 900,
+      "duration": 1,
+      "price_xu": 1250000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 1
+    },
+    {
+      "id": "bua_may_man_4",
+      "name": "Bùa may mắn IV",
+      "icon": "🧧",
+      "effect": "BUFF",
+      "tier": 4,
+      "family": "bua_may_man",
+      "crit": 26,
+      "dodge": 13,
+      "duration": 2,
+      "price_xu": 900000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 2
+    },
+    {
+      "id": "bua_may_man_5",
+      "name": "Bùa may mắn V",
+      "icon": "🧧",
+      "effect": "BUFF",
+      "tier": 5,
+      "family": "bua_may_man",
+      "crit": 36,
+      "dodge": 18,
+      "duration": 2,
+      "price_xu": 1800000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 1
+    },
+    {
+      "id": "duoc_4",
+      "name": "Đuốc IV",
+      "icon": "🔦",
+      "effect": "TORCH",
+      "tier": 4,
+      "family": "duoc",
+      "danger": 5,
+      "price_xu": 510000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 2
+    },
+    {
+      "id": "duoc_5",
+      "name": "Đuốc V",
+      "icon": "🔦",
+      "effect": "TORCH",
+      "tier": 5,
+      "family": "duoc",
+      "danger": 6,
+      "price_xu": 1020000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 1
+    },
+    {
+      "id": "bao_tai_dua_4",
+      "name": "Bao tải dứa IV",
+      "icon": "🛍️",
+      "effect": "FORTUNE",
+      "tier": 4,
+      "family": "bao_tai_dua",
+      "xu": 150000,
+      "duration": 3,
+      "price_xu": 1000000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 2
+    },
+    {
+      "id": "bao_tai_dua_5",
+      "name": "Bao tải dứa V",
+      "icon": "🛍️",
+      "effect": "FORTUNE",
+      "tier": 5,
+      "family": "bao_tai_dua",
+      "xu": 300000,
+      "duration": 3,
+      "price_xu": 2000000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 1
+    },
+    {
+      "id": "sach_self_help_4",
+      "name": "Sách self-help IV",
+      "icon": "📘",
+      "effect": "BUFF",
+      "tier": 4,
+      "family": "sach_self_help",
+      "exp": 200,
+      "duration": 3,
+      "price_xu": 780000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 2
+    },
+    {
+      "id": "sach_self_help_5",
+      "name": "Sách self-help V",
+      "icon": "📘",
+      "effect": "BUFF",
+      "tier": 5,
+      "family": "sach_self_help",
+      "exp": 320,
+      "duration": 3,
+      "price_xu": 1560000,
+      "rarity": "LEGENDARY",
+      "pack_weight": 1
+    },
+    {
+      "id": "banh_mi_ramen",
+      "name": "Thẻ tiếp tế Làng Mưa",
+      "icon": "🎟️",
+      "effect": "VALUABLE",
+      "rarity": "COMMON",
+      "value_xu": 45000
+    },
+    {
+      "id": "ao_choang_hokage",
+      "name": "Tiền cổ Làng Mưa",
+      "icon": "🪙",
+      "effect": "VALUABLE",
+      "rarity": "RARE",
+      "value_xu": 650000
+    },
+    {
+      "id": "kunai_huyen_thoai",
+      "name": "Nhẫn Akatsuki thất lạc",
+      "icon": "🗿",
+      "effect": "VALUABLE",
+      "rarity": "EPIC",
+      "value_xu": 4000000
+    },
+    {
+      "id": "cuon_an_cuu_vi",
+      "name": "Bản đồ căn cứ Akatsuki",
+      "icon": "🖼️",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 58000000
+    },
+    {
+      "id": "mu_hokage",
+      "name": "Ấn triện thủ lĩnh Làng Mưa",
+      "icon": "🏛️",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 62000000
+    },
+    {
+      "id": "bi_kip_lang_la",
+      "name": "Hồ sơ mật Làng Mưa",
+      "icon": "📚",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 66000000
+    },
+    {
+      "id": "da_namek",
+      "name": "Đá Namek",
+      "icon": "🪨",
+      "effect": "VALUABLE",
+      "rarity": "COMMON",
+      "value_xu": 90000
+    },
+    {
+      "id": "rong_than_porunga",
+      "name": "Tượng sứ Porunga",
+      "icon": "🐉",
+      "effect": "VALUABLE",
+      "rarity": "RARE",
+      "value_xu": 1300000
+    },
+    {
+      "id": "giap_saiyan",
+      "name": "Thiên thạch Saiyan",
+      "icon": "☄️",
+      "effect": "VALUABLE",
+      "rarity": "EPIC",
+      "value_xu": 8000000
+    },
+    {
+      "id": "ngoc_rong_4_sao",
+      "name": "Ngọc rồng 4 sao",
+      "icon": "🔴",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 110000000
+    },
+    {
+      "id": "ngoc_rong_namek",
+      "name": "Ngọc rồng Namek",
+      "icon": "💎",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 125000000
+    },
+    {
+      "id": "suc_manh_super_saiyan",
+      "name": "Tượng vàng Super Saiyan",
+      "icon": "🗿",
+      "effect": "VALUABLE",
+      "rarity": "LEGENDARY",
+      "value_xu": 140000000
+    }
+  ],
+  "sets": [
+    {
+      "id": "suu_tap_do_co_rift",
+      "name": "Bộ sưu tập đồ cổ Rift",
+      "items": [
+        "tinh_chat_xanh",
+        "dong_vang",
+        "bua_rung",
+        "ngoc_bo_tro"
+      ],
+      "reward_xu": 500000
+    },
+    {
+      "id": "suu_tap_tan_thu",
+      "name": "Bộ sưu tập tân thủ",
+      "items": [
+        "quang_vang_nether",
+        "tinh_chat_xanh",
+        "penta_kill"
+      ],
+      "reward_xu": 1500000
+    },
+    {
+      "id": "suu_tap_cong_nghe",
+      "name": "Bộ sưu tập công nghệ",
+      "items": [
+        "ngoc_bo_tro",
+        "bot_lua",
+        "bang_dan_vang",
+        "bo_giap_netherite"
+      ],
+      "reward_xu": 3000000
+    },
+    {
+      "id": "suu_tap_suu_tam",
+      "name": "Bộ sưu tập sưu tầm",
+      "items": [
+        "da_nether",
+        "gang_tay_the_thao",
+        "gang_tay_crimson"
+      ],
+      "reward_xu": 6000000
+    },
+    {
+      "id": "doc_dac_rift",
+      "name": "Bộ sưu tập Summoner's Rift",
+      "items": [
+        "skin_huyen_thoai",
+        "cup_cktg",
+        "acc_thach_dau"
+      ],
+      "reward_xu": 20000000
+    },
+    {
+      "id": "doc_dac_nether",
+      "name": "Bộ sưu tập Nether",
+      "items": [
+        "ngoi_sao_nether",
+        "vuong_mien_wither",
+        "loi_nether"
+      ],
+      "reward_xu": 60000000
+    },
+    {
+      "id": "doc_dac_dust2",
+      "name": "Bộ sưu tập Dust 2",
+      "items": [
+        "dao_butterfly",
+        "gang_tay_pandora",
+        "awp_gungnir"
+      ],
+      "reward_xu": 120000000
+    },
+    {
+      "id": "doc_dac_lang_la",
+      "name": "Bộ sưu tập Làng Mưa",
+      "items": [
+        "cuon_an_cuu_vi",
+        "mu_hokage",
+        "bi_kip_lang_la"
+      ],
+      "reward_xu": 90000000
+    },
+    {
+      "id": "doc_dac_namek",
+      "name": "Bộ sưu tập Namek",
+      "items": [
+        "ngoc_rong_4_sao",
+        "ngoc_rong_namek",
+        "suc_manh_super_saiyan"
+      ],
+      "reward_xu": 160000000
+    }
+  ]
+}

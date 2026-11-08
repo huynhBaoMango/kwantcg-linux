@@ -1,0 +1,1730 @@
+{
+  "dungeons": [
+    {
+      "id": "summoners_rift",
+      "name": "Summoner's Rift",
+      "tier": 1,
+      "recommended_level": 1,
+      "monsters": [
+        "linh_danh_gan",
+        "linh_ban_xa",
+        "linh_phep",
+        "linh_sieu",
+        "linh_cong_thanh",
+        "tru_canh",
+        "tru_phu",
+        "tru_noi",
+        "bo_canh_cung",
+        "soi_ma",
+        "chim_rung",
+        "coc_xanh",
+        "cua_song",
+        "nguoi_da_xanh",
+        "bui_gai_do",
+        "ma_rung",
+        "doi_hang",
+        "nhen_rung",
+        "quai_cay",
+        "hon_rung",
+        "rong_lua",
+        "rong_nuoc",
+        "rong_dat",
+        "rong_gio",
+        "rong_nguyen_to",
+        "hu_khong_nho",
+        "hu_khong_truong_thanh",
+        "su_gia_hu_khong",
+        "linh_canh_baron",
+        "quai_hang_baron",
+        "tinh_linh_rung",
+        "quai_da_co",
+        "bo_sat_hang",
+        "linh_hon_co"
+      ],
+      "elites": [
+        "su_gia_rift",
+        "rong_co",
+        "hu_khong_vuong",
+        "nguoi_da_co",
+        "thu_ve_baron"
+      ],
+      "boss": "baron_nashor",
+      "loot": {
+        "xu_min": 10000,
+        "xu_max": 20000,
+        "gear_chance": 0.3,
+        "gear": {
+          "kiem_gi": 10,
+          "ao_rach": 10,
+          "dao_cu": 10,
+          "khien_muc": 10,
+          "gay_go": 10,
+          "mu_vai": 10,
+          "giay_rach": 10,
+          "day_chuyen_dong": 10,
+          "nhan_da": 10,
+          "bua_giay": 10,
+          "kiem_doran": 6,
+          "khien_doran": 6,
+          "ao_vai_doran": 6,
+          "nhan_doran": 6,
+          "kiem_dai": 6,
+          "ao_giap_da": 6,
+          "gang_tay_sat": 6,
+          "bua_loi_xanh": 6,
+          "noi_gang": 10,
+          "dao_bau": 10,
+          "dep_to_ong": 10,
+          "giap_tam_sat": 6,
+          "mai_rua": 6
+        },
+        "item_chance": 0.2,
+        "items": {
+          "thuoc_hoi": 45,
+          "cuon_cuu_ho": 15,
+          "duoc": 15,
+          "cuon_thoat": 10,
+          "lau_thai": 8,
+          "ca_phe_den": 8,
+          "giap_xop": 8
+        },
+        "exp_per_fight": 40,
+        "boss_xu": 900000,
+        "shard_card_id": "quan_ashe",
+        "shard_min": 2,
+        "shard_max": 4,
+        "material_chance": 0.45,
+        "materials": {
+          "linh_kien_common": 85,
+          "linh_kien_rare": 15
+        },
+        "valuable_chance": 0.25,
+        "valuables": {
+          "tinh_chat_xanh": 60,
+          "dong_vang": 50,
+          "ngoc_bo_tro": 36,
+          "trang_bi_doran": 20,
+          "bua_rung": 12,
+          "penta_kill": 1
+        }
+      },
+      "jackpots": [
+        "skin_huyen_thoai",
+        "cup_cktg",
+        "acc_thach_dau"
+      ]
+    },
+    {
+      "id": "nether",
+      "name": "Nether",
+      "tier": 2,
+      "recommended_level": 10,
+      "monsters": [
+        "zombie_piglin",
+        "blaze",
+        "ghast",
+        "magma_cube",
+        "wither_skeleton",
+        "piglin",
+        "hoglin",
+        "zoglin",
+        "strider",
+        "ghast_con",
+        "blaze_nho",
+        "cube_magma_nho",
+        "xuong_kho",
+        "quy_lua",
+        "quai_nether",
+        "doi_nether",
+        "nhen_nether",
+        "heo_rung_nether",
+        "nguoi_lon",
+        "tho_san_lon",
+        "chien_binh_lon",
+        "phap_su_lon",
+        "hon_lua",
+        "tro_tan",
+        "da_dung_nham",
+        "sen_dung_nham",
+        "chim_lua",
+        "quai_xuong",
+        "tinh_linh_nether",
+        "linh_gac_nether",
+        "ran_nether",
+        "bo_nether",
+        "hu_khong_nether",
+        "bong_toi_nether"
+      ],
+      "elites": [
+        "piglin_brute",
+        "ghast_khong_lo",
+        "blaze_ho_ve",
+        "hoglin_gia",
+        "strider_co"
+      ],
+      "boss": "wither",
+      "loot": {
+        "xu_min": 18000,
+        "xu_max": 36000,
+        "gear_chance": 0.3,
+        "gear": {
+          "kiem_da": 10,
+          "giap_da": 10,
+          "xeng_go": 10,
+          "cuoc_da": 10,
+          "khien_go": 10,
+          "mu_da": 10,
+          "giay_da": 10,
+          "bua_xuong": 10,
+          "nhan_vang": 10,
+          "day_chuyen_than": 10,
+          "kiem_sat": 6,
+          "giap_sat": 6,
+          "kiem_netherite": 6,
+          "giap_netherite": 6,
+          "mu_netherite": 6,
+          "giay_netherite": 6,
+          "khien_netherite": 6,
+          "bua_lua": 6,
+          "kiem_vang": 6,
+          "ao_da_nether": 6,
+          "kiem_blaze": 3,
+          "giap_magma": 3,
+          "mu_wither": 3,
+          "ao_ghast": 3,
+          "gang_piglin": 3,
+          "khien_netherite_co": 3,
+          "noi_gang": 10,
+          "kiem_thuy_tinh": 6,
+          "giay_long_vu": 6,
+          "riu_cuong_chien": 3,
+          "giap_chi_nang": 3
+        },
+        "item_chance": 0.2,
+        "items": {
+          "thuoc_hoi_2": 45,
+          "cuon_cuu_ho_2": 15,
+          "duoc_2": 15,
+          "cuon_thoat": 10,
+          "lau_thai_2": 8,
+          "ca_phe_den_2": 8,
+          "giap_xop_2": 8
+        },
+        "exp_per_fight": 80,
+        "boss_xu": 1600000,
+        "shard_card_id": "quan_enderman",
+        "shard_min": 2,
+        "shard_max": 4,
+        "material_chance": 0.5,
+        "materials": {
+          "linh_kien_common": 45,
+          "linh_kien_rare": 45,
+          "linh_kien_epic": 10
+        },
+        "valuable_chance": 0.25,
+        "valuables": {
+          "ngoc_ender": 60,
+          "da_nether": 50,
+          "bot_lua": 45,
+          "quang_vang_nether": 25,
+          "trai_blaze": 12,
+          "bo_giap_netherite": 1
+        }
+      },
+      "jackpots": [
+        "ngoi_sao_nether",
+        "vuong_mien_wither",
+        "loi_nether",
+        "da_dia_nguc_toi_thuong",
+        "trung_ender_dragon"
+      ]
+    },
+    {
+      "id": "dust2",
+      "name": "Dust 2",
+      "tier": 3,
+      "recommended_level": 20,
+      "monsters": [
+        "chien_binh_t",
+        "chien_binh_ct",
+        "tay_awp",
+        "tay_sung_truong",
+        "tay_shotgun",
+        "tay_sung_luc",
+        "nguoi_nem_khoi",
+        "nguoi_nem_luu_dan",
+        "chuyen_gia_go_bom",
+        "trinh_sat",
+        "chi_huy",
+        "linh_boc_thep",
+        "ga_dust_2",
+        "nguoi_cam_bom",
+        "linh_canh_a",
+        "linh_canh_b",
+        "tay_sung_may",
+        "nguoi_dat_bom",
+        "nguoi_pha_cua",
+        "tay_sung_ban_tia",
+        "nguoi_mo_duong",
+        "nguoi_chan_hau",
+        "chuyen_gia_flash",
+        "chuyen_gia_luu_khoi",
+        "bac_si_chien_truong",
+        "nguoi_van_chuyen",
+        "linh_du",
+        "linh_dac_nhiem",
+        "ky_thuat_vien",
+        "mui_nhon",
+        "tay_sung_coi",
+        "nguoi_do_tham",
+        "linh_phong_thu",
+        "sat_thu_ban_dem"
+      ],
+      "elites": [
+        "sat_thu_awp",
+        "chi_huy_t",
+        "chi_huy_ct",
+        "chuyen_gia_go_bom_tinh_nhue",
+        "linh_danh_thue"
+      ],
+      "boss": "bom_c4",
+      "loot": {
+        "xu_min": 32000,
+        "xu_max": 65000,
+        "gear_chance": 0.3,
+        "gear": {
+          "sung_luc_cu": 10,
+          "dao_gam": 10,
+          "ao_rach_chien_truong": 10,
+          "mu_luoi_trai": 10,
+          "gang_tay_vai": 10,
+          "giay_cu_chien_truong": 10,
+          "ba_lo_cu": 10,
+          "kinh_ram": 10,
+          "sung_ngan": 6,
+          "ao_kevlar": 6,
+          "mu_chong_dan": 6,
+          "gang_tay_chien_thuat": 6,
+          "ba_lo_chien_thuat": 6,
+          "sung_tieu_lien": 6,
+          "sung_shotgun": 6,
+          "bo_go_bom": 6,
+          "awp_dragon": 3,
+          "giap_chien_thuat": 3,
+          "ak_47_huyen_thoai": 3,
+          "m4a4": 3,
+          "gang_tay_the_thao_xanh": 3,
+          "mat_na_phong_doc": 3,
+          "sung_may_hang_nang": 3,
+          "ao_giap_hang_nang": 3,
+          "dao_karambit_lua": 1,
+          "gang_tay_pandora_box": 1,
+          "awp_gungnir_vang": 1,
+          "ao_giap_crimson": 1,
+          "dao_bau": 10,
+          "phao_tay": 3,
+          "ao_choang_bong_ma": 3,
+          "kiem_tu_than": 1,
+          "giap_tam_sat": 6
+        },
+        "item_chance": 0.2,
+        "items": {
+          "thuoc_hoi_3": 45,
+          "cuon_cuu_ho_3": 15,
+          "duoc_3": 15,
+          "cuon_thoat": 10,
+          "lau_thai_3": 8,
+          "ca_phe_den_3": 8,
+          "giap_xop_3": 8
+        },
+        "exp_per_fight": 120,
+        "boss_xu": 2900000,
+        "shard_card_id": "quan_jhin",
+        "shard_min": 2,
+        "shard_max": 4,
+        "material_chance": 0.55,
+        "materials": {
+          "linh_kien_common": 20,
+          "linh_kien_rare": 40,
+          "linh_kien_epic": 32,
+          "linh_kien_legendary": 8
+        },
+        "valuable_chance": 0.25,
+        "valuables": {
+          "bang_dan_vang": 60,
+          "dao_karambit": 50,
+          "gang_tay_the_thao": 45,
+          "giap_kevlar": 30,
+          "awp_dragon_lore": 12,
+          "gang_tay_crimson": 1
+        }
+      },
+      "jackpots": [
+        "dao_butterfly",
+        "gang_tay_pandora",
+        "awp_gungnir",
+        "kho_skin_cs2",
+        "acc_global_elite",
+        "cup_major",
+        "skin_ruby"
+      ]
+    },
+    {
+      "id": "lang_la",
+      "name": "Làng Mưa",
+      "tier": 4,
+      "recommended_level": 30,
+      "monsters": [
+        "ninja_lang_la",
+        "ninja_akatsuki",
+        "nhan_thuat_su",
+        "ech_chien_gamabunta",
+        "tho_san_ninja",
+        "hoc_vien_ninja",
+        "ninja_tap_su",
+        "ninja_lang_cat",
+        "ninja_lang_suong",
+        "ninja_lang_may",
+        "ninja_lang_da",
+        "ninja_lang_thac",
+        "ninja_phan_loan",
+        "sat_thu_akatsuki",
+        "nguoi_nhen",
+        "ran_khong_lo",
+        "coc_tien",
+        "sen_khong_lo",
+        "quai_vat_cuu_vi",
+        "bong_phan_than",
+        "ninja_go",
+        "bu_nhin_tap_luyen",
+        "ninja_bua_chu",
+        "ninja_doc_duoc",
+        "ninja_toc_do",
+        "ninja_suc_manh",
+        "ninja_hoi_phuc",
+        "ninja_phong_thu",
+        "ninja_tan_cong",
+        "ninja_trieu_hoi",
+        "ninja_ao_anh",
+        "ninja_bong_toi",
+        "ninja_anh_sang",
+        "ninja_huyen_thoai"
+      ],
+      "elites": [
+        "orochimaru",
+        "ninja_anbu",
+        "ran_manda",
+        "cuu_vi_ho_ve",
+        "su_phu_jiraiya"
+      ],
+      "boss": "pain",
+      "loot": {
+        "xu_min": 58000,
+        "xu_max": 117000,
+        "gear_chance": 0.3,
+        "gear": {
+          "kunai_cu": 10,
+          "phi_tieu": 10,
+          "ao_vai_ninja": 10,
+          "gang_tay_vai_ninja": 10,
+          "giay_ninja": 10,
+          "bua_giay_lang_la": 10,
+          "ong_dung_kunai": 10,
+          "kunai_ninja": 6,
+          "ao_ninja": 6,
+          "kiem_chakra": 3,
+          "bang_do_lang_la": 6,
+          "gang_tay_ninja": 6,
+          "giay_ninja_chuyen_dung": 6,
+          "bua_no": 6,
+          "ao_giap_lang_la": 6,
+          "ao_choang_hokage_chien": 3,
+          "mu_hokage_lua": 3,
+          "gang_tay_cuu_vi": 3,
+          "bua_an": 3,
+          "kiem_samehada": 3,
+          "kiem_chakra_nang_cap": 3,
+          "ao_giap_anbu": 3,
+          "mat_na_anbu": 3,
+          "kiem_kusanagi": 1,
+          "ao_choang_luc_dao": 1,
+          "kiem_totsuka": 1,
+          "ao_giap_cuu_vi": 1,
+          "dep_to_ong": 10,
+          "nhan_huyet_khe": 3,
+          "bua_nguyen": 3,
+          "thanh_luy_di_dong": 1,
+          "kiem_thuy_tinh": 6
+        },
+        "item_chance": 0.2,
+        "items": {
+          "thuoc_hoi_4": 45,
+          "cuon_cuu_ho_4": 15,
+          "duoc_4": 15,
+          "cuon_thoat": 10,
+          "lau_thai_4": 8,
+          "ca_phe_den_4": 8,
+          "giap_xop_4": 8
+        },
+        "exp_per_fight": 180,
+        "boss_xu": 5200000,
+        "shard_card_id": "quan_gaara",
+        "shard_min": 2,
+        "shard_max": 4,
+        "material_chance": 0.6,
+        "materials": {
+          "linh_kien_common": 15,
+          "linh_kien_rare": 40,
+          "linh_kien_epic": 35,
+          "linh_kien_legendary": 10
+        },
+        "valuable_chance": 0.25,
+        "valuables": {
+          "banh_mi_ramen": 60,
+          "ao_choang_hokage": 45,
+          "kunai_huyen_thoai": 12
+        }
+      },
+      "jackpots": [
+        "cuon_an_cuu_vi",
+        "mu_hokage",
+        "bi_kip_lang_la"
+      ]
+    },
+    {
+      "id": "namek",
+      "name": "Namek",
+      "tier": 5,
+      "recommended_level": 45,
+      "monsters": [
+        "linh_frieza",
+        "recoome",
+        "dodoria",
+        "zarbon",
+        "nguoi_namek",
+        "linh_frieza_tinh_nhue",
+        "linh_frieza_hang_nang",
+        "chien_binh_frieza",
+        "sat_thu_frieza",
+        "doi_truong_ginyu",
+        "bac_si_frieza",
+        "nguoi_namek_chien_binh",
+        "phap_su_frieza",
+        "nguoi_namek_gia",
+        "quai_vat_namek",
+        "quai_vat_bien_namek",
+        "guldo",
+        "jeice",
+        "linh_ginyu",
+        "tay_sai_frieza",
+        "chien_binh_hoang_gia",
+        "sat_thu_vu_tru",
+        "linh_canh_tau",
+        "ky_su_frieza",
+        "quai_thu_vu_tru",
+        "quai_thu_namek",
+        "chien_binh_sao_hoa",
+        "burter",
+        "ho_ve_frieza",
+        "phap_su_vu_tru",
+        "chien_binh_anh_sang",
+        "chien_binh_bong_toi",
+        "chien_binh_sao_bang",
+        "linh_hon_namek"
+      ],
+      "elites": [
+        "chien_binh_ginyu",
+        "chien_binh_saiyan",
+        "rong_namek",
+        "nguoi_namek_hoi_phuc",
+        "quai_vat_co_dai"
+      ],
+      "boss": "frieza",
+      "loot": {
+        "xu_min": 105000,
+        "xu_max": 210000,
+        "gear_chance": 0.3,
+        "gear": {
+          "giap_linh_frieza": 10,
+          "sung_nang_luong_cu": 10,
+          "bang_do_saiyan": 10,
+          "gang_tay_vai_chien_binh": 10,
+          "giay_chien_binh": 10,
+          "ao_da_vu_tru": 10,
+          "bua_namek": 10,
+          "mu_vai_vu_tru": 10,
+          "giap_saiyan_chien": 3,
+          "kiem_z": 3,
+          "gang_tay_chien_dau": 6,
+          "giay_saiyan": 6,
+          "bo_giap_namek": 6,
+          "sung_frieza": 6,
+          "khien_nang_luong": 6,
+          "bua_porunga": 6,
+          "kiem_z_nang_cap": 3,
+          "giap_saiyan_hoang_gia": 3,
+          "gang_tay_ginyu": 3,
+          "giap_namek_chien_binh": 3,
+          "sung_tu_than": 3,
+          "mu_giap_frieza": 3,
+          "giap_dodoria": 3,
+          "bo_giap_zarbon": 3,
+          "kiem_vo_cuc": 1,
+          "giap_thien_than": 1,
+          "kiem_z_toi_thuong": 1,
+          "giap_super_saiyan": 1,
+          "kiem_vegito": 1,
+          "giap_gogeta": 1,
+          "gang_tay_ginyu_vang": 1,
+          "giap_frieza_vang": 1,
+          "mai_rua": 6,
+          "giay_long_vu": 6,
+          "riu_cuong_chien": 3,
+          "mat_na_cuong_no": 1,
+          "kiem_tu_than": 1,
+          "thanh_luy_di_dong": 1
+        },
+        "item_chance": 0.2,
+        "items": {
+          "thuoc_hoi_5": 45,
+          "cuon_cuu_ho_5": 15,
+          "duoc_5": 15,
+          "cuon_thoat": 10,
+          "lau_thai_5": 8,
+          "ca_phe_den_5": 8,
+          "giap_xop_5": 8
+        },
+        "exp_per_fight": 250,
+        "boss_xu": 9400000,
+        "shard_card_id": "quan_frieza",
+        "shard_min": 2,
+        "shard_max": 4,
+        "material_chance": 0.65,
+        "materials": {
+          "linh_kien_common": 10,
+          "linh_kien_rare": 35,
+          "linh_kien_epic": 40,
+          "linh_kien_legendary": 15
+        },
+        "valuable_chance": 0.25,
+        "valuables": {
+          "da_namek": 60,
+          "rong_than_porunga": 45,
+          "giap_saiyan": 12
+        }
+      },
+      "jackpots": [
+        "ngoc_rong_4_sao",
+        "ngoc_rong_namek",
+        "suc_manh_super_saiyan"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "com_trua",
+      "title": "Cơm trưa tập thể",
+      "text": "Quân mở hộp cơm giữa hầm, cả đội đói meo.",
+      "options": [
+        {
+          "label": "Chia cơm",
+          "outcomes": [
+            {
+              "text": "Cả đội ăn no, hồi 15% HP",
+              "hp_pct": 0.15
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị phục kích trong bụi cỏ, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        },
+        {
+          "label": "Để dành",
+          "outcomes": [
+            {
+              "text": "Giữ lại được một nồi lẩu",
+              "item_id": "lau_thai"
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị phục kích trong bụi cỏ, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quan_afk",
+      "title": "Quân AFK",
+      "text": "Một thành viên treo máy ngay giữa phòng.",
+      "options": [
+        {
+          "label": "Gánh nó",
+          "outcomes": [
+            {
+              "text": "Vác cả người lẫn balo, mất 10% HP nhưng nhặt được tiền rơi",
+              "hp_pct": -0.1,
+              "xu": 50000
+            }
+          ]
+        },
+        {
+          "label": "Kệ nó",
+          "outcomes": [
+            {
+              "text": "Bỏ lại phía sau. Nguy hiểm +1",
+              "danger": 1
+            },
+            {
+              "weight": 1,
+              "text": "Hên: nhặt được tiền rơi",
+              "xu": 40000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shop_do",
+      "title": "Shop đồ trong hầm",
+      "text": "Một quầy hàng tự động vẫn còn sáng đèn.",
+      "options": [
+        {
+          "label": "Mua bùa may mắn",
+          "outcomes": [
+            {
+              "text": "Mua được Bùa may mắn I",
+              "xu": -50000,
+              "item_id": "bua_may_man"
+            }
+          ]
+        },
+        {
+          "label": "Ngó thôi",
+          "outcomes": [
+            {
+              "text": "Không mua gì, đi tiếp"
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị phục kích trong bụi cỏ, mất 10% HP",
+              "hp_pct": -0.1
+            },
+            {
+              "weight": 1,
+              "text": "Hên: nhặt được tiền rơi",
+              "xu": 40000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xin_via",
+      "title": "Xin vía cao thủ",
+      "text": "Một cao thủ lạ mặt đi ngang, hào quang sáng rực.",
+      "options": [
+        {
+          "label": "Xin vía",
+          "outcomes": [
+            {
+              "text": "Vía tốt thật, nhặt được tiền",
+              "weight": 2,
+              "xu": 30000
+            },
+            {
+              "text": "Cao thủ lườm, chẳng cho gì"
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị phục kích trong bụi cỏ, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        },
+        {
+          "label": "Không cần",
+          "outcomes": [
+            {
+              "text": "Tự tin đi tiếp. Nguy hiểm -1",
+              "danger": -1
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị phục kích trong bụi cỏ, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meo_hoang",
+      "title": "Con mèo hoang",
+      "text": "Một con mèo gầy ngồi giữa hầm, nhìn cả đội chằm chằm.",
+      "options": [
+        {
+          "label": "Cho nó ăn",
+          "outcomes": [
+            {
+              "text": "Mèo ăn xong dụi vào chân rồi bỏ đi",
+              "xu": -10000,
+              "sets_flag": "meo_no"
+            }
+          ]
+        },
+        {
+          "label": "Đuổi đi",
+          "outcomes": [
+            {
+              "text": "Mèo bỏ chạy, không có gì xảy ra"
+            }
+          ]
+        }
+      ],
+      "weight": 3
+    },
+    {
+      "id": "meo_quay_lai",
+      "title": "Con mèo quay lại",
+      "text": "Con mèo lúc nãy quay lại, ngậm theo thứ gì đó.",
+      "options": [
+        {
+          "label": "Đi theo mèo",
+          "outcomes": [
+            {
+              "text": "Mèo dẫn tới một cái rương giấu kỹ",
+              "weight": 2,
+              "chest": "silver"
+            },
+            {
+              "text": "Mèo dẫn tới ổ mèo con, chẳng có gì"
+            }
+          ]
+        },
+        {
+          "label": "Vuốt ve nó",
+          "outcomes": [
+            {
+              "text": "Cả đội thấy nhẹ lòng, hồi 20% HP",
+              "hp_pct": 0.2
+            }
+          ]
+        }
+      ],
+      "weight": 12,
+      "requires": "meo_no"
+    },
+    {
+      "id": "rift_bui_co",
+      "title": "Bụi cỏ",
+      "text": "Bụi cỏ rung nhẹ, kiểu rung của người đang nấp.",
+      "options": [
+        {
+          "label": "Soi bụi cỏ",
+          "outcomes": [
+            {
+              "text": "Tóm được người nấp, nhặt được tiền",
+              "weight": 2,
+              "xu": 50000
+            },
+            {
+              "text": "Bị phục kích, mất 10% HP",
+              "weight": 2,
+              "hp_pct": -0.1,
+              "danger": 1
+            }
+          ]
+        },
+        {
+          "label": "Đi đường lớn",
+          "outcomes": [
+            {
+              "text": "Vòng an toàn. Nguy hiểm -1",
+              "danger": -1
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị phục kích trong bụi cỏ, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "summoners_rift"
+      ]
+    },
+    {
+      "id": "rift_baron",
+      "title": "Hang Baron",
+      "text": "Tiếng gầm vọng ra từ hang tối, mặt đất rung lên.",
+      "options": [
+        {
+          "label": "Đánh Baron",
+          "outcomes": [
+            {
+              "text": "Hạ được Baron, mở rương bạc",
+              "hp_pct": -0.15,
+              "danger": 2,
+              "chest": "silver"
+            }
+          ]
+        },
+        {
+          "label": "Nhường",
+          "outcomes": [
+            {
+              "text": "Rút lui, giữ sức"
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị phục kích trong bụi cỏ, mất 10% HP",
+              "hp_pct": -0.1
+            },
+            {
+              "weight": 1,
+              "text": "Hên: nhặt được tiền rơi",
+              "xu": 40000
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "summoners_rift"
+      ]
+    },
+    {
+      "id": "rift_top_feed",
+      "title": "Top lane feed",
+      "text": "Top lane lại chết, chat bắt đầu nổ.",
+      "options": [
+        {
+          "label": "Gánh top",
+          "outcomes": [
+            {
+              "text": "Cày lại cả đường, kiếm được tiền",
+              "hp_pct": -0.1,
+              "xu": 60000
+            }
+          ]
+        },
+        {
+          "label": "Mute chat",
+          "outcomes": [
+            {
+              "text": "Tĩnh tâm đánh tiếp, hồi 10% HP",
+              "hp_pct": 0.1
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị phục kích trong bụi cỏ, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "summoners_rift"
+      ]
+    },
+    {
+      "id": "rift_shop",
+      "title": "Shop đồ",
+      "text": "Ông chủ shop đứng sau quầy, gõ tay chờ.",
+      "options": [
+        {
+          "label": "Mua đồ",
+          "outcomes": [
+            {
+              "text": "Mua được Cà phê I",
+              "xu": -60000,
+              "item_id": "ca_phe_den"
+            }
+          ]
+        },
+        {
+          "label": "Đi tiếp",
+          "outcomes": [
+            {
+              "text": "Tiếc tiền, đi tiếp"
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị phục kích trong bụi cỏ, mất 10% HP",
+              "hp_pct": -0.1
+            },
+            {
+              "weight": 1,
+              "text": "Hên: nhặt được tiền rơi",
+              "xu": 40000
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "summoners_rift"
+      ]
+    },
+    {
+      "id": "nether_lava",
+      "title": "Hồ dung nham",
+      "text": "Dung nham sôi sùng sục, cầu đá chỉ còn một nửa.",
+      "options": [
+        {
+          "label": "Nhảy qua",
+          "outcomes": [
+            {
+              "text": "Qua được, tay cháy xém",
+              "weight": 2,
+              "hp_pct": -0.1
+            },
+            {
+              "text": "Qua an toàn",
+              "weight": 2
+            },
+            {
+              "weight": 1,
+              "text": "Hên: nhặt được tiền rơi",
+              "xu": 40000
+            }
+          ]
+        },
+        {
+          "label": "Bắc cầu",
+          "outcomes": [
+            {
+              "text": "Bắc cầu mất thời gian nhưng an toàn. Nguy hiểm -1",
+              "xu": -40000,
+              "danger": -1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "nether"
+      ]
+    },
+    {
+      "id": "nether_piglin",
+      "title": "Piglin đổi đồ",
+      "text": "Một con Piglin giơ vàng ra, ra hiệu đổi.",
+      "options": [
+        {
+          "label": "Đổi vàng",
+          "outcomes": [
+            {
+              "text": "Đổi được linh kiện hiếm",
+              "xu": -50000,
+              "item_id": "linh_kien_rare"
+            }
+          ]
+        },
+        {
+          "label": "Từ chối",
+          "outcomes": [
+            {
+              "text": "Piglin hậm hực bỏ đi. Nguy hiểm +1",
+              "danger": 1
+            },
+            {
+              "weight": 1,
+              "text": "Hên: nhặt được tiền rơi",
+              "xu": 40000
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "nether"
+      ]
+    },
+    {
+      "id": "nether_creeper",
+      "title": "Creeper sau lưng",
+      "text": "Tiếng xì xì quen thuộc vang lên ngay sau lưng.",
+      "options": [
+        {
+          "label": "Chạy",
+          "outcomes": [
+            {
+              "text": "Chạy kịp, Nguy hiểm -1",
+              "danger": -1
+            },
+            {
+              "weight": 1,
+              "text": "Xui: dung nham bắn trúng, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        },
+        {
+          "label": "Đập nó",
+          "outcomes": [
+            {
+              "text": "Nổ tung nhưng nhặt được đồ rơi",
+              "weight": 2,
+              "xu": 60000
+            },
+            {
+              "text": "Ăn trọn vụ nổ, mất 20% HP",
+              "weight": 1,
+              "hp_pct": -0.2
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "nether"
+      ]
+    },
+    {
+      "id": "nether_mine",
+      "title": "Mỏ bỏ hoang",
+      "text": "Đường ray gãy dẫn vào mỏ tối om.",
+      "options": [
+        {
+          "label": "Đào",
+          "outcomes": [
+            {
+              "text": "Đào được linh kiện thường",
+              "item_id": "linh_kien_common",
+              "danger": 1
+            }
+          ]
+        },
+        {
+          "label": "Bỏ qua",
+          "outcomes": [
+            {
+              "text": "Đi tiếp, không mạo hiểm"
+            },
+            {
+              "weight": 1,
+              "text": "Xui: dung nham bắn trúng, mất 10% HP",
+              "hp_pct": -0.1
+            },
+            {
+              "weight": 1,
+              "text": "Hên: nhặt được tiền rơi",
+              "xu": 40000
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "nether"
+      ]
+    },
+    {
+      "id": "site_a",
+      "title": "Site A",
+      "text": "Khu A đã được đặt bom, đồng hồ đang chạy.",
+      "options": [
+        {
+          "label": "Gỡ bom",
+          "outcomes": [
+            {
+              "text": "Gỡ xong, được thưởng nóng",
+              "xu": 80000,
+              "danger": 1
+            }
+          ]
+        },
+        {
+          "label": "Canh bom",
+          "outcomes": [
+            {
+              "text": "Giữ được site, có rương tiếp tế",
+              "chest": "silver",
+              "danger": 1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "dust2"
+      ]
+    },
+    {
+      "id": "dust2_eco",
+      "title": "Eco round",
+      "text": "Tiền chỉ đủ mua súng lục, cả đội nhìn nhau.",
+      "options": [
+        {
+          "label": "Save",
+          "outcomes": [
+            {
+              "text": "Tiết kiệm được một ít",
+              "xu": 50000
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị bắn tỉa từ xa, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        },
+        {
+          "label": "Force buy",
+          "outcomes": [
+            {
+              "text": "Mua được Giáp xốp I",
+              "xu": -40000,
+              "item_id": "giap_xop"
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "dust2"
+      ]
+    },
+    {
+      "id": "dust2_long",
+      "title": "Long A",
+      "text": "Hành lang dài hun hút, đầu bên kia có bóng người.",
+      "options": [
+        {
+          "label": "Peek",
+          "outcomes": [
+            {
+              "text": "Hạ được địch, nhặt tiền",
+              "weight": 2,
+              "xu": 40000
+            },
+            {
+              "text": "Bị bắn trước, mất 15% HP",
+              "weight": 1,
+              "hp_pct": -0.15
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "outcomes": [
+            {
+              "text": "Flash mở đường. Nguy hiểm -1",
+              "danger": -1,
+              "hp_pct": 0.05
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị bắn tỉa từ xa, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "dust2"
+      ]
+    },
+    {
+      "id": "dust2_chicken",
+      "title": "Con gà Dust 2",
+      "text": "Con gà chạy ngang qua, kêu quang quác.",
+      "options": [
+        {
+          "label": "Đuổi theo",
+          "outcomes": [
+            {
+              "text": "Bắt được gà, có người trả tiền",
+              "weight": 2,
+              "xu": 30000
+            },
+            {
+              "text": "Gà chạy mất, chẳng được gì"
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị bắn tỉa từ xa, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        },
+        {
+          "label": "Kệ nó",
+          "outcomes": [
+            {
+              "text": "Đi tiếp. Nguy hiểm -1",
+              "danger": -1
+            },
+            {
+              "weight": 1,
+              "text": "Xui: bị bắn tỉa từ xa, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "dust2"
+      ]
+    },
+    {
+      "id": "lang_la_ramen",
+      "title": "Quán trọ dưới mưa",
+      "text": "Một quán trọ bên chân tháp vẫn sáng đèn. Chủ quán ra hiệu giấu băng đô trước khi vào.",
+      "options": [
+        {
+          "label": "Mua suất ăn nóng",
+          "outcomes": [
+            {
+              "text": "Trả tiền suất ăn và chỗ hong áo, hồi 25% HP.",
+              "xu": -30000,
+              "hp_pct": 0.25
+            }
+          ]
+        },
+        {
+          "label": "Lẻn vào kho lương",
+          "outcomes": [
+            {
+              "text": "Lấy được lương thực, hồi 25% HP nhưng lính tuần tra phát hiện. Nguy hiểm +1.",
+              "hp_pct": 0.25,
+              "danger": 1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "lang_la"
+      ]
+    },
+    {
+      "id": "lang_la_scroll",
+      "title": "Mật thư Akatsuki",
+      "text": "Một ống mật thư mắc dưới đường ống thoát nước, bên ngoài dán bùa niêm phong.",
+      "options": [
+        {
+          "label": "Gỡ niêm phong",
+          "outcomes": [
+            {
+              "text": "Tìm thấy Cuộn thoát thân trong ống mật thư.",
+              "weight": 1,
+              "item_id": "cuon_thoat"
+            },
+            {
+              "text": "Bùa nổ phát tín hiệu báo động. Nguy hiểm +1.",
+              "weight": 2,
+              "danger": 1
+            }
+          ]
+        },
+        {
+          "label": "Giấu ống mật thư",
+          "outcomes": [
+            {
+              "text": "Bọc kín mật thư rồi tiếp tục đi."
+            },
+            {
+              "weight": 1,
+              "text": "Kim độc xuyên lớp vỏ ống, mất 10% HP.",
+              "hp_pct": -0.1
+            },
+            {
+              "weight": 1,
+              "text": "Tìm thấy tiền giao dịch giấu trong ống mật thư.",
+              "xu": 40000
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "lang_la"
+      ]
+    },
+    {
+      "id": "lang_la_chunin",
+      "title": "Giao dịch chợ đen",
+      "text": "Một kẻ môi giới ra giá cho mật khẩu dẫn vào căn cứ Akatsuki.",
+      "options": [
+        {
+          "label": "Bán tin giả",
+          "outcomes": [
+            {
+              "text": "Qua mặt được môi giới, nhận tiền bán tin.",
+              "weight": 2,
+              "xu": 60000
+            },
+            {
+              "text": "Ám hiệu sai bị lộ, phục binh đánh úp. Mất 15% HP.",
+              "weight": 1,
+              "hp_pct": -0.15
+            }
+          ]
+        },
+        {
+          "label": "Theo dõi từ xa",
+          "outcomes": [
+            {
+              "text": "Tìm được đường tránh chốt gác. Nguy hiểm -1.",
+              "danger": -1
+            },
+            {
+              "weight": 1,
+              "text": "Dẫm phải kim độc khi bám theo, mất 10% HP.",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "lang_la"
+      ]
+    },
+    {
+      "id": "lang_la_kurama",
+      "title": "Kết giới Vũ Hổ Tự Tại",
+      "text": "Mưa quanh tháp bỗng đổi hướng. Những thanh thu chakra đang truyền tín hiệu về chỗ Pain.",
+      "options": [
+        {
+          "label": "Phá trạm cảm ứng",
+          "outcomes": [
+            {
+              "text": "Lấy được tiền từ kho trạm, nhưng Pain nhận ra kẻ xâm nhập. Nguy hiểm +2.",
+              "danger": 2,
+              "xu": 100000
+            }
+          ]
+        },
+        {
+          "label": "Cắt đường dẫn chakra",
+          "outcomes": [
+            {
+              "text": "Phá kết nối cảm ứng, mất 5% HP. Nguy hiểm -1.",
+              "hp_pct": -0.05,
+              "danger": -1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "lang_la"
+      ]
+    },
+    {
+      "id": "namek_ngoc_rong",
+      "title": "Ngọc rồng",
+      "text": "Một viên ngọc rồng lấp lánh trong hố đá.",
+      "options": [
+        {
+          "label": "Đào lên",
+          "outcomes": [
+            {
+              "text": "Đào được rương báu",
+              "chest": "silver",
+              "danger": 1
+            }
+          ]
+        },
+        {
+          "label": "Để lại",
+          "outcomes": [
+            {
+              "text": "Đi tiếp, để dành cho người khác"
+            },
+            {
+              "weight": 1,
+              "text": "Xui: dính đòn chí mạng, mất 10% HP",
+              "hp_pct": -0.1
+            },
+            {
+              "weight": 1,
+              "text": "Hên: nhặt được tiền rơi",
+              "xu": 40000
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "namek"
+      ]
+    },
+    {
+      "id": "namek_gravity",
+      "title": "Phòng tập trọng lực",
+      "text": "Căn phòng nặng gấp trăm lần bên ngoài.",
+      "options": [
+        {
+          "label": "Tập luyện",
+          "outcomes": [
+            {
+              "text": "Tập xong, uống Cà phê I",
+              "hp_pct": -0.15,
+              "item_id": "ca_phe_den"
+            }
+          ]
+        },
+        {
+          "label": "Nghỉ",
+          "outcomes": [
+            {
+              "text": "Nghỉ lấy sức, hồi 10% HP",
+              "hp_pct": 0.1
+            },
+            {
+              "weight": 1,
+              "text": "Xui: dính đòn chí mạng, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "namek"
+      ]
+    },
+    {
+      "id": "namek_senzu",
+      "title": "Đậu thần",
+      "text": "Một hũ đậu thần còn vài hạt.",
+      "options": [
+        {
+          "label": "Ăn ngay",
+          "outcomes": [
+            {
+              "text": "Hồi 30% HP",
+              "hp_pct": 0.3
+            },
+            {
+              "weight": 1,
+              "text": "Xui: dính đòn chí mạng, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        },
+        {
+          "label": "Cất vào túi",
+          "outcomes": [
+            {
+              "text": "Giữ được Thuốc hồi I",
+              "item_id": "thuoc_hoi"
+            },
+            {
+              "weight": 1,
+              "text": "Xui: dính đòn chí mạng, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "namek"
+      ]
+    },
+    {
+      "id": "namek_frieza_ship",
+      "title": "Tàu của Frieza",
+      "text": "Con tàu tròn nằm giữa hố đá, cửa còn hé mở.",
+      "options": [
+        {
+          "label": "Lục tàu",
+          "outcomes": [
+            {
+              "text": "Lấy được tiền",
+              "weight": 2,
+              "xu": 80000
+            },
+            {
+              "text": "Bị phục kích, mất 20% HP",
+              "weight": 1,
+              "hp_pct": -0.2,
+              "danger": 2
+            }
+          ]
+        },
+        {
+          "label": "Né",
+          "outcomes": [
+            {
+              "text": "Vòng ra xa. Nguy hiểm -1",
+              "danger": -1
+            },
+            {
+              "weight": 1,
+              "text": "Xui: dính đòn chí mạng, mất 10% HP",
+              "hp_pct": -0.1
+            }
+          ]
+        }
+      ],
+      "dungeons": [
+        "namek"
+      ]
+    },
+    {
+      "id": "nhat_vi",
+      "title": "Ví rơi",
+      "text": "Một cái ví rơi trên đường hầm, vẫn còn ấm.",
+      "options": [
+        {
+          "label": "Nhặt lên",
+          "outcomes": [
+            {
+              "text": "Cất ví, chờ chủ quay lại",
+              "sets_flag": "co_vi"
+            }
+          ]
+        },
+        {
+          "label": "Mặc kệ",
+          "outcomes": [
+            {
+              "text": "Đi tiếp, coi như không thấy"
+            }
+          ]
+        }
+      ],
+      "weight": 3
+    },
+    {
+      "id": "tra_vi",
+      "title": "Chủ ví quay lại",
+      "text": "Một người hớt hải chạy tới, chỉ vào cái ví.",
+      "options": [
+        {
+          "label": "Trả ví",
+          "outcomes": [
+            {
+              "text": "Chủ ví tặng một rương nhỏ",
+              "chest": "bronze"
+            }
+          ]
+        },
+        {
+          "label": "Đòi tiền chuộc",
+          "outcomes": [
+            {
+              "text": "Được trả tiền, nhưng mất mặt",
+              "xu": 80000,
+              "danger": 1
+            }
+          ]
+        }
+      ],
+      "weight": 12,
+      "requires": "co_vi"
+    },
+    {
+      "id": "giup_ga",
+      "title": "Người mới tập chơi",
+      "text": "Một người mới đứng giữa hầm, không biết đi đâu.",
+      "options": [
+        {
+          "label": "Chỉ đường",
+          "outcomes": [
+            {
+              "text": "Mất chút thời gian, nhưng vui",
+              "danger": 1,
+              "sets_flag": "giup_ga"
+            }
+          ]
+        },
+        {
+          "label": "Bỏ đi",
+          "outcomes": [
+            {
+              "text": "Kệ, ai bảo không xem map"
+            }
+          ]
+        }
+      ],
+      "weight": 3
+    },
+    {
+      "id": "ga_cam_on",
+      "title": "Người mới trả ơn",
+      "text": "Người lúc nãy đuổi kịp, dúi vào tay một món.",
+      "options": [
+        {
+          "label": "Nhận quà",
+          "outcomes": [
+            {
+              "text": "Được tặng Bùa may mắn I",
+              "item_id": "bua_may_man"
+            },
+            {
+              "text": "Được tặng một rương nhỏ",
+              "chest": "bronze"
+            }
+          ]
+        },
+        {
+          "label": "Rủ đi chung",
+          "outcomes": [
+            {
+              "text": "Có thêm người canh gác. Nguy hiểm -2",
+              "danger": -2
+            }
+          ]
+        }
+      ],
+      "weight": 12,
+      "requires": "giup_ga"
+    }
+  ],
+  "weekly_rules": [
+    {
+      "id": "tuan_leo_rank",
+      "name": "Tuần leo rank",
+      "text": "Phòng hiếm mở nhiều gấp đôi, nhưng địch đánh đau hơn 10%",
+      "rare_room_mult": 2,
+      "enemy_atk_mult": 1.1
+    },
+    {
+      "id": "tuan_hardcore",
+      "name": "Tuần hardcore",
+      "text": "Nghỉ chỉ hồi một nửa, bù lại Xu rơi nhiều hơn 20%",
+      "rest_heal_mult": 0.5,
+      "xu_mult": 1.2
+    },
+    {
+      "id": "tuan_eco",
+      "name": "Tuần eco",
+      "text": "Xu rơi ít hơn 20%, nhưng rương rơi nhiều gấp rưỡi",
+      "xu_mult": 0.8,
+      "chest_chance_mult": 1.5
+    },
+    {
+      "id": "tuan_chunin",
+      "name": "Tuần truy nã Akatsuki",
+      "text": "Cả đội né tốt hơn (+10), quái trâu hơn 10%",
+      "ally_dodge": 10,
+      "enemy_hp_mult": 1.1
+    },
+    {
+      "id": "tuan_namek",
+      "name": "Tuần Namek",
+      "text": "Quái trâu hơn 20%, độc đắc dễ ra gấp ba",
+      "enemy_hp_mult": 1.2,
+      "jackpot_chance_mult": 3
+    },
+    {
+      "id": "tuan_quan_may",
+      "name": "Tuần Quân may mắn",
+      "text": "Độc đắc dễ gấp đôi, Xu +15%, quái khỏe hơn 5%",
+      "jackpot_chance_mult": 2,
+      "xu_mult": 1.15,
+      "enemy_hp_mult": 1.05
+    },
+    {
+      "id": "tuan_mat_dien",
+      "name": "Tuần mất điện",
+      "text": "Tối om: cả đội né +10, rương rơi gấp đôi",
+      "ally_dodge": 10,
+      "chest_chance_mult": 2
+    },
+    {
+      "id": "tuan_dai_gia",
+      "name": "Tuần đại gia",
+      "text": "Xu rơi +30%, quái đánh đau hơn 15%",
+      "xu_mult": 1.3,
+      "enemy_atk_mult": 1.15
+    }
+  ]
+}

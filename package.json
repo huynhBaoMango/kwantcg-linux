@@ -1,0 +1,10 @@
+{
+  "name": "friendtcg-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FriendTCG Discord bot. The real program is the self-contained .NET binary in this folder; these files only tell the hosting panel how to start it.",
+  "main": "index.js",
+  "scripts": {
+    "start": "sh start.sh"
+  }
+}

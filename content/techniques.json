@@ -1,0 +1,2107 @@
+{
+  "techniques": [
+    {
+      "id": "bao_kiem",
+      "name": "Bão kiếm",
+      "energy": 3,
+      "flavor_text": "Vung loạn xạ, trúng ai thì trúng.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 3,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_random",
+            "coeff": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "ban_tia",
+      "name": "Bắn tỉa",
+      "energy": 3,
+      "flavor_text": "Nhắm kẻ trốn sau cùng.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 1.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "ket_lieu",
+      "name": "Kết liễu",
+      "energy": 3,
+      "flavor_text": "Thấy máu là lao vào.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_lowest",
+            "coeff": 1.2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_lowest",
+            "coeff": 1.5,
+            "when": "target_hp_below",
+            "when_value": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "dam_thang",
+      "name": "Đấm thẳng mặt",
+      "energy": 2,
+      "flavor_text": "Không vòng vo.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 1.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "hoa_tien",
+      "name": "Hỏa tiễn",
+      "energy": 4,
+      "flavor_text": "Một phát cho cả nhà.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "mua_thien_thach",
+      "name": "Mưa thiên thạch",
+      "energy": 5,
+      "flavor_text": "Trời sập.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.9
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "stun",
+            "target": "enemy_random",
+            "turns": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "combo_lien_hoan",
+      "name": "Combo liên hoàn",
+      "energy": 4,
+      "flavor_text": "Bốn phát không kịp thở.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 4,
+          "params": {
+            "effect": "damage",
+            "target": "primary",
+            "coeff": 0.55
+          }
+        }
+      ]
+    },
+    {
+      "id": "chem_xuyen",
+      "name": "Chém xuyên",
+      "energy": 3,
+      "flavor_text": "Một nhát xuyên hàng.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 1.0
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "no_hu",
+      "name": "Nổ hũ",
+      "energy": 4,
+      "flavor_text": "Hên thì trúng đậm.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_random",
+            "coeff": 2.4,
+            "chance": 0.5
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_random",
+            "coeff": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "lat_keo",
+      "name": "Lật kèo",
+      "energy": 3,
+      "flavor_text": "Càng thua càng hăng.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "primary",
+            "coeff": 1.0
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "primary",
+            "coeff": 1.5,
+            "when": "self_hp_below",
+            "when_value": 0.4
+          }
+        },
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "heal",
+            "target": "self",
+            "coeff": 0.15,
+            "when": "self_hp_below",
+            "when_value": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "thoi_mien",
+      "name": "Thôi miên",
+      "energy": 3,
+      "flavor_text": "Nhìn vào mắt tôi.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "stun",
+            "target": "primary",
+            "turns": 1
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "energy_steal",
+            "target": "primary",
+            "coeff": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "cam_khau",
+      "name": "Cấm khẩu",
+      "energy": 3,
+      "flavor_text": "Im lặng là vàng.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "silence",
+            "target": "all_enemies",
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "primary",
+            "coeff": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "bom_khoi",
+      "name": "Bom khói",
+      "energy": 4,
+      "flavor_text": "Khụ khụ.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "weak",
+            "target": "all_enemies",
+            "coeff": 0.25,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "haste",
+            "target": "all_enemies",
+            "coeff": -0.2,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "dap_dat",
+      "name": "Dậm đất",
+      "energy": 4,
+      "flavor_text": "Rung chuyển cả phòng.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.6
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "stun",
+            "target": "enemy_front",
+            "turns": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "tat_dien",
+      "name": "Tắt điện",
+      "energy": 3,
+      "flavor_text": "Cúp cầu dao.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "energy",
+            "target": "all_enemies",
+            "coeff": -2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_random",
+            "coeff": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "khi_doc",
+      "name": "Khí độc",
+      "energy": 3,
+      "flavor_text": "Mùi lạ lắm.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "poison",
+            "target": "all_enemies",
+            "coeff": 0.3,
+            "turns": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "ran_can",
+      "name": "Rắn cắn",
+      "energy": 2,
+      "flavor_text": "Cắn rồi chạy.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "poison",
+            "target": "primary",
+            "coeff": 0.5,
+            "turns": 3
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "primary",
+            "coeff": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "phao_dai",
+      "name": "Pháo đài",
+      "energy": 3,
+      "flavor_text": "Đánh tao đây này.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "taunt",
+            "target": "self",
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "self",
+            "coeff": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "id": "tuong_thanh",
+      "name": "Tường thành",
+      "energy": 4,
+      "flavor_text": "Cả đội núp sau lưng.",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "all_allies",
+            "coeff": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "id": "phan_cong",
+      "name": "Phản công",
+      "energy": 3,
+      "flavor_text": "Đỡ xong là trả.",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "self",
+            "coeff": 0.15
+          }
+        },
+        {
+          "scale_stat": "def",
+          "params": {
+            "effect": "damage",
+            "target": "primary",
+            "coeff": 2.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ho_menh",
+      "name": "Hộ mệnh",
+      "energy": 2,
+      "flavor_text": "Che cho đứa yếu nhất.",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "ally_lowest",
+            "coeff": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "id": "cap_cuu_khan",
+      "name": "Cấp cứu khẩn",
+      "energy": 3,
+      "flavor_text": "Bông băng đâu!",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "heal",
+            "target": "ally_lowest",
+            "coeff": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "noi_lau_than",
+      "name": "Nồi lẩu thần",
+      "energy": 4,
+      "flavor_text": "Ăn xong khoẻ re.",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "heal",
+            "target": "all_allies",
+            "coeff": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "hoi_sinh",
+      "name": "Hồi sinh thần tốc",
+      "energy": 5,
+      "flavor_text": "Chưa cho chết.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "revive",
+            "target": "ally_dead",
+            "coeff": 0.4
+          }
+        },
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "heal",
+            "target": "all_allies",
+            "coeff": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "hut_mau",
+      "name": "Hút máu",
+      "energy": 3,
+      "flavor_text": "Lấy của người bù cho ta.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "primary",
+            "coeff": 1.2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "heal",
+            "target": "self",
+            "coeff": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "tiep_lua",
+      "name": "Tiếp lửa",
+      "energy": 3,
+      "flavor_text": "Cả đội lên tinh thần.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "energy",
+            "target": "all_allies",
+            "coeff": 1
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "empower",
+            "target": "all_allies",
+            "coeff": 0.15,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "tang_toc",
+      "name": "Tăng tốc",
+      "energy": 3,
+      "flavor_text": "Nhanh lên nào.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "haste",
+            "target": "all_allies",
+            "coeff": 0.3,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "cuong_no",
+      "name": "Cuồng nộ",
+      "energy": 2,
+      "flavor_text": "Máu lên não.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "empower",
+            "target": "self",
+            "coeff": 0.5,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "primary",
+            "coeff": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "co_vu",
+      "name": "Cổ vũ",
+      "energy": 4,
+      "flavor_text": "Cố lên cả nhà ơi.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "empower",
+            "target": "all_allies",
+            "coeff": 0.25,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "all_allies",
+            "coeff": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "sac_pin",
+      "name": "Sạc pin",
+      "energy": 4,
+      "flavor_text": "Cắm sạc cho cả đội.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "energy",
+            "target": "all_allies",
+            "coeff": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "lien_hoan",
+      "name": "Liên hoàn",
+      "energy": 3,
+      "flavor_text": "Một, hai, ba, không ngừng tay.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 3,
+          "params": {
+            "effect": "attack",
+            "target": "primary",
+            "coeff": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "song_dao",
+      "name": "Song đao",
+      "energy": 2,
+      "flavor_text": "Tay trái chưa xong, tay phải đã tới.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 2,
+          "params": {
+            "effect": "attack",
+            "target": "primary",
+            "coeff": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "tan_cong_tong_luc",
+      "name": "Tổng lực",
+      "energy": 4,
+      "flavor_text": "Đánh cả hàng, đứa nào cũng dính.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "attack",
+            "target": "all_enemies",
+            "coeff": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "tai_dien",
+      "name": "Tái diễn",
+      "energy": 3,
+      "flavor_text": "Chiêu cũ, nhưng vẫn hiệu quả.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 2,
+          "params": {
+            "effect": "echo",
+            "target": "primary"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bung_no",
+      "name": "Bùng nổ",
+      "energy": 4,
+      "flavor_text": "Dồn hết vào một lần.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "echo",
+            "target": "primary"
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 2,
+          "params": {
+            "effect": "attack",
+            "target": "primary",
+            "coeff": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "hoa_thieu",
+      "name": "Hỏa thiêu",
+      "energy": 4,
+      "flavor_text": "Cháy hết, cháy sạch.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "burn",
+            "target": "all_enemies",
+            "coeff": 0.15
+          }
+        }
+      ]
+    },
+    {
+      "id": "dao_gam",
+      "name": "Dao găm",
+      "energy": 3,
+      "flavor_text": "Vết cắt nhỏ, chạy càng nhiều càng mất máu.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "primary",
+            "coeff": 0.8
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "bleed",
+            "target": "primary",
+            "coeff": 0.4,
+            "turns": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "quan_khien",
+      "name": "Khiên nhỏ",
+      "energy": 2,
+      "flavor_text": "Khiên nhỏ, nhưng là khiên của Quân.",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "self",
+            "coeff": 0.15
+          }
+        }
+      ]
+    },
+    {
+      "id": "quan_ban",
+      "name": "Bắn nhỏ",
+      "energy": 2,
+      "flavor_text": "Bắn một phát, trúng thì vui.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "quan_lua",
+      "name": "Lửa nhỏ",
+      "energy": 3,
+      "flavor_text": "Lửa nhỏ, nhưng đủ cháy nhà.",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "id": "quan_cuu",
+      "name": "Cứu nhỏ",
+      "energy": 2,
+      "flavor_text": "Cứu được ai thì cứu.",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "heal",
+            "target": "ally_lowest",
+            "coeff": 0.18
+          }
+        }
+      ]
+    },
+    {
+      "id": "quan_toc",
+      "name": "Tốc nhỏ",
+      "energy": 2,
+      "flavor_text": "Nhanh lên, Quân đang đợi.",
+      "steps": [
+        {
+          "scale_stat": "spd",
+          "params": {
+            "effect": "haste",
+            "target": "all_allies",
+            "coeff": 0.06,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_san_doc",
+      "name": "Săn mồi trúng độc",
+      "energy": 3,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 1
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 0.65,
+            "when": "target_has_status",
+            "when_status": "poison"
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_thieu_dot",
+      "name": "Thiêu rụi",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "burn",
+            "target": "all_enemies",
+            "coeff": 0.16,
+            "turns": 3
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 1.1,
+            "when": "target_has_status",
+            "when_status": "burn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_khoet_vet_thuong",
+      "name": "Khoét vết thương",
+      "energy": 3,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "bleed",
+            "target": "enemy_lowest",
+            "coeff": 0.25,
+            "turns": 3
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_lowest",
+            "coeff": 1.1,
+            "when": "target_has_status",
+            "when_status": "bleed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_pha_tran",
+      "name": "Phá trận suy yếu",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "weak",
+            "target": "all_enemies",
+            "coeff": 0.16,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 1.25,
+            "when": "target_has_status",
+            "when_status": "weak"
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_tiep_ung",
+      "name": "Tiếp ứng đồng đội",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "energy",
+            "target": "all_allies",
+            "coeff": 1
+          }
+        },
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "ally_lowest",
+            "coeff": 0.13
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_yem_tro",
+      "name": "Hỏa lực yểm trợ",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "sharpen",
+            "target": "all_allies",
+            "coeff": 0.16,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "attack",
+            "target": "enemy_front",
+            "coeff": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_giam_chan",
+      "name": "Giam chân",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "haste",
+            "target": "all_enemies",
+            "coeff": -0.18,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "bleed",
+            "target": "enemy_front",
+            "coeff": 0.3,
+            "turns": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_ho_ve",
+      "name": "Che chở tuyến sau",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "taunt",
+            "target": "self",
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "all_allies",
+            "coeff": 0.09
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_phong_doc",
+      "name": "Phóng độc",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "poison",
+            "target": "all_enemies",
+            "coeff": 0.18,
+            "turns": 3
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "weak",
+            "target": "enemy_front",
+            "coeff": 0.15,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_tai_tao",
+      "name": "Tái tạo đội hình",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "heal",
+            "target": "all_allies",
+            "coeff": 0.08
+          }
+        },
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "ally_lowest",
+            "coeff": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_ap_che",
+      "name": "Áp chế năng lượng",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "energy_steal",
+            "target": "enemy_back",
+            "coeff": 1
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "silence",
+            "target": "enemy_back",
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_dot_kich",
+      "name": "Đột kích điểm yếu",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 1.25
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "bleed",
+            "target": "enemy_back",
+            "coeff": 0.25,
+            "turns": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_thach_giap",
+      "name": "Thạch giáp phản chấn",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "params": {
+            "effect": "shield",
+            "target": "self",
+            "coeff": 0.18
+          }
+        },
+        {
+          "scale_stat": "def",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 1.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_phong_an",
+      "name": "Phong tỏa năng lượng",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "silence",
+            "target": "all_enemies",
+            "turns": 1
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "energy",
+            "target": "all_enemies",
+            "coeff": -1
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_lien_kich",
+      "name": "Liên kích đồng bộ",
+      "energy": 4,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "haste",
+            "target": "all_allies",
+            "coeff": 0.15,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 3,
+          "params": {
+            "effect": "attack",
+            "target": "primary",
+            "coeff": 0.55
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_baron",
+      "name": "Bão axit Hư Không",
+      "energy": 5,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.65
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "weak",
+            "target": "all_enemies",
+            "coeff": 0.16,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "haste",
+            "target": "all_enemies",
+            "coeff": -0.15,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_wither",
+      "name": "Ba đầu lâu khô héo",
+      "energy": 5,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "poison",
+            "target": "all_enemies",
+            "coeff": 0.18,
+            "turns": 3
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 3,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_random",
+            "coeff": 0.55
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_c4",
+      "name": "Kíp nổ hẹn giờ",
+      "energy": 5,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "burn",
+            "target": "all_enemies",
+            "coeff": 0.18,
+            "turns": 3
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.8
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "weak",
+            "target": "all_enemies",
+            "coeff": 0.12,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_pain",
+      "name": "Thần La Thiên Chinh",
+      "energy": 5,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.75
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "haste",
+            "target": "all_enemies",
+            "coeff": -0.2,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_lowest",
+            "coeff": 0.7,
+            "when": "target_has_status",
+            "when_status": "weak"
+          }
+        }
+      ]
+    },
+    {
+      "id": "quai_frieza",
+      "name": "Siêu tân tinh hủy diệt",
+      "energy": 5,
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "burn",
+            "target": "all_enemies",
+            "coeff": 0.2,
+            "turns": 3
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.7
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "params": {
+            "effect": "damage",
+            "target": "enemy_lowest",
+            "coeff": 0.65,
+            "when": "target_has_status",
+            "when_status": "bleed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rasenshuriken",
+      "name": "Rasenshuriken",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.9
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "attack",
+            "target": "enemy_lowest",
+            "coeff": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "khong_kich_d2",
+      "name": "Không kích D2",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.65
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "weak",
+            "target": "all_enemies",
+            "coeff": 0.12,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "lenh_peaky",
+      "name": "Lệnh Peaky",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "energy",
+            "target": "all_allies",
+            "coeff": 1
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "sharpen",
+            "target": "all_allies",
+            "coeff": 0.18,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "to_nhen",
+      "name": "Tơ nhện trói chân",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "haste",
+            "target": "all_enemies",
+            "coeff": -0.2,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "hp",
+          "hits": 1,
+          "params": {
+            "effect": "shield",
+            "target": "self",
+            "coeff": 0.12
+          }
+        }
+      ]
+    },
+    {
+      "id": "kamehameha",
+      "name": "Kamehameha",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.75
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "overdrive",
+            "target": "self",
+            "coeff": 0.15,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "ngoc_chuong",
+      "name": "Ngọc chướng",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "hits": 1,
+          "params": {
+            "effect": "shield",
+            "target": "all_allies",
+            "coeff": 0.12
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "haste",
+            "target": "all_enemies",
+            "coeff": -0.15,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "vu_dieu_thuy_dieu",
+      "name": "Vũ điệu Thủy Điểu",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 3,
+          "params": {
+            "effect": "attack",
+            "target": "enemy_lowest",
+            "coeff": 0.4
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "bleed",
+            "target": "enemy_lowest",
+            "coeff": 0.12,
+            "turns": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "vuot_vuc_tham",
+      "name": "Vượt vực thẳm",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 2,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 0.6
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "bleed",
+            "target": "enemy_front",
+            "coeff": 0.15,
+            "turns": 2,
+            "when": "target_has_status",
+            "when_status": "weak"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bom_nay",
+      "name": "Bom nảy",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 2,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.35
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.45,
+            "when": "target_has_status",
+            "when_status": "burn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "khuc_khai_hoan",
+      "name": "Khúc khải hoàn",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "hits": 1,
+          "params": {
+            "effect": "heal",
+            "target": "all_allies",
+            "coeff": 0.1
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "focus",
+            "target": "all_allies",
+            "coeff": 0.14,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "bao_tam_linh",
+      "name": "Bão tâm linh",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.7
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "energy_steal",
+            "target": "enemy_back",
+            "coeff": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "combo_ragnarok",
+      "name": "Ragnarök",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 3,
+          "params": {
+            "effect": "attack",
+            "target": "enemy_front",
+            "coeff": 0.5
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "empower",
+            "target": "self",
+            "coeff": 0.15,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "hoi_tho_nguyen_tu",
+      "name": "Hơi thở nguyên tử",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "burn",
+            "target": "all_enemies",
+            "coeff": 0.12,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.75,
+            "when": "target_has_status",
+            "when_status": "burn"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dau_an_igni",
+      "name": "Dấu ấn Igni",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "hits": 1,
+          "params": {
+            "effect": "poison",
+            "target": "enemy_front",
+            "coeff": 0.025,
+            "scale_from": "target",
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "burn",
+            "target": "enemy_front",
+            "coeff": 0.12,
+            "turns": 3
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_front",
+            "coeff": 0.8,
+            "when": "target_has_status",
+            "when_status": "poison"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bao_ten",
+      "name": "Bão tên",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 3,
+          "params": {
+            "effect": "attack",
+            "target": "enemy_random",
+            "coeff": 0.4
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "id": "mui_ten_chien_thuat",
+      "name": "Mũi tên chiến thuật",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 0.9
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "energy",
+            "target": "enemy_back",
+            "coeff": -1
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 0.6,
+            "when": "target_has_status",
+            "when_status": "weak"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vong_lap_dormammu",
+      "name": "Vòng lặp Dormammu",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "echo",
+            "target": "self"
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "weak",
+            "target": "all_enemies",
+            "coeff": 0.12,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "bao_tuyet",
+      "name": "Bão tuyết",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.7
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.45,
+            "when": "target_slowed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phuong_hoang_ho_menh",
+      "name": "Phượng hoàng hồi sinh",
+      "energy": 4,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "revive",
+            "target": "ally_dead",
+            "coeff": 0.25
+          }
+        },
+        {
+          "scale_stat": "hp",
+          "hits": 1,
+          "params": {
+            "effect": "heal",
+            "target": "all_allies",
+            "coeff": 0.08
+          }
+        }
+      ]
+    },
+    {
+      "id": "chidori",
+      "name": "Chidori",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 1.2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 0.6,
+            "when": "target_has_status",
+            "when_status": "stun"
+          }
+        }
+      ]
+    },
+    {
+      "id": "final_flash",
+      "name": "Final Flash",
+      "energy": 4,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.85
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "overdrive",
+            "target": "self",
+            "coeff": 0.2,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "death_ball",
+      "name": "Death Ball",
+      "energy": 4,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.8
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_lowest",
+            "coeff": 0.6,
+            "when": "target_has_status",
+            "when_status": "bleed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "anh_sang_cuu_tro",
+      "name": "Ánh sáng cứu trợ",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "hp",
+          "hits": 1,
+          "params": {
+            "effect": "heal",
+            "target": "all_allies",
+            "coeff": 0.12
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "weak",
+            "target": "all_enemies",
+            "coeff": 0.12,
+            "turns": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "dao_am_sat",
+      "name": "Dao ám sát",
+      "energy": 3,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 1.2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "enemy_back",
+            "coeff": 0.6,
+            "when": "target_has_status",
+            "when_status": "bleed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chan_dong_hat_nhan",
+      "name": "Chấn động hạt nhân",
+      "energy": 4,
+      "flavor_text": "",
+      "steps": [
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "weak",
+            "target": "all_enemies",
+            "coeff": 0.12,
+            "turns": 2
+          }
+        },
+        {
+          "scale_stat": "atk",
+          "hits": 1,
+          "params": {
+            "effect": "damage",
+            "target": "all_enemies",
+            "coeff": 0.8,
+            "when": "target_has_status",
+            "when_status": "weak"
+          }
+        }
+      ]
+    }
+  ]
+}

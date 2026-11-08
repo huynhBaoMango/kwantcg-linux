@@ -1,0 +1,968 @@
+{
+  "_comment": "Kho dòng phụ của gear. Mỗi món rơi ra rút GearAffixCount dòng khác nhau theo weight, trong số dòng hợp min_rarity và kinds (trống = mọi loại). Dòng chỉ số: stat + range [min, max] (điểm × tier hầm; percent: % chỉ số gốc của card). Dòng skill: skill như nội tại gear (trigger, scale_stat, skill_params, roll {field, range}); tên hiện trong log trận là 'tên gear · tên dòng'.",
+  "affixes": [
+    {
+      "id": "mau",
+      "name": "Máu",
+      "weight": 14,
+      "min_rarity": "COMMON",
+      "stat": "HP",
+      "range": [
+        20,
+        60
+      ]
+    },
+    {
+      "id": "suc",
+      "name": "Sức",
+      "weight": 14,
+      "min_rarity": "COMMON",
+      "stat": "ATK",
+      "range": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": "giap",
+      "name": "Giáp",
+      "weight": 14,
+      "min_rarity": "COMMON",
+      "stat": "DEF",
+      "range": [
+        3,
+        9
+      ]
+    },
+    {
+      "id": "nhanh",
+      "name": "Nhanh",
+      "weight": 11,
+      "min_rarity": "COMMON",
+      "stat": "SPD",
+      "range": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": "chuan",
+      "name": "Chuẩn",
+      "weight": 10,
+      "min_rarity": "COMMON",
+      "stat": "CRIT",
+      "range": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "lanh",
+      "name": "Lanh",
+      "weight": 8,
+      "min_rarity": "COMMON",
+      "stat": "DODGE",
+      "range": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "mau_pct",
+      "name": "Máu dày",
+      "weight": 8,
+      "min_rarity": "COMMON",
+      "stat": "HP",
+      "percent": true,
+      "range": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": "suc_pct",
+      "name": "Sức bền",
+      "weight": 8,
+      "min_rarity": "COMMON",
+      "stat": "ATK",
+      "percent": true,
+      "range": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": "giap_pct",
+      "name": "Giáp chắc",
+      "weight": 8,
+      "min_rarity": "COMMON",
+      "stat": "DEF",
+      "percent": true,
+      "range": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": "nhanh_pct",
+      "name": "Nhẹ chân",
+      "weight": 6,
+      "min_rarity": "RARE",
+      "stat": "SPD",
+      "percent": true,
+      "range": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "mai_luoi",
+      "name": "Mài lưỡi",
+      "weight": 5,
+      "min_rarity": "RARE",
+      "kinds": [
+        "weapon",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "sharpen",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.04,
+            0.08
+          ]
+        }
+      }
+    },
+    {
+      "id": "tap_trung",
+      "name": "Tập trung",
+      "weight": 5,
+      "min_rarity": "RARE",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "focus",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.04,
+            0.08
+          ]
+        }
+      }
+    },
+    {
+      "id": "tich_khi",
+      "name": "Tích khí",
+      "weight": 5,
+      "min_rarity": "RARE",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "overdrive",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.12
+          ]
+        }
+      }
+    },
+    {
+      "id": "tay_lanh",
+      "name": "Tay lành",
+      "weight": 4,
+      "min_rarity": "RARE",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "heal_power",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.1
+          ]
+        }
+      }
+    },
+    {
+      "id": "khien_day",
+      "name": "Khiên dày",
+      "weight": 4,
+      "min_rarity": "RARE",
+      "kinds": [
+        "armor",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "shield_power",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.1
+          ]
+        }
+      }
+    },
+    {
+      "id": "hiem_hoc",
+      "name": "Hiểm hóc",
+      "weight": 4,
+      "min_rarity": "RARE",
+      "kinds": [
+        "weapon",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "crit_damage",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.1,
+            0.2
+          ]
+        }
+      }
+    },
+    {
+      "id": "hut_mau",
+      "name": "Hút máu",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "kinds": [
+        "weapon",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "life_steal",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.06
+          ]
+        }
+      }
+    },
+    {
+      "id": "hoi_phuc",
+      "name": "Hồi phục",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "kinds": [
+        "armor",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "regen",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.015,
+            0.03
+          ]
+        }
+      }
+    },
+    {
+      "id": "cung_cap",
+      "name": "Cứng cáp",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "kinds": [
+        "armor"
+      ],
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_taken",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            -0.06,
+            -0.03
+          ]
+        }
+      }
+    },
+    {
+      "id": "ket_lieu",
+      "name": "Kết liễu",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "kinds": [
+        "weapon",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "coeff": 0.12,
+          "when": "target_hp_below",
+          "target": "self"
+        },
+        "roll": {
+          "field": "when_value",
+          "range": [
+            0.25,
+            0.4
+          ]
+        }
+      }
+    },
+    {
+      "id": "mo_man",
+      "name": "Mở màn",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "kinds": [
+        "weapon"
+      ],
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "when": "target_full_hp",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.12
+          ]
+        }
+      }
+    },
+    {
+      "id": "ra_don_dau",
+      "name": "Ra đòn đầu",
+      "weight": 2,
+      "min_rarity": "RARE",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "when": "first_attack",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.15,
+            0.3
+          ]
+        }
+      }
+    },
+    {
+      "id": "lien_thu",
+      "name": "Liều thủ",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "kinds": [
+        "armor",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_taken",
+          "when": "self_hp_below",
+          "when_value": 0.35,
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            -0.12,
+            -0.06
+          ]
+        }
+      }
+    },
+    {
+      "id": "cung_duong",
+      "name": "Cùng đường",
+      "weight": 2,
+      "min_rarity": "EPIC",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "when": "self_hp_below",
+          "when_value": 0.3,
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.1,
+            0.2
+          ]
+        }
+      }
+    },
+    {
+      "id": "ve_sau",
+      "name": "Về sau",
+      "weight": 2,
+      "min_rarity": "EPIC",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "damage_dealt",
+          "when": "from_round",
+          "when_value": 4,
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.12
+          ]
+        }
+      }
+    },
+    {
+      "id": "ri_mau",
+      "name": "Rỉ máu",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "kinds": [
+        "weapon"
+      ],
+      "skill": {
+        "trigger": "strike",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "bleed",
+          "target": "primary",
+          "coeff": 0.02
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.1,
+            0.2
+          ]
+        }
+      }
+    },
+    {
+      "id": "chay_xem",
+      "name": "Cháy xém",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "skill": {
+        "trigger": "strike",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "burn",
+          "target": "primary",
+          "coeff": 0.03
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.1,
+            0.2
+          ]
+        }
+      }
+    },
+    {
+      "id": "tam_doc",
+      "name": "Tẩm độc",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "kinds": [
+        "armor",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "hit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "poison",
+          "target": "primary",
+          "coeff": 0.03
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.12,
+            0.22
+          ]
+        }
+      }
+    },
+    {
+      "id": "doc_dai",
+      "name": "Độc dai",
+      "weight": 1,
+      "min_rarity": "EPIC",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "status_turns",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            1,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "lach_nap",
+      "name": "Lách nạp",
+      "weight": 2,
+      "min_rarity": "RARE",
+      "kinds": [
+        "armor",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "dodge",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "energy",
+          "coeff": 1,
+          "target": "self"
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.25,
+            0.45
+          ]
+        }
+      }
+    },
+    {
+      "id": "trung_nap",
+      "name": "Trúng nạp",
+      "weight": 2,
+      "min_rarity": "EPIC",
+      "kinds": [
+        "weapon",
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "crit",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "energy",
+          "coeff": 1,
+          "target": "self"
+        },
+        "roll": {
+          "field": "chance",
+          "range": [
+            0.2,
+            0.35
+          ]
+        }
+      }
+    },
+    {
+      "id": "an_mang",
+      "name": "Ăn mạng",
+      "weight": 2,
+      "min_rarity": "RARE",
+      "skill": {
+        "trigger": "kill",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "heal",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.1
+          ]
+        }
+      }
+    },
+    {
+      "id": "khat_mau",
+      "name": "Khát máu",
+      "weight": 2,
+      "min_rarity": "EPIC",
+      "kinds": [
+        "weapon"
+      ],
+      "skill": {
+        "trigger": "kill",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "empower",
+          "permanent": true,
+          "stack_max": 3,
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.06
+          ]
+        }
+      }
+    },
+    {
+      "id": "chai_li",
+      "name": "Chai lì",
+      "weight": 2,
+      "min_rarity": "RARE",
+      "kinds": [
+        "armor"
+      ],
+      "skill": {
+        "trigger": "hit",
+        "scale_stat": "DEF",
+        "skill_params": {
+          "effect": "stat_bonus",
+          "coeff": 0.02,
+          "permanent": true,
+          "target": "self"
+        },
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            2,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "id": "da_chan",
+      "name": "Đà chân",
+      "weight": 2,
+      "min_rarity": "EPIC",
+      "kinds": [
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "attack",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "haste",
+          "coeff": 0.02,
+          "permanent": true,
+          "target": "self"
+        },
+        "roll": {
+          "field": "stack_max",
+          "range": [
+            2,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "id": "lot_ao",
+      "name": "Lót áo",
+      "weight": 3,
+      "min_rarity": "RARE",
+      "kinds": [
+        "armor"
+      ],
+      "skill": {
+        "trigger": "open",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "shield",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.06,
+            0.12
+          ]
+        }
+      }
+    },
+    {
+      "id": "khoi_dong",
+      "name": "Khởi động",
+      "weight": 2,
+      "min_rarity": "RARE",
+      "kinds": [
+        "accessory"
+      ],
+      "skill": {
+        "trigger": "open",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "haste",
+          "turns": 2,
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.08,
+            0.15
+          ]
+        }
+      }
+    },
+    {
+      "id": "che_ban",
+      "name": "Che bạn",
+      "weight": 2,
+      "min_rarity": "EPIC",
+      "kinds": [
+        "armor"
+      ],
+      "skill": {
+        "trigger": "ally_hit",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "shield",
+          "target": "hit_ally",
+          "coeff": 0.03
+        },
+        "roll": {
+          "field": "max_uses",
+          "range": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "gang_guong",
+      "name": "Gắng gượng",
+      "weight": 2,
+      "min_rarity": "EPIC",
+      "skill": {
+        "trigger": "round_start",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "heal",
+          "when": "self_hp_below",
+          "when_value": 0.4,
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.06
+          ]
+        }
+      }
+    },
+    {
+      "id": "song_sot",
+      "name": "Sống sót",
+      "weight": 1,
+      "min_rarity": "LEGENDARY",
+      "skill": {
+        "trigger": "death",
+        "scale_stat": "HP",
+        "skill_params": {
+          "effect": "revive",
+          "max_uses": 1,
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.1,
+            0.2
+          ]
+        }
+      }
+    },
+    {
+      "id": "khai_cuoc",
+      "name": "Khai cuộc",
+      "weight": 2,
+      "min_rarity": "EPIC",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "start_energy",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            1,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "rut_gon",
+      "name": "Rút gọn",
+      "weight": 1,
+      "min_rarity": "LEGENDARY",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "ult_cost",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            1,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "hoi_cua",
+      "name": "Hời của",
+      "weight": 2,
+      "min_rarity": "EPIC",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "loot_xu",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.03,
+            0.06
+          ]
+        }
+      }
+    },
+    {
+      "id": "mat_tinh",
+      "name": "Mắt tinh",
+      "weight": 1,
+      "min_rarity": "EPIC",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "valuable_chance",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.02,
+            0.05
+          ]
+        }
+      }
+    },
+    {
+      "id": "dung_kheo",
+      "name": "Dùng khéo",
+      "weight": 1,
+      "min_rarity": "RARE",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "item_potency",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.1
+          ]
+        }
+      }
+    },
+    {
+      "id": "hoc_nhanh",
+      "name": "Học nhanh",
+      "weight": 2,
+      "min_rarity": "RARE",
+      "skill": {
+        "trigger": "passive",
+        "scale_stat": "ATK",
+        "skill_params": {
+          "effect": "exp",
+          "target": "self"
+        },
+        "roll": {
+          "field": "coeff",
+          "range": [
+            0.05,
+            0.1
+          ]
+        }
+      }
+    }
+  ]
+}
